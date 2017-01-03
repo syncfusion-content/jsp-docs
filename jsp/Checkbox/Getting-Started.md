@@ -17,7 +17,7 @@ Please refer this page http://help.syncfusion.com/jsp/overview for the general i
 
 Create a JSP file and add the below given code to render the checkbox control. 
 
-{% highlight html %}
+{% highlight javascript %}
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
    pageEncoding="ISO-8859-1"%>

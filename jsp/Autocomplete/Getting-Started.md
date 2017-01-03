@@ -27,10 +27,10 @@ content="width=device-width, initial-scale=1.0 user-scalable=no" />
 <meta name="author" content="Syncfusion" />
 <title>Essential JSP - Autocomplete</title>
 <link rel="shortcut icon" href="Content/images/favicon.ico" />
-<link href="//cdn.syncfusion.com//**{{**site.releaseversion**}}**/js/web/material/ej.web.all.min.css"
+<link href="//cdn.syncfusion.com//{{site.releaseversion}}/js/web/material/ej.web.all.min.css"
 rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"> </script>    
-<script type="text/javascript" src="//cdn.syncfusion.com//**{{**site.releaseversion**}}**/js/web/ej.web.all.min.js"></script>
+<script type="text/javascript" src="//cdn.syncfusion.com//{{site.releaseversion}}/js/web/ej.web.all.min.js"></script>
 </head>
 <body>
 
