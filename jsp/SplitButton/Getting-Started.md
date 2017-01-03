@@ -1,7 +1,7 @@
 ---
 layout: post
 title: getting-started
-description:How to create a SplitButton in JSP platform
+description: How to create a SplitButton in JSP platform
 platform: JSP
 control: Split Button
 documentation: ug
