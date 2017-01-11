@@ -2,7 +2,7 @@
 layout: post
 title: Overview
 description: overview
-platform: jsp
+platform: JSP
 control: TimePicker
 documentation: ug
 ---
