@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | JSP | Syncfusion
 description: Getting Started.
-platform: jsp 
+platform: JSP 
 control: Common 
 documentation: ug
 ---
@@ -52,7 +52,7 @@ If you are downloading the zipped package, Downloaded package contains the follo
 4.	JSP SampleBrowser will be launched under the default port 8080 (localhost: 8080/SampleBrowser/index.jsp).
 5.	Browse product samples using the Sample Browser.
 
-![](/jsp/Getting-Started_images/Getteing-Started_img5.PNG)
+![](Getting-Started_images/Getteing-Started_img5.PNG)
 
 ### Steps to utilize Essential JSP components in Dynamic web application with Eclipse environment
 
@@ -62,7 +62,7 @@ To use Essential JSP in eclipse environment, follow the steps below:
 
 Eclipse IDE with Apache Tomcat 7 configured 
 
-![](/jsp/Getting-Started_images/Getteing-Started_img1.png)
+![](Getting-Started_images/Getteing-Started_img1.png)
 
 #### Step 2:
 
@@ -70,7 +70,7 @@ Create a Dynamic web application in eclipse
 
 *	Choose File > New > Project....
 *	In the upcoming wizard choose Web > Dynamic Web Project.
-![](/jsp/Getting-Started_images/Getteing-Started_img2.PNG)
+![](Getting-Started_images/Getteing-Started_img2.PNG)
 
  And create a new Dynamic web project in eclipse.
 
@@ -100,7 +100,7 @@ Copy Essential JavaScript and CSS files from /SampleBrowser/Scripts and /SampleB
 
 {% endhighlight %}
 
-![](/jsp/Getting-Started_images/Getteing-Started_img3.PNG)
+![](Getting-Started_images/Getteing-Started_img3.PNG)
 
 #### Step 5:
 
@@ -151,7 +151,7 @@ Use the Essential JSP custom tag within your JSP file.
  Finally, right-click your project’s in the Eclipse Project Explorer.
 * Select Run As > Run on server.
 
-![](/jsp/Getting-Started_images/Getteing-Started_img4.PNG)
+![](Getting-Started_images/Getteing-Started_img4.PNG)
 
 
 
