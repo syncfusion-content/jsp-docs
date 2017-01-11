@@ -11,7 +11,7 @@ documentation: ug
 
 This section briefly describes about how to create a **Colorpicker** in your application with JSP. The usage of the **Colorpicker** is described in the following sections.
 
-## Create a simple Color Picker in JSP
+## Create a simple ColorPicker in JSP
 
 You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation.](/jsp-docs/jsp/Getting-Started)
 
@@ -32,7 +32,7 @@ You can execute the above code example to display the **Colorpicker** control wi
 
 ![](getting-started_images/colorpicker.png) 
 
-### Configuring Color Picker
+### Configuring ColorPicker
 
 This section encompasses the details on how can you configure the **Colorpicker** control in your application and customize it with various properties such as preset type for **Colorpicker** according to your requirement.
 
@@ -47,4 +47,3 @@ To modify the preset type of the **Colorpicker**, add the following code in your
 The following screenshot illustrates the **Colorpicker** control with preset type property.
 
 ![](getting-started_images/colorpickerpreset.png) 
-
