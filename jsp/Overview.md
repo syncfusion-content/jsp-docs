@@ -2,7 +2,7 @@
 layout: post
 title: Welcome to JSP platform
 description: Overview of JSP platform
-platform: jsp 
+platform: JSP 
 control: Introduction
 documentation: ug
 ---

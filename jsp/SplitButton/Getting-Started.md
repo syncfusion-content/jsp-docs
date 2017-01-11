@@ -3,7 +3,7 @@ layout: post
 title: getting-started
 description: How to create a SplitButton in JSP platform
 platform: JSP
-control: Split Button
+control: SplitButton
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains breifly about how to create a SplitButton in your applcation with JSP.The usage of SplitButton control is described in the following sections.
 
-## Create a Split Button in JSP Platform
+## Create a SplitButton in JSP Platform
 
 To create a Essential JSP component, you should have the general knowledge about the information regarding integrating Syncfusion widget's provided in this [page](https://help.syncfusion.com/jsp/overview).
 

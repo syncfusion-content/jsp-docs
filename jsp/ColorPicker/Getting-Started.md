@@ -1,19 +1,19 @@
 ---
 layout: post
-title: getting-started
-description: getting started for Color Picker
+title: Getting-started
+description: Getting started for ColorPicker
 platform: JSP
-control: Color Picker
+control: ColorPicker
 documentation: ug
 ---
 
 # GettingStarted
 
-This section briefly describes about how to create a color picker in your application with JSP.
+This section briefly describes about how to create a ColorPicker in your application with JSP.
 
-The useage of the color picker is described in the following sections.
+The useage of the ColorPicker is described in the following sections.
 
-## Create a simple Color Picker in JSP
+## Create a simple ColorPicker in JSP
 
 Please refer this page http://help.syncfusion.com/jsp/overview for the general information regarding integerating Syncfusion widgets.
 
@@ -32,7 +32,7 @@ Create a JSP file and add the below given code to render the checkbox control.
 <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>
 <link href="Content/ejthemes/material/ej.web.all.min.css" rel="stylesheet" />
 <script type="text/javascript" src="Scripts/ej.web.all.min.js"></script>
-<title>Color Picker</title>
+<title>ColorPicker</title>
 <style>
  .control{
 margin-left: 10%;
@@ -52,15 +52,15 @@ margin-left: 10%;
 
 {% endhighlight %}
 
-You can execute the above code example to display the Color Picker control with simple control list.
+You can execute the above code example to display the ColorPicker control with simple control list.
 
 ![](getting-started_images/colorpicker.png) 
 
-### Configuring Color Picker
+### Configuring ColorPicker
 
-This section encompasses the details on how can you configure the color picker control in your application and customize it with various properties such as preset type for color picker according to your requirement.
+This section encompasses the details on how can you configure the ColorPicker control in your application and customize it with various properties such as preset type for ColorPicker according to your requirement.
 
-To modify the preset type of the color picker, add the following code in your JSP file.
+To modify the preset type of the ColorPicker, add the following code in your JSP file.
 
 {% highlight javascript %}
 
@@ -68,7 +68,7 @@ To modify the preset type of the color picker, add the following code in your JS
 
 {% endhighlight %}
 
-The following screenshot illustrates the Color Picker control with preset type property.
+The following screenshot illustrates the ColorPicker control with preset type property.
 
 ![](getting-started_images/colorpickerpreset.png) 
 
