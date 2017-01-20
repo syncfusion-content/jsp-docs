@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started
 description: Getting Started
-platform: jsp
+platform: JSP
 control: DatePicker
 documentation: ug
 ---
@@ -20,9 +20,9 @@ Create the JSP file and add the below given code to render **DatePicker** contro
 
 {% highlight html %}
 
-      <div>DatePicker control in JSP</div>
-      <ej:datePicker id="datepicker" ></ej:datePicker>
-      
+        <div>DatePicker control in JSP</div>
+        <ej:datePicker id="datepicker" ></ej:datePicker>
+        
 {% endhighlight %}
 
 You can execute the above code example to display the **DatePicker** control.
@@ -36,17 +36,17 @@ To set the **MinDate**, **MaxDate** in your application add the following script
 
 {% highlight javascript %}
 
-<script>
-var curdate = new Date(); 
-var rangeDate = new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDate() + 30);
-$(function () {
-    $("#datepicker").ejDatePicker({
-        value: curdate, 
-        minDate: curdate,
-        maxDate: rangeDate
-        });
-});
-</script>
+    <script>
+    var curdate = new Date(); 
+    var rangeDate = new Date(curdate.getFullYear(), curdate.getMonth(), curdate.getDate() + 30);
+    $(function () {
+        $("#datepicker").ejDatePicker({
+            value: curdate, 
+            minDate: curdate,
+            maxDate: rangeDate
+            });
+    });
+    </script>
 
 {% endhighlight %}
 
