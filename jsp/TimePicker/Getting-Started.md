@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started
 description: Getting Started
-platform: jsp
+platform: JSP
 control: TimePicker
 documentation: ug
 ---
@@ -19,8 +19,8 @@ Create the JSP file and add the below given code to render **TimePicker** contro
 
 {% highlight html %}
 
-      <div>TimePicker control in JSP</div>
-      <ej:timePicker id="timepicker" ></ej:timePicker>
+        <div>TimePicker control in JSP</div>
+        <ej:timePicker id="timepicker" ></ej:timePicker>
       
 {% endhighlight %}
 
@@ -35,16 +35,16 @@ To set the **MinTime**, **MaxTime** in your application add the following script
 
 {% highlight javascript %}
 
-<script>
-    var mintime = "9:00 AM";
-    var maxtime = "9:00 PM";
-    $(function () {
-        $("#timepicker").ejTimePicker({
-            minTime: mintime,
-            maxTime: maxtime
+    <script>
+        var mintime = "9:00 AM";
+        var maxtime = "9:00 PM";
+        $(function () {
+            $("#timepicker").ejTimePicker({
+                minTime: mintime,
+                maxTime: maxtime
+            });
         });
-    });
-</script>
+    </script>
 
 {% endhighlight %}
 

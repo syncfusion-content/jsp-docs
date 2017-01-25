@@ -2,7 +2,7 @@
 layout: post
 title: Button
 description: button type
-platform: jsp
+platform: JSP
 control: Button
 documentation: ug
 ---
@@ -18,12 +18,12 @@ Create the JSP file and add the below given code to render **Button** control.
 
 {% highlight html %}
 
-<table>
-   <tr>
-      <td>My First Button</td>
-      <td><ej:button id="button" text="Login"></ej:button></td>
-   </tr>
-</table>
+    <table>
+    <tr>
+        <td>My First Button</td>
+        <td><ej:button id="button" text="Login"></ej:button></td>
+    </tr>
+    </table>
 
 
 {% endhighlight %}
@@ -35,13 +35,13 @@ This section encompasses the details on how you can configure the **Button** con
 To modify the size of the **Button** and rename the **Button**, add the following code in your JSP file.
 
 {% highlight html %}
-    
-<table>
-   <tr>
-      <td>My First Button</td>
-      <td><ej:button id="button" text="Login" size="large" showRoundedCorner="true" contentType="textandimage" prefixIcon="e-icon e-handup"></ej:button></td>
-   </tr>
-</table>
+        
+    <table>
+    <tr>
+        <td>My First Button</td>
+        <td><ej:button id="button" text="Login" size="large" showRoundedCorner="true" contentType="textandimage" prefixIcon="e-icon e-handup"></ej:button></td>
+    </tr>
+    </table>
 
     
 {% endhighlight %}
