@@ -19,22 +19,10 @@ Create the JSP file and add the below given code to render **Spreadsheet** contr
 
 {% highlight html %}
 
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld"%>
-<%@ page import="com.syncfusion.*"%>
-<%@page import="datasource.GetJsonData" %>
 <div class="cols-sample-area">
  <ej:spreadsheet id="spreadsheet" loadComplete="loadComplete">
-  <ej:spreadsheet-scrollSettings width="900" height="500">
-  </ej:spreadsheet-scrollSettings>
  </ej:spreadsheet>
 </div>
-<style>
-.cols-sample-area {
-	width: 900px;
-	height: 500px;
-}
-</style>
 
 
 {% endhighlight %}
@@ -43,10 +31,10 @@ The above code will render the following output in the display.
 
 ![Getting-Started_images/md_img1.png](Getting-Started_images/md_img1.png)
 
-##Configuring the Spreadsheet
+## Configuring the Spreadsheet
 
 
-###Populate Spreadsheet with data
+### Populate Spreadsheet with data
  Now, this section explains how to populate JSON data to the Spreadsheet. Refer the below code snippet.
 
  {% highlight html %}
@@ -61,7 +49,6 @@ The above code will render the following output in the display.
 
 <div class="cols-sample-area">
   <ej:spreadsheet id="spreadsheet" loadComplete="loadComplete">
-   <ej:spreadsheet-scrollSettings width="900" height="500"></ej:spreadsheet-scrollSettings>
     <ej:spreadsheet-sheets>
      <ej:spreadsheet-sheet>
       <ej:spreadsheet-sheet-rangeSettings>
@@ -78,18 +65,10 @@ function loadComplete(args) {
    if (!this.isImport) {
        this.setWidthToColumns([140, 128, 105, 100, 100, 110, 120, 120, 100]);
        xlFormat.format({ "style": { "font-weight": "bold" } }, "A1:H1");
-       xlFormat.format({ "type": "currency" }, "B2:D11");
-       xlFormat.format({ "type": "currency" }, "G2:G11");
        this.XLRibbon.updateRibbonIcons();
         }
     }
 </script>
-<style>
-.cols-sample-area {
-	width: 900px;
-	height: 500px;
-}
-</style>
 
 
  {% endhighlight %}
@@ -117,10 +96,7 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
     request.setAttribute("DataSource", data);
     %>
  <div class="cols-sample-area">
-   <ej:spreadsheet id="spreadsheet" allowFormulaBar="false" enableContextMenu="false" 
-    showRibbon="false" loadComplete="loadComplete">
-    <ej:spreadsheet-scrollSettings width="900" height="500">
-    </ej:spreadsheet-scrollSettings>
+   <ej:spreadsheet id="spreadsheet" loadComplete="loadComplete">
      <ej:spreadsheet-sheets>
 	  <ej:spreadsheet-sheet>
 	   <ej:spreadsheet-sheet-rangeSettings>
@@ -138,12 +114,6 @@ To apply conditional formats for a range use [`setCFRule`](http://help.syncfusio
    this.XLFormat.format({ "style": { "font-weight": "bold", "font-size": "10pt", "vertical-align": "middle", "text-align": "center" } }, "A1:A13");
     }
 </script>
-<style>
-.cols-sample-area {
-	width: 900px;
-	height: 500px;
-}
-</style>
 
 {% endhighlight %}
 
@@ -171,17 +141,10 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
     %>
 
 <div class="cols-sample-area">
-  <ej:spreadsheet id="spreadsheet" loadComplete="loadComplete">
-   <ej:spreadsheet-scrollSettings width="900" height="500">
-   </ej:spreadsheet-scrollSettings>
+  <ej:spreadsheet id="spreadsheet">
    <ej:spreadsheet-exportSettings 
-      excelUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport" 
-      pdfUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport" 
-      csvUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport">
+      excelUrl="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport" >
    </ej:spreadsheet-exportSettings>
-   <ej:spreadsheet-importSettings 
-      importMapper="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import">
-   </ej:spreadsheet-importSettings>
    <ej:spreadsheet-sheets>
     <ej:spreadsheet-sheet>
      <ej:spreadsheet-sheet-rangeSettings>
@@ -192,24 +155,6 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
    </ej:spreadsheet-sheets>
   </ej:spreadsheet>
 </div>
-<script>
-function loadComplete(args) {
-  var xlFormat = this.XLFormat;
-  if (!this.isImport) {
-      this.setWidthToColumns([140, 128, 105, 100, 100, 110, 120, 120, 100]);
-      xlFormat.format({ "style": { "font-weight": "bold" } }, "A1:H1");
-      xlFormat.format({ "type": "currency" }, "B2:D11");
-	  xlFormat.format({ "type": "currency" }, "G2:G11");
-      this.XLRibbon.updateRibbonIcons();
-        }
-    }
-</script>
-<style>
-.cols-sample-area {
-	width: 900px;
-	height: 500px;
-}
-</style>
 
 {% endhighlight %}
 
