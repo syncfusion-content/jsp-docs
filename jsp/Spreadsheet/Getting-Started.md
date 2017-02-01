@@ -12,7 +12,7 @@ documentation: ug
 This section explains you the steps required to populate the Spreadsheet with data, format and export it as excel file. This section covers only the minimal features that you need to know to get started with the Spreadsheet.
 
 ## Create a simple Spreadsheet in JSP
-You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation.](/jsp-docs/jsp/Getting-Started)
+You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation.](/jsp/Getting-Started)
 
 
 Create the JSP file and add the below given code to render **Spreadsheet** control.
