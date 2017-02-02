@@ -58,100 +58,82 @@ If you are downloading the zipped package, Downloaded package contains the follo
 
 To use Essential JSP in eclipse environment, follow the steps below:
 
-#### Step:1
 
-Eclipse IDE with Apache Tomcat 7 configured 
+1. Eclipse IDE with Apache Tomcat 7 configured 
 
-![](Getting-Started_images/Getteing-Started_img1.png)
-
-#### Step 2:
-
-Create a Dynamic web application in eclipse
-
-*	Choose File > New > Project....
-*	In the upcoming wizard choose Web > Dynamic Web Project.
-![](Getting-Started_images/Getteing-Started_img2.PNG)
-
- And create a new Dynamic web project in eclipse.
-
-#### Step 3: 
-
-Add a new JSP page to your project’s.
-*	Right-click the WebContent folder. 
-*	Select New > JSP file. 
-*	Enter a file name and click Finish.
+  ![](Getting-Started_images/Getteing-Started_img1.png)
 
 
-#### Step 4:
+2. Create a Dynamic web application in eclipse
 
-Copy Essential JavaScript and CSS files from /SampleBrowser/Scripts and /SampleBrowser/Content to your project’s /WebContent and Configure your JSP page to include the Essential JavaScript and CSS files to the page, as shown in the example below.
+   *	Choose File > New > Project....
+   *	In the upcoming wizard choose Web > Dynamic Web Project.
+   ![](Getting-Started_images/Getteing-Started_img2.PNG)
 
-<b>Example</b>
+  And create a new Dynamic web project in eclipse.
 
-{% highlight html %}
+3. Add a new JSP page to your project’s.
+   *	Right-click the WebContent folder. 
+   *	Select New > JSP file. 
+   *	Enter a file name and click Finish.
 
-<head>
 
-<link href="Content/ejthemes/material/ej.web.all.min.css" rel="stylesheet" />
+4. Copy Essential JavaScript and CSS files from /SampleBrowser/Scripts and /SampleBrowser/Content to your project’s /WebContent and Configure your JSP page to include the Essential JavaScript and CSS files to the page, as shown in the example below.
 
-<script type="text/javascript" src="Scripts/ej.web.all.min.js"></script>
+    <b>Example</b>
 
-</head>
+    {% highlight html %}
 
-{% endhighlight %}
+    <head>
 
-![](Getting-Started_images/Getteing-Started_img3.PNG)
+    <link href="Content/ejthemes/material/ej.web.all.min.css" rel="stylesheet" />
 
-#### Step 5:
+    <script type="text/javascript" src="Scripts/ej.web.all.min.js"></script>
 
-Now add the Essential JSP source package from \SampleBrowser\WEB-INF\lib\syncfusion-taglib-[version].jar to your project's /WebContent/WEB-INF/lib folder.
+    </head>
 
-#### Step 6:
+    {% endhighlight %}
 
-Add the Custom taglib from \SampleBrowser\WEB-INF\EJ.tld to your project’s /WebContent/WEB-INF.
+    ![](Getting-Started_images/Getteing-Started_img3.PNG)
+
+5. Now add the Essential JSP source package from \SampleBrowser\WEB-INF\lib\syncfusion-taglib-[version].jar to your project's /WebContent/WEB-INF/lib folder.
+
+6. Add the Custom taglib from \SampleBrowser\WEB-INF\EJ.tld to your project’s /WebContent/WEB-INF.
  
-#### Step 7:
+7. Import the Essential JSP component package into your JSP page.
 
-Import the Essential JSP component package into your JSP page.
+    <b>Example</b>
 
-<b>Example</b>
+    {% highlight html %}
 
-{% highlight html %}
+    <%@ page import="com.syncfusion.*"%>
 
-<%@ page import="com.syncfusion.*"%>
+    {% endhighlight %}
 
-{% endhighlight %}
+8. Add the mapping Tag Library descriptor (tld) file to support Essential JSP custom tags.
 
-#### Step 7:
+    <b>Example</b>
 
-Add the mapping Tag Library descriptor (tld) file to support Essential JSP custom tags.
+    {% highlight html %}
 
-<b>Example</b>
+    <%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld"%>
 
-{% highlight html %}
+    {% endhighlight %}
 
-<%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld"%>
+9. Use the Essential JSP custom tag within your JSP file.
 
-{% endhighlight %}
+    <b>Example</b>
 
-#### Step 8:
+    {% highlight html %}
 
-Use the Essential JSP custom tag within your JSP file.
+    <ej:datePicker id="datepicker”></ej:datePicker>
 
-<b>Example</b>
+    {% endhighlight %}
 
-{% highlight html %}
+10. Finally, right-click your project’s in the Eclipse Project Explorer.
 
-<ej:datePicker id="datepicker”></ej:datePicker>
-
-{% endhighlight %}
-
-#### Step 9:
-
- Finally, right-click your project’s in the Eclipse Project Explorer.
-* Select Run As > Run on server.
-
-![](Getting-Started_images/Getteing-Started_img4.PNG)
+   * Select Run As > Run on server.
+  ![](Getting-Started_images/Getteing-Started_img4.PNG)
 
 
 
