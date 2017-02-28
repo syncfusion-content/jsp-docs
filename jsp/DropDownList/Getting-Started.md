@@ -41,12 +41,9 @@ And the internal script dependencies of the **DropDownList** widget are:
 For getting started you can use the ‘ej.web.all.min.js’ file, which encapsulates all the ‘ej’ controls and frameworks in one single file.
 For themes, you can use the ‘ej.web.all.min.css’ CDN link from the snippet given. To add the themes in your application, please refer this link.
 
-## Preparing JSP document
+## Create a simple DropDownList in JSP
 
 You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation.](/jsp-docs/jsp/Getting-Started).
-
-
-## Creating DropDownList
 
 The DropDownList can be created in JSP by using the below given code.
 
