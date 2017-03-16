@@ -16,7 +16,7 @@ This section explains briefly about how to create a **Schedule** in your applica
 
 You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation](/jsp-docs/jsp/Getting-Started).
 
-Add the scripts and CSS references in the order mentioned in the following code example.
+Add the scripts and CSS references in the same order mentioned in the following code example.
 
 {% highlight html %}
 
@@ -40,7 +40,7 @@ Add the scripts and CSS references in the order mentioned in the following code 
 
 {% endhighlight %}	
 
-Create the Schedule by adding ej:schedule tag for initializing schedule component on the application.
+Add ej:schedule tag for initializing the Schedule component on the application.
 
 {% highlight html %}
 
@@ -50,7 +50,7 @@ Create the Schedule by adding ej:schedule tag for initializing schedule componen
 
 ## Binding Appointment Data
 
-Set the Scheduler `dataSource`, define an object of array data. You need to import datasource in JSP sample and access the data in datasource by creating object of it. Refer the below code to define the datasource for the Schedule.
+Set the Scheduler `dataSource`, and define an object of array data. You need to import datasource in JSP sample and access the data in datasource by creating object of it. Refer the below code to define the datasource of Schedule.
 
 {% highlight c# %}
 
@@ -113,7 +113,7 @@ Access the data from datasource by using below code,
 {% endhighlight %}
 
 
-Refer the below code to render Schedule with datasource.
+Render the Schedule with datasource by referring the below code.
 
 {% highlight html %}
 
