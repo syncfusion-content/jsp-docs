@@ -96,42 +96,45 @@ The following code example describes the above behavior.
 
     <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 	<%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld" %>
-	<%@ page import="com.syncfusion.*" %><%@ page import="datasource.GetJsonData" %> 
+	<%@ page import="com.syncfusion.*" %><%@ page import="datasource.GetJsonData" %>
     <body>
-	<div class="cols-sample-area"><%
-    GetJsonData obj=new GetJsonData();
-    Object data = obj.GetKanbanJson();
-    request.setAttribute("KanbanDataSource",data);%>
-    <ej:kanban id="Kanban" keyField="Status" allowTitle="true" dataSource="${KanbanDataSource}">
-			<ej:kanban-fields content="Summary" primaryKey="Id"></ej:kanban-fields>
-			<ej:kanban-columns>
-				<ej:kanban-column headerText="Backlog" key="Open" headerTemplate="#column1"></ej:kanban-column>
-				<ej:kanban-column headerText="In Progress" key="InProgress"></ej:kanban-column>
-				<ej:kanban-column headerText="Testing" key="Testing"></ej:kanban-column>
-				<ej:kanban-column headerText="Done" key="Close" headerTemplate="#column4"></ej:kanban-column>
-			</ej:kanban-columns>
-    </ej:kanban>
-	</div>
+    <div class="cols-sample-area">
+        <%
+        GetJsonData obj=new GetJsonData();
+        Object data = obj.GetKanbanJson();
+        request.setAttribute("KanbanDataSource",data);%>
+        <ej:kanban id="Kanban" keyfield="Status" allowtitle="true" datasource="${KanbanDataSource}">
+            <ej:kanban-fields content="Summary" primarykey="Id"></ej:kanban-fields>
+            <ej:kanban-columns>
+                <ej:kanban-column headertext="Backlog" key="Open" headertemplate="#column1"></ej:kanban-column>
+                <ej:kanban-column headertext="In Progress" key="InProgress"></ej:kanban-column>
+                <ej:kanban-column headertext="Testing" key="Testing"></ej:kanban-column>
+                <ej:kanban-column headertext="Done" key="Close" headertemplate="#column4"></ej:kanban-column>
+            </ej:kanban-columns>
+        </ej:kanban>
+    </div>
     </body>
-	<style>
-    .e-backlog,.e-done {
+    <style>
+    .e-backlog, .e-done {
         font-size: 16px;
         padding-right: 5px;
         display: inline-block;
-        }    
-    .e-backlog:before {
-        content: "\e807";
-        }    
-    .e-done:before {
-        content: "\e80a";
+       }
+
+        .e-backlog:before {
+            content: "\e807";
+        }
+
+        .e-done:before {
+            content: "\e80a";
         }
     </style>
-	<script id="column1" type="text/x-jsrender">
-            <span class="e-backlog e-icon"></span> Backlog
-        </script>
-        <div id="column4">
-            <span class="e-done e-icon"></span> Done
-        </div>
+    <script id="column1" type="text/x-jsrender">
+    <span class="e-backlog e-icon"></span> Backlog
+    </script>
+    <div id="column4">
+    <span class="e-done e-icon"></span> Done
+    </div>
     </html>
 
 {% endhighlight %}

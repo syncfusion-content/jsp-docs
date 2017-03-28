@@ -121,6 +121,160 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/editing_img2.png)
 
+### Dialog Template Form
+
+You can edit any of the fields pertaining to a single card of data and apply it to a template so that the same format is applied to all the other cards that you may edit later. 
+
+Using this template support, you can edit the fields that are not bound to `editItems`.
+
+To edit the cards using Dialog template form, set `editMode` as `dialogtemplate` and specify the template id to `dialogTemplate` property of `editSettings`.
+
+N> 1. `value` attribute is used to bind the corresponding field value while editing.
+N> 2. `name` attribute is used to get the changed field values while save the edited card.
+N> 3.  For `editMode` property you can assign either `string` value (“dialogtemplate”) or `enum` value (`ej.Kanban.EditMode.DialogTemplate`).
+
+The following code example describes the above behavior.
+
+
+{% highlight html %}
+
+      
+    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%><%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld" %><%@ page import="com.syncfusion.*" %><%@ page session="false" import="java.util.ArrayList" %><%@ page session="false" import="java.util.Iterator" %><%@ page session="false" import="org.json.simple.parser.JSONParser" %><%@ page import="datasource.GetJsonData" %>
+    <script type="text/javascript" src="Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <body>
+    <div class="cols-sample-area">
+        <%
+        GetJsonData obj=new GetJsonData();
+        Object data = obj.GetKanbanJson();
+        JSONParser parser = new JSONParser();
+        request.setAttribute("KanbanDataSource",data);
+        %>
+        <ej:kanban id="Kanban" keyfield="Status" actioncomplete="complete" datasource="${KanbanDataSource}">
+            <ej:kanban-fields content="Summary" primarykey="Id"></ej:kanban-fields>
+            <ej:kanban-columns>
+                <ej:kanban-column headertext="Backlog" key="Open"></ej:kanban-column>
+                <ej:kanban-column headertext="In Progress" key="InProgress"></ej:kanban-column>
+                <ej:kanban-column headertext="Done" key="Close"></ej:kanban-column>
+            </ej:kanban-columns>
+            <ej:kanban-editsettings allowadding="true" allowediting="true" editmode="dialogtemplate" dialogtemplate="#template">
+            </ej:kanban-editsettings>
+        </ej:kanban>
+    </div>
+    </body>
+    <script id="template" type="text/template">
+    <table cellspacing="10">
+        <tr>
+            <td style="text-align: right;">
+                Id
+            </td>
+            <td style="text-align: left">
+                <input id="Id" name="Id" value="" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
+            </td>
+            <td style="text-align: right;">
+                Status
+            </td>
+            <td style="text-align: left">
+                <select id="Status" name="Status">
+                    <option value="Close">Close</option>
+                    <option value="InProgress">InProgress</option>
+                    <option value="Open">Open</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right;">
+                Estimate
+            </td>
+            <td style="text-align: left">
+                <input type="text" id="Estimate" name="Estimate" value="" />
+            </td>
+            <td style="text-align: right;">
+                Assignee
+            </td>
+            <td style="text-align: left">
+                <select id="Assignee" name="Assignee">
+                    <option value="Nancy">Nancy</option>
+                    <option value="Andrew">Andrew</option>
+                    <option value="Janet">Janet</option>
+                    <option value="Margaret">Margaret</option>
+                    <option value="Steven">Steven</option>
+                    <option value="Michael">Michael</option>
+                    <option value="Robert">Robert</option>
+                    <option value="Laura">Laura</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    </script>
+    <script>
+    function complete(args) {
+        if ((args.requestType == "beginedit" || args.requestType == "add") && args.model.editSettings.editMode == "dialogtemplate") {
+            $("#Estimate").ejNumericTextbox({ value: parseFloat($("#Estimate").val()), width: "175px", height: "34px", decimalPlaces: 2 });
+            $("#Assignee").ejDropDownList({ width: '175px' });
+            $("#Status").ejDropDownList({ width: '175px' });
+            if (args.requestType == "beginedit" || args.requestType == "add") {
+                $("#Assignee").ejDropDownList("setSelectedValue", args.data['Assignee']);
+                $("#Status").ejDropDownList("setSelectedValue", args.data['Status']);
+            }
+        }
+    }
+    </script>
+    </html>
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/editing_img3.png)
+
+### External Form
+
+Set the `editMode` as externalform to open the edit form in outside kanban content.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+
+    <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%><%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld" %><%@ page import="com.syncfusion.*" %><%@ page session="false" import="java.util.ArrayList" %><%@ page session="false" import="java.util.Iterator" %><%@ page session="false" import="org.json.simple.parser.JSONParser" %><%@ page import="datasource.GetJsonData" %>
+    <script type="text/javascript" src="Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <body>
+	<div class="cols-sample-area"><%
+    GetJsonData obj=new GetJsonData();
+    Object data = obj.GetKanbanJson();
+    JSONParser parser = new JSONParser();
+    request.setAttribute("KanbanDataSource",data);
+    %>
+		<ej:kanban id="Kanban" keyField="Status" allowTitle="true" dataSource="${KanbanDataSource}">
+			<ej:kanban-fields content="Summary" primaryKey="Id"></ej:kanban-fields>
+			<ej:kanban-columns>
+				<ej:kanban-column headerText="Backlog" key="Open"></ej:kanban-column>
+				<ej:kanban-column headerText="In Progress" key="InProgress"></ej:kanban-column>
+				<ej:kanban-column headerText="Done" key="Close"></ej:kanban-column>
+			</ej:kanban-columns>
+			<ej:kanban-editSettings allowAdding="true" allowEditing="true" editMode="ExternalForm">
+			<ej:kanban-editSettings-editItems>
+					<ej:kanban-editSettings-editItem field="Id" editType="stringedit" validationRules="${StringValidation}"></ej:kanban-editSettings-editItem>
+					<ej:kanban-editSettings-editItem field="Status" editType="dropdownedit"></ej:kanban-editSettings-editItem>
+					<ej:kanban-editSettings-editItem field="Assignee" editType="dropdownedit"></ej:kanban-editSettings-editItem>
+					<ej:kanban-editSettings-editItem field="Estimate" editType="numericedit"  editParams="${GetNumericParam}" validationRules="${Estimatevalidation}"></ej:kanban-editSettings-editItem>
+					<ej:kanban-editSettings-editItem field="Summary" editType="textarea" validationRules="${TextareaValdation}"></ej:kanban-editSettings-editItem>
+				</ej:kanban-editSettings-editItems>
+			</ej:kanban-editSettings>
+		</ej:kanban>
+	</div>
+    </body>
+    </html>
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/editing_img11.png)
+
 ## Column Validation
 
 We can validate the value of the added or edited card cell before saving.

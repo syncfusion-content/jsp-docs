@@ -59,88 +59,95 @@ The following code example describes the above behavior.
     <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%><%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld" %><%@ page import="com.syncfusion.*" %><%@ page session="false" import="java.util.ArrayList" %><%@ page session="false" import="java.util.Iterator" %><%@ page import="datasource.GetJsonData" %>
     <body>
-	<div class="cols-sample-area"><%
-    GetJsonData obj=new GetJsonData();
-    Object data = obj.GetKanbanJson();
-    request.setAttribute("KanbanDataSource",data);
-    %>
-		<ej:kanban id="Kanban" keyField="Status" allowTitle="true" allowSelection="true" dataSource="${KanbanDataSource}">
-			<ej:kanban-fields content="Summary" primaryKey="Id" imageUrl="ImgUrl"></ej:kanban-fields>
-			<ej:kanban-columns>
-				<ej:kanban-column headerText="Backlog" key="Open"></ej:kanban-column>
-				<ej:kanban-column headerText="In Progress" key="InProgress"></ej:kanban-column>
-				<ej:kanban-column headerText="Testing" key="Testing"></ej:kanban-column>
-			</ej:kanban-columns>
-			<ej:kanban-cardSettings template="#cardtemplate"></ej:kanban-cardSettings>
-		</ej:kanban>
-	</div>
+    <div class="cols-sample-area">
+        <%
+        GetJsonData obj=new GetJsonData();
+        Object data = obj.GetKanbanJson();
+        request.setAttribute("KanbanDataSource",data);
+        %>
+        <ej:kanban id="Kanban" keyfield="Status" allowtitle="true" allowselection="true" datasource="${KanbanDataSource}">
+            <ej:kanban-fields content="Summary" primarykey="Id" imageurl="ImgUrl"></ej:kanban-fields>
+            <ej:kanban-columns>
+                <ej:kanban-column headertext="Backlog" key="Open"></ej:kanban-column>
+                <ej:kanban-column headertext="In Progress" key="InProgress"></ej:kanban-column>
+                <ej:kanban-column headertext="Testing" key="Testing"></ej:kanban-column>
+            </ej:kanban-columns>
+            <ej:kanban-cardsettings template="#cardtemplate"></ej:kanban-cardsettings>
+        </ej:kanban>
+    </div>
     </body>
     <style>
-    .cols-sample-area{
-	display:block !important
-    } 
+    .cols-sample-area {
+        display: block !important;
+    }
+
     .e-templatetable {
-            width: 100%;
-        }
-        .details >table {
-            margin-left:2px;            
-			border-collapse: separate;
-            border-spacing: 2px;
-            width: 100%;
-        }
-	    .details td {
-	        vertical-align: top;
-	    }
-        .details {
-            padding: 8px 8px 10px 0;
-        }
-        .photo {
-            padding: 8px 6px 10px 6px;
-            text-align: center;
-        }
-        .CardHeader {
-            font-weight: bolder;
-            padding-right: 10px;
-        }
+        width: 100%;
+    }
+
+    .details > table {
+        margin-left: 2px;
+        border-collapse: separate;
+        border-spacing: 2px;
+        width: 100%;
+    }
+
+    .details td {
+        vertical-align: top;
+    }
+
+    .details {
+        padding: 8px 8px 10px 0;
+    }
+
+    .photo {
+        padding: 8px 6px 10px 6px;
+        text-align: center;
+    }
+
+    .CardHeader {
+        font-weight: bolder;
+        padding-right: 10px;
+    }
     </style>
     <script id="cardtemplate" type="text/x-jsrender">
-	<table class="e-templatetable">
-		<colgroup>
-			<col width="10%">
-				<col width="90%">
-				</colgroup>
-				<tbody>
-					<tr>
-						<td class="photo">
-							<img src="Content/images/kanban/{{:Priority}}.png">
-							</td>
-							<td class="details">
-								<table>
-									<colgroup>
-										<col width="10%">
-											<col width="90%">
-											</colgroup>
-											<tbody>
-												<tr>
-													<td class="CardHeader">   Assignee: </td>
-													<td>{{:Assignee}}</td>
-												</tr>
-												<tr>
-													<td class="CardHeader">   Summary: </td>
-													<td>{{:Summary}}</td>
-												</tr>
-												<tr>
-													<td class="CardHeader">   Type: </td>
-													<td>{{:Type}}</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</script>
-				</html>
+    <table class="e-templatetable">
+        <colgroup>
+            <col width="10%">
+            <col width="90%">
+        </colgroup>
+        <tbody>
+            <tr>
+                <td class="photo">
+                    <img src="Content/images/kanban/"{{"{{"}}:Priority{{}}}}.png">
+                </td>
+                <td class="details">
+                    <table>
+                        <colgroup>
+                            <col width="10%">
+                            <col width="90%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="CardHeader">   Assignee: </td>
+                                <td>{{"{{"}}:Assignee{{}}}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CardHeader">   Summary: </td>
+                                <td>{{"{{"}}:Summary{{}}}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CardHeader">   Type: </td>
+                                <td>{{"{{"}}:Type{{}}}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </script>
+    </html>
 
 {% endhighlight %}
 
@@ -196,84 +203,90 @@ The following code example describes the tooltip template.
     <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%><%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld" %><%@ page import="com.syncfusion.*" %><%@ page session="false" import="java.util.ArrayList" %><%@ page session="false" import="java.util.Iterator" %><%@ page session="false" import="java.util.HashMap" %><%@ page session="false" import="org.json.simple.parser.JSONParser" %><%@ page import="datasource.GetJsonData" %>
     <body>
-	<div class="cols-sample-area"><%
-    GetJsonData obj=new GetJsonData();
-    Object data = obj.GetKanbanJson();
-    request.setAttribute("KanbanDataSource",data);
-    JSONParser parser = new JSONParser();
-    %>
-		<ej:kanban id="Kanban" keyField="Status" dataSource="${KanbanDataSource}">
-			<ej:kanban-fields content="Summary"  tag="Tags" primaryKey="Id"></ej:kanban-fields>
-			<ej:kanban-columns>
-				<ej:kanban-column headerText="Backlog" key="Open"></ej:kanban-column>
-				<ej:kanban-column headerText="In Progress" key="InProgress">
-				</ej:kanban-column>
-				<ej:kanban-column headerText="Done" key="Close"></ej:kanban-column>
-			</ej:kanban-columns>
-			<ej:kanban-tooltipSettings template="#tooltipTemp" enable="true"></ej:kanban-tooltipSettings>
-		</ej:kanban>
-	</div>
+    <div class="cols-sample-area">
+        <%
+        GetJsonData obj=new GetJsonData();
+        Object data = obj.GetKanbanJson();
+        request.setAttribute("KanbanDataSource",data);
+        JSONParser parser = new JSONParser();
+        %>
+        <ej:kanban id="Kanban" keyfield="Status" datasource="${KanbanDataSource}">
+            <ej:kanban-fields content="Summary" tag="Tags" primarykey="Id"></ej:kanban-fields>
+            <ej:kanban-columns>
+                <ej:kanban-column headertext="Backlog" key="Open"></ej:kanban-column>
+                <ej:kanban-column headertext="In Progress" key="InProgress">
+                </ej:kanban-column>
+                <ej:kanban-column headertext="Done" key="Close"></ej:kanban-column>
+            </ej:kanban-columns>
+            <ej:kanban-tooltipsettings template="#tooltipTemp" enable="true"></ej:kanban-tooltipsettings>
+        </ej:kanban>
+    </div>
     </body>
     <script id="tooltipTemp" type="text/x-jsrender">
-            <div class='e-kanbantooltiptemplate'>
-                <table>
-                    <tr>
-                        <td class="photo">
-                            <img src="{{:ImgUrl}}">
-                        </td>
-                        <td class="details">
-                            <table>
-                                <colgroup>
-                                    <col width="30%">
-                                    <col width="70%">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td class="CardHeader">Assignee:</td>
-                                        <td>{{:Assignee}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="CardHeader">Type:</td>
-                                        <td>{{:Type}}</td>
-                                    </tr>                                
-                                    <tr>
-                                        <td class="CardHeader">Estimate:</td>
-                                        <td>{{:Estimate}}</td>
-                                    </tr>                                
-                                    <tr>
-                                        <td class="CardHeader">Summary:</td>
-                                        <td>{{:Summary}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+    <div class='e-kanbantooltiptemplate'>
+        <table>
+            <tr>
+                <td class="photo">
+                    <img src="{{"{{"}}:ImgUrl{{}}}}">
+                </td>
+                <td class="details">
+                    <table>
+                        <colgroup>
+                            <col width="30%">
+                            <col width="70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="CardHeader">Assignee:</td>
+                                <td>{{"{{"}}:Assignee{{}}}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CardHeader">Type:</td>
+                                <td>{{"{{"}}:Type{{}}}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CardHeader">Estimate:</td>
+                                <td>{{"{{"}}:Estimate{{}}}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CardHeader">Summary:</td>
+                                <td>{{"{{"}}:Summary{{}}}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
     </script>
-	 <style> 
-        .details >table {
-            width: 100%;
-            margin-left:2px;           
-            border-collapse: separate;
-            border-spacing: 1px;
-        }
-        .e-kanbantooltiptemplate {
-            width: 250px;
-            padding: 3px;
-        }
+    <style>
+    .details > table {
+        width: 100%;
+        margin-left: 2px;
+        border-collapse: separate;
+        border-spacing: 1px;
+    }
+
+    .e-kanbantooltiptemplate {
+        width: 250px;
+        padding: 3px;
+    }
+
         .e-kanbantooltiptemplate > table {
             width: 100%;
         }
+
         .e-kanbantooltiptemplate td {
             vertical-align: top;
         }
-        td.details {
-            padding-left: 10px;
-        }
-        .CardHeader {
-            font-weight: bolder;
-        }
+
+    td.details {
+        padding-left: 10px;
+    }
+
+    .CardHeader {
+        font-weight: bolder;
+    }
     </style>
     </html>
 
