@@ -77,10 +77,6 @@ The following code example describes the above behavior.
     </div>
     </body>
     <style>
-    .cols-sample-area {
-        display: block !important;
-    }
-
     .e-templatetable {
         width: 100%;
     }
