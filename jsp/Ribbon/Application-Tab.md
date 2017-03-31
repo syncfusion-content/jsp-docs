@@ -138,10 +138,6 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
     </div>
     </body>
     <style>
-    .cols-sample-area {
-        width: 80%;
-        height: 350px;
-    }
     .e-accuser {
         background-image: url("Content/ejthemes/common-images/ribbon/User.jpg");
     }
