@@ -63,10 +63,6 @@ For further information on – how to refer the required culture scripts into yo
     </div>
     </body>
     <style>
-    .cols-sample-area {
-        width: 80%;
-    }
-
     .e-ribbon .e-rbnquickaccessbar .e-ribbonpaste:before {
         font-size: 27px;
         left: -5px;
@@ -150,11 +146,6 @@ By default, Ribbon render its content and layout from left to right. To customiz
         </ej:ribbon>
     </div>
     </body>
-    <style>
-    .cols-sample-area {
-        width: 80%;
-    }
-    </style>
     </html>
 
 {% endhighlight %}
