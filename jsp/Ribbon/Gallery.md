@@ -79,10 +79,6 @@ N> The `itemHeight` and `itemWidth` for gallery item can be set, if not set defa
     </div>
     </body>
     <style>
-    .cols-sample-area {
-        width: 80%;
-    }
-
     .e-ribbon .e-groupdiv .e-gallerybtn, .e-ribbon .e-groupdiv .e-gallerybtn:hover, .e-ribbon .e-groupdiv .e-galleryselect, .e-ribbon .e-resizediv .e-gallerybtn, .e-ribbon .e-resizediv .e-gallerybtn:hover, .e-ribbon .e-resizediv .e-galleryselect {
         border-width: 3px !important;
         border-style: solid;
@@ -245,9 +241,6 @@ You can also set `text` and `toolTip` to custom gallery item which can also be c
     </div>
     </body>
     <style>
-    .cols-sample-area {
-        width: 80%;
-    }
 
     .e-ribbon .e-groupdiv .e-gallerybtn, .e-ribbon .e-groupdiv .e-gallerybtn:hover, .e-ribbon .e-groupdiv .e-galleryselect, .e-ribbon .e-resizediv .e-gallerybtn, .e-ribbon .e-resizediv .e-gallerybtn:hover, .e-ribbon .e-resizediv .e-galleryselect {
         border-width: 3px !important;
