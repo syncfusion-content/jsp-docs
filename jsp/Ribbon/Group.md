@@ -151,11 +151,6 @@ Separates the control from the next control in the group when group `alignType` 
 			</ej:ribbon>
 		</div>
 	</body>
-	<style>
-    .cols-sample-area{
-    width:80%;
-    }
-    </style>
     </html>
 
 {% endhighlight %}
