@@ -35,17 +35,33 @@ The above code will render the following output in the display.
 
 
 ### Populate Spreadsheet with data
- Now, this section explains how to populate JSON data to the Spreadsheet. Refer the below code snippet.
+ Now, this section explains how to populate JSON data to the Spreadsheet.Refer the below code to define the datasource of Spreadsheet.
+{% highlight js %}
 
- {% highlight html %}
- 
-        
-<%@page import="datasource.GetJsonData" %>
-<%
-   GetJsonData obj =new GetJsonData();
-    Object data = obj.getSpreadData();
-    request.setAttribute("DataSource", data);
-    %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page session="false" import="java.util.ArrayList" %>
+<%@ page session="false" import="java.util.Iterator" %>
+<%@ page session="false" import="org.json.simple.parser.JSONParser" %>
+<%@ taglib prefix="ej" uri="/WEB-INF/EJ.tld"%>
+<%@ page import="com.syncfusion.*"%>
+<%  ArrayList < Object > array = new ArrayList<Object>();
+    JSONParser parser = new JSONParser();
+    array.add(parser.parse("{\"Item Name\": \"Casual Shoes\",\"Date\": \"02/14/2014\",\"Time\": \"11:34:32 AM\",\"Quantity\": \"10\",\"Price\": \"20\",\"Amount\": \"200\",\"Discount\": \"1\",\"Profit\": \"10\"}"));
+	  array.add(parser.parse("{\"Item Name\": \"Sports Shoes\",\"Date\": \"06/11/2014\",\"Time\": \"05:56:32 AM\",\"Quantity\": \"20\",\"Price\": \"30\",\"Amount\": \"600\",\"Discount\": \"5\",\"Profit\": \"50\"}"));
+	  array.add(parser.parse("{\"Item Name\": \"Formal Shoes\",\"Date\": \"07/27/2014\",\"Time\": \"03:32:44 AM\",\"Quantity\": \"20\",\"Price\": \"15\",\"Amount\": \"300\",\"Discount\": \"7\",\"Profit\": \"27\"}"));
+	  array.add(parser.parse("{\"Item Name\": \"Sandals & Floaters\",\"Date\": \"11/21/2014\",\"Time\": \"06:23:54 AM\",\"Quantity\": \"15\",\"Price\": \"20\",\"Amount\": \"300\",\"Discount\": \"11\",\"Profit\": \"67\"}"));
+	  array.add(parser.parse("{\"Item Name\": \"Flip- Flops & Slippers\",\"Date\": \"06/23/2014\",\"Time\": \"12:43:59 AM\",\"Quantity\": \"30\",\"Price\": \"10\",\"Amount\": \"300\",\"Discount\": \"10\",\"Profit\": \"70\"}"));
+	  array.add(parser.parse("{\"Item Name\": \"Sneakers\",\"Date\": \"07/22/2014\",\"Time\": \"10:55:53 AM\",\"Quantity\": \"40\",\"Price\": \"20\",\"Amount\": \"800\",\"Discount\": \"13\",\"Profit\": \"66\"}"));
+	  array.add(parser.parse("{\"Item Name\": \"Running Shoes\",\"Date\": \"02/04/2014\",\"Time\": \"03:44:34 AM\",\"Quantity\": \"20\",\"Price\": \"10\",\"Amount\": \"200\",\"Discount\": \"3\",\"Profit\": \"14\"}"));
+	  array.add(parser.parse("{\"Item Name\": \"Loafers\",\"Date\": \"11/30/2014\",\"Time\": \"03:12:52 AM\",\"Quantity\": \"31\",\"Price\": \"10\",\"Amount\": \"310\",\"Discount\": \"6\",\"Profit\": \"29\"}"));
+	  array.add(parser.parse("{\"Item Name\": \"Cricket Shoes\",\"Date\": \"07/07/2014\",\"Time\": \"11:32:14 AM\",\"Quantity\": \"41\",\"Price\": \"30\",\"Amount\": \"1210\",\"Discount\": \"12\",\"Profit\": \"166\"}"));
+    array.add(parser.parse("{\"Item Name\": \"T-Shirts\",\"Date\": \"10/31/2014\",\"Time\": \"12:01:44 AM\",\"Quantity\": \"50\",\"Price\": \"10\",\"Amount\": \"500\",\"Discount\": \"9\",\"Profit\": \"55\"}"));
+    request.setAttribute("DataSource", array);
+%>
+{% endhighlight %}
+      
+
+{% highlight html %}
 
 <div class="cols-sample-area">
   <ej:spreadsheet id="spreadsheet" loadComplete="loadComplete">
@@ -69,7 +85,6 @@ function loadComplete(args) {
         }
     }
 </script>
-
 
  {% endhighlight %}
  
