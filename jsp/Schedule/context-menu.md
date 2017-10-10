@@ -374,3 +374,46 @@ To include the default categorize option within the context menu, it is necessar
 {% endhighlight %}
 
 N> The **categorize** option must be added only to the **appointment** collection, which displays on right clicking the appointments.
+
+## Remote Data Binding for Categorize
+
+In Schedule, we can also binding the categorize datasource using remote data. The below code example shows how to bind the datasource to categorizeSettings.
+
+{% highlight js %}
+
+<%@ page import="datasource.schedule.*"%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="java.util.Date"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%
+    ScheduleGetDataSource obj = new ScheduleGetDataSource();
+    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
+    request.setAttribute("scheduleData", scheduledatas);
+    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+%>
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+    <ej:schedule-categorizeSettings enable="true" allowMultiple="true" id="Id" text="Text" color="Color" fontColor="Fontcolor">
+        <ej:dataManager url="Home/GetCategorizeData" adaptor="UrlAdaptor"></ej:dataManager>
+    </ej:schedule-categorizeSettings>
+    <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
+</ej:schedule>
+
+{% endhighlight %}
+
+The server-side controller code to handle the CRUD operations are as follows.
+
+{% highlight c# %}
+
+public JsonResult GetCategorizeData()
+{
+    // ScheduleDataDataContext is a LINQ-to-SQL data class name that is defined in the .dbml file to access the tables from the database
+    IEnumerable data = new ScheduleDataDataContext().CategoryData;
+    return Json(data, JsonRequestBehavior.AllowGet);
+}
+
+{% endhighlight %}
