@@ -1,6 +1,6 @@
 node('content')
 { 
-String platform='JavaScript';
+String platform='JSP';
    try
 	{   
 		//Clone scm repository in Workspace source directory
