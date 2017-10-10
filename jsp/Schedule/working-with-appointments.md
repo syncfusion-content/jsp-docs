@@ -993,7 +993,7 @@ This option prioritize the appointments based on its importance and it can be di
 The [prioritySettings](/api/js/ejschedule#members:prioritysettings) holds the below priority related properties such as,
 
 * [enable](/api/js/ejschedule#members:prioritysettings-enable) - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
-* [template](/js/schedule/templates#priority-settings-template) – Customize the priority icon/images using template options.
+* [template](/jsp/schedule/templates#priority-settings-template) – Customize the priority icon/images using template options.
 * [dataSource](/api/js/ejschedule#members:prioritysettings-datasource) – binds the priority dataSource collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview).
 
 We have below 4 default values for priority dataSource collection.
@@ -1431,7 +1431,7 @@ The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the be
 * [templateId](/api/js/ejschedule#members:blockoutsettings-templateid) â€“ It applies the template design to block the intervals.
 * [dataSource](/api/js/ejschedule#members:blockoutsettings-datasource) â€“ Binds the block intervals dataSource collection. This property should be assigned either with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview).
 
-The below blockout fields holds the appropriate column names from the dataSource - 
+The below blockout fields holds the appropriate column names from the dataSource -
 
 <table>
     <tr>
