@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Essential JSP
+## Essential JS for JSP
 
 ### System Requirements
 
@@ -21,14 +21,14 @@ To work with JSP, you need to meet the below configuration.
 
 ### Download and Install 
 
-Download and install the Essential JSP component setup from this link after logging in with your Syncfusion account. 
+Download and install the Essential JS for JSP component setup from this link after logging in with your Syncfusion account. 
 
-You can download the Essential JSP components in two ways.
+You can download the Essential JS for JSP components in two ways.
 
 * Setup file(.exe).
 * Zipped file.
 
-If you are installing the setup file (.exe), then the Essential JSP component packages will be available under the installed location of Syncfusion, refer below.
+If you are installing the setup file (.exe), then the Essential JS for JSP component packages will be available under the installed location of Syncfusion, refer below.
 
    (installed location) \Syncfusion\Essential Studio\14.4.0.15\JSP\.
 
@@ -38,25 +38,25 @@ You can also find the JSP samples (demo website) available under the below insta
 
 If you are downloading the zipped package, Downloaded package contains the following directories.
 
-1.	/Src - Comprises of Essential JSP source package (jar files) to use Essential JSP.
+1.	/Src - Comprises of Essential JS for JSP source package (jar files) to use Essential JS for JSP.
 2.	/Samples - Sample JSP Web Site.
-3.	/Scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JSP components. Also, contains external dependency files such as jQuery, jsRender etc.
+3.	/Scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for JSP components. Also, contains external dependency files such as jQuery, jsRender etc.
 4.	/Themes - Contains the style sheets for web components
 
 
-### Steps to deploy the Essential JSP component demos in Apache Tomcat 
+### Steps to deploy the Essential JS for JSP component demos in Apache Tomcat 
 
 1.	Download the Apache Tomcat from the official download page
-2.	You can find a sample JSP web site in the /Samples directory of the Essential JSP distribution. To run the web site, copy this directory to your Webapps folder of Apache Tomcat
+2.	You can find a sample JSP web site in the /Samples directory of the Essential JS for JSP distribution. To run the web site, copy this directory to your Webapps folder of Apache Tomcat
 3.	Run the startup.bat file from the Tomcat location (Tomcat bin folder)
 4.	JSP SampleBrowser will be launched under the default port 8080 (localhost: 8080/SampleBrowser/index.jsp).
 5.	Browse product samples using the Sample Browser.
 
 ![](Getting-Started_images/Getteing-Started_img5.PNG)
 
-### Steps to utilize Essential JSP components in Dynamic web application with Eclipse environment
+### Steps to utilize Essential JS for JSP components in Dynamic web application with Eclipse environment
 
-To use Essential JSP in eclipse environment, follow the steps below:
+To use Essential JS for JSP in eclipse environment, follow the steps below:
 
 
 1. Eclipse IDE with Apache Tomcat 7 configured 
@@ -96,11 +96,11 @@ To use Essential JSP in eclipse environment, follow the steps below:
 
     ![](Getting-Started_images/Getteing-Started_img3.PNG)
 
-5. Now add the Essential JSP source package from \SampleBrowser\WEB-INF\lib\syncfusion-taglib-[version].jar to your project's /WebContent/WEB-INF/lib folder.
+5. Now add the Essential JS for JSP source package from \SampleBrowser\WEB-INF\lib\syncfusion-taglib-[version].jar to your project's /WebContent/WEB-INF/lib folder.
 
 6. Add the Custom taglib from \SampleBrowser\WEB-INF\EJ.tld to your project’s /WebContent/WEB-INF.
  
-7. Import the Essential JSP component package into your JSP page.
+7. Import the Essential JS for JSP component package into your JSP page.
 
     <b>Example</b>
 
@@ -110,7 +110,7 @@ To use Essential JSP in eclipse environment, follow the steps below:
 
     {% endhighlight %}
 
-8. Add the mapping Tag Library descriptor (tld) file to support Essential JSP custom tags.
+8. Add the mapping Tag Library descriptor (tld) file to support Essential JS for JSP custom tags.
 
     <b>Example</b>
 
@@ -120,7 +120,7 @@ To use Essential JSP in eclipse environment, follow the steps below:
 
     {% endhighlight %}
 
-9. Use the Essential JSP custom tag within your JSP file.
+9. Use the Essential JS for JSP custom tag within your JSP file.
 
     <b>Example</b>
 

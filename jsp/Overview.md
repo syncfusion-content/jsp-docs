@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential JSP
+# Welcome to Syncfusion Essential JS for JSP
 
 Syncfusion JSP server side wrapper with over 40+ controls provide the enhanced way to create the rich dynamic web applications effortlessly. Components offered with this package are JavaScript UI controls which lets to customize the functionality and looks via altered options and themes.    
 
