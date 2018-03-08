@@ -22,8 +22,8 @@ By default, setting 100% width to the Scheduler makes it adaptable to the window
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -48,8 +48,8 @@ To auto-resize the Scheduler height – set the **height** property of the Sched
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -108,8 +108,8 @@ The following code snippet depicts the Scheduler code with responsive set to tru
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 

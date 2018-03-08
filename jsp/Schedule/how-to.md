@@ -76,8 +76,8 @@ Initially, set the **highlight** as false for the **workHours**, so as to disabl
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
@@ -134,8 +134,8 @@ It is possible to display the Scheduler with appointments, which is filtered bas
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -260,8 +260,8 @@ The following code example depicts the way to achieve the customization of defau
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 

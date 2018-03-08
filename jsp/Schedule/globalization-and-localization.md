@@ -32,8 +32,8 @@ The following code example shows how to localize the Schedule control in **fr-FR
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -165,8 +165,8 @@ To customize or localize only some specific words in the default `ej.Schedule.Lo
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -213,8 +213,8 @@ The following code example shows the way to set the specific time zone value wit
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -244,8 +244,8 @@ The following code snippet shows how to define isDST and the time zones for spec
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -271,8 +271,8 @@ It is also possible to define or customize the default time zone collection of t
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> timeZoneData = new ArrayList<HashMap<String, Object>>();
@@ -375,8 +375,8 @@ The following code snippet shows the way to set specific **24 hour format** time
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -406,8 +406,8 @@ If the [dateFormat](/api/js/ejschedule#members:dateformat) property is not speci
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -435,8 +435,8 @@ To set different first day of week in Scheduler,
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 

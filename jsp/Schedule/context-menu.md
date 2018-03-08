@@ -70,8 +70,8 @@ The following code snippet shows how to enable the context menu settings in Sche
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
@@ -181,8 +181,8 @@ The following code example depicts how **to add the custom menu items** to the a
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
@@ -233,8 +233,8 @@ To define specific actions for a click made on the custom menu items, the client
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
@@ -286,8 +286,8 @@ Also, it is possible to predict the target on which the right click is made, eit
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
@@ -340,8 +340,8 @@ To include the default categorize option within the context menu, it is necessar
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
@@ -387,8 +387,8 @@ In Schedule, we can also binding the categorize datasource using remote data. Th
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 

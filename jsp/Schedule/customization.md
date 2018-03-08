@@ -40,8 +40,8 @@ The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -71,8 +71,8 @@ Working hours indicates the work hour limit within the Scheduler, which is highl
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -108,8 +108,8 @@ The majorSlot and minorSlot can be set on the Scheduler with the following code 
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -138,8 +138,8 @@ The following code example renders the Scheduler by hiding the weekend days.
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -169,8 +169,8 @@ The Current date indicates the date with which the Scheduler loads initially and
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -200,8 +200,8 @@ The following code example shows how to set the minDate and maxDate properties o
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
     Date mindate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
     Date maxdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/8");
@@ -584,8 +584,8 @@ The following code snippet shows how to customize the appointment and work cells
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+    request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 

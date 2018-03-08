@@ -104,8 +104,8 @@ Access the data from datasource by using below code,
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
 	ScheduleGetDataSource obj = new ScheduleGetDataSource();
-	ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
-	request.setAttribute("scheduleData", scheduleDatas);
+	ArrayList<ScheduleDataSource> scheduleData = obj.getData();
+	request.setAttribute("scheduleData", scheduleData);
 	Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
