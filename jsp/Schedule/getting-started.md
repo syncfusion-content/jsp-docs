@@ -81,14 +81,14 @@ public class ScheduleDataSource {
 	public Boolean AllDay;
 	public Boolean Recurrence;
 	public String RecurrenceRule;
-	public ScheduleDataSource(int id, String subject, Date starttime, Date endtime, Boolean allday, Boolean recurrence, String recurrencerule) {
-		this.Id = id;
-		this.Subject = subject;
-		this.StartTime = starttime;
-		this.EndTime = endtime;
-		this.AllDay = allday;
-		this.Recurrence = recurrence;
-		this.RecurrenceRule = recurrencerule;
+	public ScheduleDataSource(int Id, String Subject, Date StartTime, Date EndTime, Boolean AllDay, Boolean Recurrence, String Recurrencerule) {
+		this.Id = Id;
+		this.Subject = Subject;
+		this.StartTime = StartTime;
+		this.EndTime = EndTime;
+		this.AllDay = AllDay;
+		this.Recurrence = Recurrence;
+		this.RecurrenceRule = Recurrencerule;
 	}
 }
 
@@ -104,9 +104,9 @@ Access the data from datasource by using below code,
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
 	ScheduleGetDataSource obj = new ScheduleGetDataSource();
-	ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-	request.setAttribute("scheduleData", scheduledatas);
-	Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+	ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+	request.setAttribute("scheduleData", scheduleDatas);
+	Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -115,7 +115,7 @@ Render the Schedule with datasource by referring the below code.
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
 	<ej:schedule-appointmentSettings dataSource="${scheduleData}"
 		id="Id"
 		subject="Subject"

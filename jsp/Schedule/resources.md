@@ -87,27 +87,27 @@ The following are the resource fields which must be defined within the **resourc
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
@@ -115,11 +115,11 @@ The following are the resource fields which must be defined within the **resourc
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>
@@ -145,27 +145,27 @@ The resource data can be bound to the Schedule control through the **resourceSet
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
@@ -173,11 +173,11 @@ The resource data can be bound to the Schedule control through the **resourceSet
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>
@@ -197,9 +197,9 @@ The resource data can be bound to the Schedule control through the **resourceSet
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
     String[] selectData = { "CategoryID", "CategoryName" };
 %>
 
@@ -208,7 +208,7 @@ The resource data can be bound to the Schedule control through the **resourceSet
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
             <ej:schedule-resources-resourceSettings id="CategoryID" text="CategoryName">
@@ -238,26 +238,26 @@ The appointments belonging to all the resources will be displayed on the Schedul
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
@@ -265,10 +265,10 @@ The appointments belonging to all the resources will be displayed on the Schedul
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>
@@ -296,27 +296,27 @@ This type of grouping allows the Scheduler to display all the resources at a sin
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
@@ -324,11 +324,11 @@ This type of grouping allows the Scheduler to display all the resources at a sin
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>
@@ -352,80 +352,80 @@ This type of grouping displays the resources in the Scheduler at multiple levels
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Rooms", "Owners" };
-    ArrayList<HashMap<String, Object>> roomdata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> roomData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> room1 = new HashMap<String, Object>();
     room1.put("text", "ROOM 1");
     room1.put("id", 1);
     room1.put("groupId", 1);
     room1.put("color", "#cb6bb2");
-    roomdata.add(room1);
+    roomData.add(room1);
     HashMap<String, Object> room2 = new HashMap<String, Object>();
     room2.put("text", "ROOM 2");
     room2.put("id", 2);
     room2.put("groupId", 1);
     room2.put("color", "#56ca85");
-    roomdata.add(room2);
+    roomData.add(room2);
     HashMap<String, Object> room3 = new HashMap<String, Object>();
     room3.put("text", "ROOM 3");
     room3.put("id", 3);
     room3.put("groupId", 1);
     room3.put("color", "#f8a398");
-    roomdata.add(room3);
+    roomData.add(room3);
 
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> owner1 = new HashMap<String, Object>();
     owner1.put("text", "Nancy");
     owner1.put("id", 1);
     owner1.put("groupId", 1);
     owner1.put("color", "#ffaa00");
-    resourcedata.add(owner1);
+    resourceData.add(owner1);
     HashMap<String, Object> owner2 = new HashMap<String, Object>();
     owner2.put("text", "Steven");
     owner2.put("id", 3);
     owner2.put("groupId", 2);
     owner2.put("color", "#f8a398");
-    resourcedata.add(owner2);
+    resourceData.add(owner2);
     HashMap<String, Object> owner3 = new HashMap<String, Object>();
     owner3.put("text", "Michael");
     owner3.put("id", 5);
     owner3.put("groupId", 1);
     owner3.put("color", "#51a0ed");
-    resourcedata.add(owner3);
+    resourceData.add(owner3);
     HashMap<String, Object> owner4 = new HashMap<String, Object>();
     owner4.put("text", "Laura");
     owner4.put("id", 7);
     owner4.put("groupId", 2);
     owner4.put("color", "#ffaa00");
-    resourcedata.add(owner4);
+    resourceData.add(owner4);
     HashMap<String, Object> owner5 = new HashMap<String, Object>();
     owner5.put("text", "Robert");
     owner5.put("id", 8);
     owner5.put("groupId", 1);
     owner5.put("color", "#f8a398");
-    resourcedata.add(owner5);
+    resourceData.add(owner5);
     HashMap<String, Object> owner6 = new HashMap<String, Object>();
     owner6.put("text", "Janet");
     owner6.put("id", 4);
     owner6.put("groupId", 2);
     owner6.put("color", "#51a0ed");
-    resourcedata.add(owner6);
+    resourceData.add(owner6);
     HashMap<String, Object> owner7 = new HashMap<String, Object>();
     owner7.put("text", "Milan");
     owner7.put("id", 13);
     owner7.put("groupId", 3);
     owner7.put("color", "#99ff99");
-    resourcedata.add(owner7);
+    resourceData.add(owner7);
     HashMap<String, Object> owner8 = new HashMap<String, Object>();
     owner8.put("text", "Paul");
     owner8.put("id", 15);
     owner8.put("groupId", 3);
     owner8.put("color", "#cc99ff");
-    resourcedata.add(owner8);
+    resourceData.add(owner8);
 %>
 
 {% endhighlight %}
@@ -433,14 +433,14 @@ This type of grouping displays the resources in the Scheduler at multiple levels
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="false" field="roomId" name="Rooms" title="Room">
-            <ej:schedule-resources-resourceSettings id="id" groupId="groupId" color="color" text="text" dataSource="<%=roomdata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" groupId="groupId" color="color" text="text" dataSource="<%=roomData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" groupId="groupId" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" groupId="groupId" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="roomId,ownerId"></ej:schedule-appointmentSettings>
@@ -468,30 +468,30 @@ It is possible to assign different workdays and workhours for each resources pre
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Rooms", "Owners" };
-    ArrayList<HashMap<String, Object>> roomdata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> roomData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> room1 = new HashMap<String, Object>();
     room1.put("text", "ROOM 1");
     room1.put("id", 1);
     room1.put("groupId", 1);
     room1.put("color", "#cb6bb2");
-    roomdata.add(room1);
+    roomData.add(room1);
     HashMap<String, Object> room2 = new HashMap<String, Object>();
     room2.put("text", "ROOM 2");
     room2.put("id", 2);
     room2.put("groupId", 1);
     room2.put("color", "#56ca85");
-    roomdata.add(room2);
+    roomData.add(room2);
 
     String[] ownerDays1 = { "monday", "wednesday", "friday" };
     String[] ownerDays2 = { "tuesday", "thursday" };
     String[] ownerDays3 = { "sunday", "tuesday", "thursday", "saturday" };
 
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> owner1 = new HashMap<String, Object>();
     owner1.put("text", "Nancy");
     owner1.put("id", 1);
@@ -500,7 +500,7 @@ It is possible to assign different workdays and workhours for each resources pre
     owner1.put("on", "10");
     owner1.put("off", "18");
     owner1.put("customDays", "<%=ownerDays1%>");
-    resourcedata.add(owner1);
+    resourceData.add(owner1);
     HashMap<String, Object> owner2 = new HashMap<String, Object>();
     owner2.put("text", "Steven");
     owner2.put("id", 3);
@@ -509,7 +509,7 @@ It is possible to assign different workdays and workhours for each resources pre
     owner2.put("on", "6");
     owner2.put("off", "10");
     owner2.put("customDays", "<%=ownerDays2%>");
-    resourcedata.add(owner2);
+    resourceData.add(owner2);
     HashMap<String, Object> owner3 = new HashMap<String, Object>();
     owner3.put("text", "Michael");
     owner3.put("id", 5);
@@ -518,7 +518,7 @@ It is possible to assign different workdays and workhours for each resources pre
     owner3.put("on", "11");
     owner3.put("off", "15");
     owner3.put("customDays", "<%=ownerDays3%>");
-    resourcedata.add(owner3);
+    resourceData.add(owner3);
 %>
 
 {% endhighlight %}
@@ -526,14 +526,14 @@ It is possible to assign different workdays and workhours for each resources pre
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="false" field="roomId" name="Rooms" title="Room">
-            <ej:schedule-resources-resourceSettings id="id" groupId="groupId" color="color" text="text" dataSource="<%=roomdata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" groupId="groupId" color="color" text="text" dataSource="<%=roomData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" groupId="groupId" color="color" text="text" start="on" end="off" workWeek="customDays" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" groupId="groupId" color="color" text="text" start="on" end="off" workWeek="customDays" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="roomId,ownerId"></ej:schedule-appointmentSettings>

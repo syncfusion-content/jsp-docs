@@ -76,12 +76,12 @@ Initially, set the **highlight** as false for the **workHours**, so as to disabl
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
 
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
@@ -89,32 +89,32 @@ Initially, set the **highlight** as false for the **workHours**, so as to disabl
     res1.put("color", "#f8a398");
     res1.put("start", "10");
     res1.put("end", "18");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
     res2.put("start", "6");
     res2.put("end", "10");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
     res3.put("start", "11");
     res3.put("end", "15");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" start="start" end="end" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" start="start" end="end" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>
@@ -134,9 +134,9 @@ It is possible to display the Scheduler with appointments, which is filtered bas
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -147,7 +147,7 @@ It is possible to display the Scheduler with appointments, which is filtered bas
 <input id='txtSearch' type='text' onkeyup='searchKeyUp()' />
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showCurrentTimeIndicator="false">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showCurrentTimeIndicator="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -260,9 +260,9 @@ The following code example depicts the way to achieve the customization of defau
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -270,7 +270,7 @@ The following code example depicts the way to achieve the customization of defau
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showCurrentTimeIndicator="false" appointmentWindowOpen="onAppointmentOpen">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showCurrentTimeIndicator="false" appointmentWindowOpen="onAppointmentOpen">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -311,7 +311,7 @@ The following code example depicts the way to synchronize the Schedule with Outl
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -319,7 +319,7 @@ The following code example depicts the way to synchronize the Schedule with Outl
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule">
     <ej:dataManager url='@Url.Action("GetApp", "Home")' crudUrl='@Url.Action("Batch","Home")' crossDomain="true"></ej:dataManager>
     </ej:schedule-appointmentSettings>

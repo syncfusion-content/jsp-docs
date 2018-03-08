@@ -32,16 +32,16 @@ The following code example shows how to localize the Schedule control in **fr-FR
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" locale="fr-FR">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" locale="fr-FR">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -165,16 +165,16 @@ To customize or localize only some specific words in the default `ej.Schedule.Lo
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -213,16 +213,16 @@ The following code example shows the way to set the specific time zone value wit
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" timeZone="UTC +05:30" isDST="true">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" timeZone="UTC +05:30" isDST="true">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -244,16 +244,16 @@ The following code snippet shows how to define isDST and the time zones for spec
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>"isDST="true">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>"isDST="true">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -271,9 +271,9 @@ It is also possible to define or customize the default time zone collection of t
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> timeZoneData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> timeData = new HashMap<String, Object>();
@@ -347,7 +347,7 @@ It is also possible to define or customize the default time zone collection of t
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-timeZoneCollection dataSource="<%=timeZoneData%>" text="text" id="id" value="value"></ej:schedule-timeZoneCollection>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -375,16 +375,16 @@ The following code snippet shows the way to set specific **24 hour format** time
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" timeMode="24">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" timeMode="24">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -406,16 +406,16 @@ If the [dateFormat](/api/js/ejschedule#members:dateformat) property is not speci
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>"dateFormat="yyyy/MM/dd">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>"dateFormat="yyyy/MM/dd">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -435,16 +435,16 @@ To set different first day of week in Scheduler,
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" currentView="week" firstDayOfWeek="monday">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" currentView="week" firstDayOfWeek="monday">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 

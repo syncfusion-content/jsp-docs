@@ -44,9 +44,9 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -54,7 +54,7 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" appointmentTemplateId="#appTemplate">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" appointmentTemplateId="#appTemplate">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -89,9 +89,9 @@ The cells can be customized with the following code example.
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -99,7 +99,7 @@ The cells can be customized with the following code example.
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" allDayCellsTemplateId="#allDayTemplate" workCellsTemplateId="#workTemplate">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" allDayCellsTemplateId="#allDayTemplate" workCellsTemplateId="#workTemplate">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -154,9 +154,9 @@ The Date header can be customized with the following code example.
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -164,7 +164,7 @@ The Date header can be customized with the following code example.
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" dateHeaderTemplateId="#dateTemplate">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" dateHeaderTemplateId="#dateTemplate">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -203,9 +203,9 @@ To customize the resource header with some additional images or other customizat
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
     ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
@@ -231,7 +231,7 @@ To customize the resource header with some additional images or other customizat
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" resourceHeaderTemplateId="#resTemplate">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" resourceHeaderTemplateId="#resTemplate">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
@@ -262,9 +262,9 @@ To perform the above specified same customization in **horizontal** **Scheduler*
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
     ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
@@ -290,7 +290,7 @@ To perform the above specified same customization in **horizontal** **Scheduler*
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" orientation="horizontal" resourceHeaderTemplateId="#resTemplate">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" orientation="horizontal" resourceHeaderTemplateId="#resTemplate">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
@@ -327,9 +327,9 @@ The template customization for major and minor timeslots can be referred from th
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -337,7 +337,7 @@ The template customization for major and minor timeslots can be referred from th
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-timeScale enable="true" majorSlot="60" majorSlotTemplateId="#majorTemplate" minorSlotCount="6" minorSlotTemplateId="#minorTemplate"></ej:schedule-timeScale>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -387,9 +387,9 @@ When template is applied for the [prioritySettings](/api/js/ejschedule#members:p
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> priorityData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> priority1 = new HashMap<String, Object>();
@@ -414,7 +414,7 @@ When template is applied for the [prioritySettings](/api/js/ejschedule#members:p
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-prioritySettings enable="true" template="<div class='${value}'></div>" dataSource="<%=priorityData%>"></ej:schedule-prioritySettings>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" priority="Priority"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -466,9 +466,9 @@ To define the template option for tooltip, the [tooltipSettings](/api/js/ejsched
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -476,7 +476,7 @@ To define the template option for tooltip, the [tooltipSettings](/api/js/ejsched
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-tooltipSettings enable="true" templateId="#tooltipTemplate"></ej:schedule-tooltipSettings>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -510,9 +510,9 @@ The following code snippet shows how to customize the content of the date, time 
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -520,7 +520,7 @@ The following code snippet shows how to customize the content of the date, time 
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" orientation="horizontal" appointmentTemplateId="#appTemplate">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" orientation="horizontal" appointmentTemplateId="#appTemplate">
     <ej:schedule-agendaViewSettings dateColumnTemplateId="#dateTemplate" timeColumnTemplateId="#timeTemplate"></ej:schedule-agendaViewSettings>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>

@@ -22,8 +22,8 @@ It is enabled by default in Scheduler and to hide it, [showCurrentTimeIndicator]
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
     Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -52,8 +52,8 @@ The All-day row cell is a single row region displayed at the top of the work cel
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
     Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -82,8 +82,8 @@ The header bar is the top most region of the Scheduler which includes the date n
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
     Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -110,8 +110,8 @@ The TimeScale is the left most region of the Scheduler in vertical mode and the 
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
     Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
@@ -138,8 +138,8 @@ The Location field in the default appointment window can be displayed or hidden 
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
     Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 

@@ -70,9 +70,9 @@ The following code snippet shows how to enable the context menu settings in Sche
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> appData1 = new HashMap<String, Object>();
@@ -156,7 +156,7 @@ The following code snippet shows how to enable the context menu settings in Sche
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-contextMenuSettings enable="true">
         <ej:schedule-contextMenuSettings-menuItems appointment="<%=contextAppData%>" cells="<%=contextCellData%>"></ej:schedule-contextMenuSettings-menuItems>
         </ej:schedule-contextMenuSettings>
@@ -181,9 +181,9 @@ The following code example depicts how **to add the custom menu items** to the a
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> appData1 = new HashMap<String, Object>();
@@ -210,7 +210,7 @@ The following code example depicts how **to add the custom menu items** to the a
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-contextMenuSettings enable="true">
         <ej:schedule-contextMenuSettings-menuItems appointment="<%=contextAppData%>" cells="<%=contextCellData%>"></ej:schedule-contextMenuSettings-menuItems>
     </ej:schedule-contextMenuSettings>
@@ -233,9 +233,9 @@ To define specific actions for a click made on the custom menu items, the client
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> appData1 = new HashMap<String, Object>();
@@ -256,7 +256,7 @@ To define specific actions for a click made on the custom menu items, the client
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" menuItemClick="onMenuItemClick">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" menuItemClick="onMenuItemClick">
     <ej:schedule-contextMenuSettings enable="true">
         <ej:schedule-contextMenuSettings-menuItems appointment="<%=contextAppData%>"></ej:schedule-contextMenuSettings-menuItems>
     </ej:schedule-contextMenuSettings>
@@ -286,9 +286,9 @@ Also, it is possible to predict the target on which the right click is made, eit
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> appData1 = new HashMap<String, Object>();
@@ -309,7 +309,7 @@ Also, it is possible to predict the target on which the right click is made, eit
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" beforeContextMenuOpen="onBeforeContextMenuOpen">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" beforeContextMenuOpen="onBeforeContextMenuOpen">
     <ej:schedule-contextMenuSettings enable="true">
         <ej:schedule-contextMenuSettings-menuItems appointment="<%=contextAppData%>"></ej:schedule-contextMenuSettings-menuItems>
     </ej:schedule-contextMenuSettings>
@@ -340,9 +340,9 @@ To include the default categorize option within the context menu, it is necessar
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextAppData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> appData1 = new HashMap<String, Object>();
@@ -363,7 +363,7 @@ To include the default categorize option within the context menu, it is necessar
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-categorizeSettings enable="true"></ej:schedule-categorizeSettings>
     <ej:schedule-contextMenuSettings enable="true">
         <ej:schedule-contextMenuSettings-menuItems appointment="<%=contextAppData%>"></ej:schedule-contextMenuSettings-menuItems>
@@ -387,16 +387,16 @@ In Schedule, we can also binding the categorize datasource using remote data. Th
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-categorizeSettings enable="true" allowMultiple="true" id="Id" text="Text" color="Color" fontColor="Fontcolor">
         <ej:dataManager url="Home/GetCategorizeData" adaptor="UrlAdaptor"></ej:dataManager>
     </ej:schedule-categorizeSettings>

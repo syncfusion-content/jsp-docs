@@ -40,9 +40,9 @@ The [cellHeight](/api/js/ejschedule#members:cellheight) property allows the Sche
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -50,7 +50,7 @@ The [cellHeight](/api/js/ejschedule#members:cellheight) property allows the Sche
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" cellWidth="40px">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" cellWidth="40px">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -72,9 +72,9 @@ In **Vertical** view, the same functionality is made applicable only in the **Mo
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -82,7 +82,7 @@ In **Vertical** view, the same functionality is made applicable only in the **Mo
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" currentView="month" showOverflowButton="false">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" currentView="month" showOverflowButton="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -100,9 +100,9 @@ The [cellWidth](/api/js/ejschedule#members:cellwidth) property allows the Schedu
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -110,7 +110,7 @@ The [cellWidth](/api/js/ejschedule#members:cellwidth) property allows the Schedu
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" cellWidth="97px">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" cellWidth="97px">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 

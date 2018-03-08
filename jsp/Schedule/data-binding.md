@@ -93,40 +93,40 @@ The below example depicts the appointment fields accepting the string type mappe
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showLocationField="true">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showLocationField="true">
     <ej:schedule-categorizeSettings enable="true"></ej:schedule-categorizeSettings>
     <ej:schedule-prioritySettings enable="true"></ej:schedule-prioritySettings>
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" resourceFields="ownerId"></ej:schedule-appointmentSettings>
@@ -148,16 +148,16 @@ To bind the Scheduler events data as array of JSON objects, refer the below code
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -174,14 +174,14 @@ The appointment data can be bound to the Scheduler through the [Odata](http://ww
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule">
         <ej:dataManager url="http://js.syncfusion.com/ejservices/api/Schedule/LoadData"></ej:dataManager>
     </ej:schedule-appointmentSettings>
@@ -200,14 +200,14 @@ The OData v4 is an improved version of OData protocols and the DataManager can a
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings subject="ShipName" startTime="OrderDate" endTime="RequiredDate" description="ShipAddress">
         <ej:dataManager url="http://services.odata.org/V4/Northwind/Northwind.svc/Orders/" adaptor="ODataV4Adaptor"></ej:dataManager>
     </ej:schedule-appointmentSettings>
@@ -226,14 +226,14 @@ The Schedule appointment data can be bound through the Web API service and it is
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule">
         <ej:dataManager url="http://mvc.syncfusion.com/OdataServices/api/ScheduleData/" crossDomain="true"></ej:dataManager>
     </ej:schedule-appointmentSettings>
@@ -264,14 +264,14 @@ The appointment data can also be bound to the Scheduler using OLEDB database as 
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule">
         <ej:dataManager url="Home/GetData" crudUrl="Home/Batch" adaptor="UrlAdaptor"></ej:dataManager>
     </ej:schedule-appointmentSettings>
@@ -302,10 +302,10 @@ public class ScheduleData
 public JsonResult GetData()
 {
     // Mention your own dataSource to be used here.
-    string strAccessConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/ScheduleDb.MDB";
+    string stringAccessConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/ScheduleDb.MDB";
     DataSet myDataSet = new DataSet();
     OleDbConnection myAccessConn = null;
-    myAccessConn = new OleDbConnection(strAccessConn);
+    myAccessConn = new OleDbConnection(stringAccessConn);
     OleDbCommand myAccessCommand = new OleDbCommand("SELECT * FROM DefaultSchedule", myAccessConn);
     OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(myAccessCommand);
     myAccessConn.Open();
@@ -325,11 +325,11 @@ The control code to handle the CRUD operation are as follows.
 public JsonResult Batch(EditParams param)
 {
     // Mention your own dataSource to be used here.
-    string strAccessConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/ScheduleDb.MDB";
+    string stringAccessConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|/ScheduleDb.MDB";
     if (param.action == "insert" || (param.action == "batch" && param.added != null))  // this block of code will execute while inserting the appointments
     {
         var value = param.action == "insert" ? param.value : param.added[0];
-        using (OleDbConnection myCon = new OleDbConnection(strAccessConn))
+        using (OleDbConnection myCon = new OleDbConnection(stringAccessConn))
         {
             OleDbCommand cmd = new OleDbCommand();
             cmd.CommandType = CommandType.Text;
@@ -368,7 +368,7 @@ public JsonResult Batch(EditParams param)
     {
         if (param.action == "remove")
         {
-            using (OleDbConnection myCon = new OleDbConnection(strAccessConn))
+            using (OleDbConnection myCon = new OleDbConnection(stringAccessConn))
             {
                 myCon.Open();
                 OleDbCommand cmd = new OleDbCommand("DELETE FROM DefaultSchedule WHERE Id = @Key", myCon);
@@ -381,7 +381,7 @@ public JsonResult Batch(EditParams param)
         {
             foreach (var apps in param.deleted)
             {
-                using (OleDbConnection myCon = new OleDbConnection(strAccessConn))
+                using (OleDbConnection myCon = new OleDbConnection(stringAccessConn))
                 {
                     myCon.Open();
                     OleDbCommand cmd = new OleDbCommand("DELETE FROM DefaultSchedule WHERE Id = @Key", myCon);
@@ -395,7 +395,7 @@ public JsonResult Batch(EditParams param)
     if ((param.action == "batch" && param.changed != null) || param.action == "update")   // this block of code will execute while updating the appointment
     {
         var value = param.action == "update" ? param.value : param.changed[0];
-        using (OleDbConnection myCon = new OleDbConnection(strAccessConn))
+        using (OleDbConnection myCon = new OleDbConnection(stringAccessConn))
         {
             myCon.Open();
             OleDbCommand cmd = new OleDbCommand("UPDATE DefaultSchedule SET Subject=@Subject,StartTime=@StartTime,EndTime=@EndTime,AllDay=@AllDay,Recurrence=@Recurrence,RecurrenceRule=@RecurrenceRule,Description=@Description,StartTimeZone=@StartTimeZone,EndTimeZone=@EndTimeZone  WHERE Id = @Key", myCon);
@@ -428,7 +428,7 @@ public JsonResult Batch(EditParams param)
             myCon.Close();
         }
     }
-    OleDbConnection myAccessConn = new OleDbConnection(strAccessConn);
+    OleDbConnection myAccessConn = new OleDbConnection(stringAccessConn);
     OleDbCommand myAccessCommand = new OleDbCommand("SELECT * FROM DefaultSchedule", myAccessConn);
     OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(myAccessCommand);
     DataSet myDataSet = new DataSet();
@@ -464,14 +464,14 @@ The Schedule appointment data can retrieve data from ASP.NET Web methods by maki
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule">
         <ej:dataManager url="WebService1.asmx/GetData" batchUrl="WebService1.asmx/Crud" insertUrl="WebService1.asmx/add" updateUrl="WebService1.asmx/update" removeUrl="WebService1.asmx/remove" adaptor="WebMethodAdaptor"></ej:dataManager>
     </ej:schedule-appointmentSettings>
@@ -500,22 +500,22 @@ public class ScheduleAppointmentsObjDatum
     public List<ScheduleAppointmentsObjData> GetRecords()
     {
         List<ScheduleAppointmentsObjData> list = new List<ScheduleAppointmentsObjData>();
-        list.Add(new ScheduleAppointmentsObjData(100, "Bering Sea Gold", "chennai", "05/02/2014 09:00:00 AM", "05/02/2014 10:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
-        list.Add(new ScheduleAppointmentsObjData(101, "Bering Sea Gold", "mum", "05/02/2014 04:00:00 AM", "05/02/2014 05:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(102, "Bering Sea Gold", "trcy", "05/02/2014 04:00:00 PM", "05/02/2014 05:30:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(103, "What Happened Next?", "chennai", "05/04/2014 03:00:00 AM", "05/04/2014 04:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(104, "Bering Sea Gold", "trcy", "05/04/2014 05:00:00 AM", "05/04/2014 05:40:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(105, "Daily Planet", "chennai", "05/03/2014 01:00:00 AM", "05/03/2014 02:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(106, "Alaska: The Last Frontier", "chennai", "05/03/2014 08:00:00 AM", "05/03/2014 09:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(107, "How It's Made", "chennai", "05/01/2014 06:00:00 AM", "05/01/2014 06:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15"));
-        list.Add(new ScheduleAppointmentsObjData(108, "Deadest Catch", "chennai", "05/03/2014 04:00:00 PM", "05/03/2014 05:00:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(109, "MayDay", "chennai", "04/30/2014 06:30:00 AM", "04/30/2014 07:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(110, "MoonShiners", "chennai", "05/02/2014 02:00:00 AM", "05/02/2014 02:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
-        list.Add(new ScheduleAppointmentsObjData(111, "Close Encounters", "chennai", "04/30/2014 02:00:00 PM", "04/30/2014 03:00:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TH;INTERVAL=1;COUNT=5"));
-        list.Add(new ScheduleAppointmentsObjData(112, "Close Encounters", "mum", "04/30/2014 03:00:00 AM", "04/30/2014 03:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=WE;INTERVAL=1;COUNT=3"));
-        list.Add(new ScheduleAppointmentsObjData(113, "Highway Through Hell", "chennai", "05/01/2014 03:00:00 AM", "05/01/2014 07:00:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
-        list.Add(new ScheduleAppointmentsObjData(114, "Moon Shiners", "chennai", "05/02/2014 04:20:00 AM", "05/02/2014 05:50:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
-        list.Add(new ScheduleAppointmentsObjData(115, "Cash Cab", "chennai", "04/30/2014 03:00:00 PM", "04/30/2014 04:30:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
+        list.Add(new ScheduleAppointmentsObjData(100, "Bering Sea Gold", "Chennai", "05/02/2014 09:00:00 AM", "05/02/2014 10:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
+        list.Add(new ScheduleAppointmentsObjData(101, "Bering Sea Gold", "Mumbai", "05/02/2014 04:00:00 AM", "05/02/2014 05:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(102, "Bering Sea Gold", "Trichy", "05/02/2014 04:00:00 PM", "05/02/2014 05:30:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(103, "What Happened Next?", "Chennai", "05/04/2014 03:00:00 AM", "05/04/2014 04:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(104, "Bering Sea Gold", "Trichy", "05/04/2014 05:00:00 AM", "05/04/2014 05:40:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(105, "Daily Planet", "Chennai", "05/03/2014 01:00:00 AM", "05/03/2014 02:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(106, "Alaska: The Last Frontier", "Chennai", "05/03/2014 08:00:00 AM", "05/03/2014 09:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(107, "How It's Made", "Chennai", "05/01/2014 06:00:00 AM", "05/01/2014 06:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15"));
+        list.Add(new ScheduleAppointmentsObjData(108, "Deadest Catch", "Chennai", "05/03/2014 04:00:00 PM", "05/03/2014 05:00:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(109, "MayDay", "Chennai", "04/30/2014 06:30:00 AM", "04/30/2014 07:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(110, "MoonShiners", "Chennai", "05/02/2014 02:00:00 AM", "05/02/2014 02:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
+        list.Add(new ScheduleAppointmentsObjData(111, "Close Encounters", "Chennai", "04/30/2014 02:00:00 PM", "04/30/2014 03:00:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TH;INTERVAL=1;COUNT=5"));
+        list.Add(new ScheduleAppointmentsObjData(112, "Close Encounters", "Mumbai", "04/30/2014 03:00:00 AM", "04/30/2014 03:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=WE;INTERVAL=1;COUNT=3"));
+        list.Add(new ScheduleAppointmentsObjData(113, "Highway Through Hell", "Chennai", "05/01/2014 03:00:00 AM", "05/01/2014 07:00:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
+        list.Add(new ScheduleAppointmentsObjData(114, "Moon Shiners", "Chennai", "05/02/2014 04:20:00 AM", "05/02/2014 05:50:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(115, "Cash Cab", "Chennai", "04/30/2014 03:00:00 PM", "04/30/2014 04:30:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
         return list;
     }
 }
@@ -882,14 +882,14 @@ The Schedule appointment data can retrieve data from MVC controller. This can be
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule">
         <ej:dataManager url="Home/GetData" batchUrl="Home/Crud" insertUrl="Home/add" updateUrl="Home/update" removeUrl="Home/remove" adaptor="UrlAdaptor"></ej:dataManager>
     </ej:schedule-appointmentSettings>
@@ -1047,14 +1047,14 @@ The **enableLoadOnDemand** property is used to enable or disable the load on dem
 <%@ page import="java.util.Date"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" enableLoadOnDemand="true">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" enableLoadOnDemand="true">
     <ej:schedule-appointmentSettings id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule">
         <ej:dataManager url="http://mvc.syncfusion.com/OdataServices/api/ScheduleData/" crossDomain="true"></ej:dataManager>
     </ej:schedule-appointmentSettings>

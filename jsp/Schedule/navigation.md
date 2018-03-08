@@ -28,9 +28,9 @@ Usually, the [navigation](/api/js/ejschedule#events:navigation) event gets trigg
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -38,7 +38,7 @@ Usually, the [navigation](/api/js/ejschedule#events:navigation) event gets trigg
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" navigation="onNavigation">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" navigation="onNavigation">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -75,9 +75,9 @@ To handle the date navigation actions, the [navigation](/api/js/ejschedule#event
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -85,7 +85,7 @@ To handle the date navigation actions, the [navigation](/api/js/ejschedule#event
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" navigation="onNavigation">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" navigation="onNavigation">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -119,9 +119,9 @@ The following code example shows the way to define the **showAppointmentNavigato
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -129,7 +129,7 @@ The following code example shows the way to define the **showAppointmentNavigato
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showAppointmentNavigator="true">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showAppointmentNavigator="true">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 

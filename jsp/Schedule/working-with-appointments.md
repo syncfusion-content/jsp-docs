@@ -65,9 +65,9 @@ The quick window option can be enabled/disabled by using [showQuickWindow](/api/
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -75,7 +75,7 @@ The quick window option can be enabled/disabled by using [showQuickWindow](/api/
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" showQuickWindow="false">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" showQuickWindow="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -93,9 +93,9 @@ Another way to disable the quick window option at dynamic time can be achieved t
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -103,7 +103,7 @@ Another way to disable the quick window option at dynamic time can be achieved t
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" showQuickWindow="true" cellClick="onCellClick">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" showQuickWindow="true" cellClick="onCellClick">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -135,9 +135,9 @@ The inline option can be enabled/disabled on Scheduler by using the [allowInline
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -145,7 +145,7 @@ The inline option can be enabled/disabled on Scheduler by using the [allowInline
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" allowInline="true">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" allowInline="true">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -162,9 +162,9 @@ It is possible to disable the inline appointment creation and enabling only the 
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -172,7 +172,7 @@ It is possible to disable the inline appointment creation and enabling only the 
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" showQuickWindow="true" cellClick="onCellClick">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" showQuickWindow="true" cellClick="onCellClick">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -218,9 +218,9 @@ To prevent the display of default appointment window on double clicking the Sche
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -228,7 +228,7 @@ To prevent the display of default appointment window on double clicking the Sche
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" appointmentWindowOpen="onAppointmentWindowOpen">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" appointmentWindowOpen="onAppointmentWindowOpen">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -254,9 +254,9 @@ You can add/edit the appointments dynamically through the public method [saveApp
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -266,7 +266,7 @@ You can add/edit the appointments dynamically through the public method [saveApp
 <!--Container for ejButton widget-->
 <ej:button size="medium" text="Add" click="addAppointment"></ej:button>
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -312,9 +312,9 @@ A pop-up with a confirmation message will get displayed before deleting an appoi
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -322,7 +322,7 @@ A pop-up with a confirmation message will get displayed before deleting an appoi
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" showDeleteConfirmationDialog="true">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" showDeleteConfirmationDialog="true">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -361,9 +361,9 @@ The below code example depicts the way to delete the appointments using GUID pro
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -371,7 +371,7 @@ The below code example depicts the way to delete the appointments using GUID pro
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" appointmentClick="onAppointmentClick">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" appointmentClick="onAppointmentClick">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -399,9 +399,9 @@ The below code example depicts the way to delete the appointments using appointm
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -409,7 +409,7 @@ The below code example depicts the way to delete the appointments using appointm
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" appointmentClick="onAppointmentClick">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" appointmentClick="onAppointmentClick">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -448,9 +448,9 @@ To stop the save, edit and delete actions on the Scheduler appointments, followi
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -458,7 +458,7 @@ To stop the save, edit and delete actions on the Scheduler appointments, followi
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" beforeAppointmentCreate="onAppointmentSave" beforeAppointmentChange="onAppointmentEdit" beforeAppointmentRemove="onAppointmentDelete">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" beforeAppointmentCreate="onAppointmentSave" beforeAppointmentChange="onAppointmentEdit" beforeAppointmentRemove="onAppointmentDelete">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -492,9 +492,9 @@ An interaction with the appointments of the Scheduler can be enabled/disabled th
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -502,7 +502,7 @@ An interaction with the appointments of the Scheduler can be enabled/disabled th
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" readOnly="true">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" readOnly="true">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -522,9 +522,9 @@ The appointment time can be modified through the drag and drop behavior, by drag
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -532,7 +532,7 @@ The appointment time can be modified through the drag and drop behavior, by drag
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" allowDragAndDrop="false">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" allowDragAndDrop="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -562,9 +562,9 @@ The following code example shows how to cancel the dragging functionality with t
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -572,7 +572,7 @@ The following code example shows how to cancel the dragging functionality with t
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" dragStop="onDragStop">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" dragStop="onDragStop">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -601,27 +601,27 @@ The following code example lets you drag and drop the external items from the tr
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
@@ -647,11 +647,11 @@ The following code example lets you drag and drop the external items from the tr
 </ej:treeView>
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>
@@ -770,9 +770,9 @@ Resizing an appointment is another way to change its start and end time. Mouse h
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -780,7 +780,7 @@ Resizing an appointment is another way to change its start and end time. Mouse h
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" enableAppointmentResize="false">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" enableAppointmentResize="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -810,9 +810,9 @@ The following code example shows how to cancel the resizing functionality with t
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -820,7 +820,7 @@ The following code example shows how to cancel the resizing functionality with t
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" resizeStart="onResizeStart">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" resizeStart="onResizeStart">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -929,9 +929,9 @@ The below categorize fields holds the appropriate column names from the dataSour
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> categoryData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> data1 = new HashMap<String, Object>();
@@ -977,7 +977,7 @@ The below categorize fields holds the appropriate column names from the dataSour
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-categorizeSettings enable="true" allowMultiple="true" dataSource="<%=categoryData%>" text="text" id="id" color="color" fontColor="fontColor"></ej:schedule-categorizeSettings>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -1052,9 +1052,9 @@ The below priority fields holds the appropriate column names from the dataSource
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> priorityData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> data1 = new HashMap<String, Object>();
@@ -1080,7 +1080,7 @@ The below priority fields holds the appropriate column names from the dataSource
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-prioritySettings enable="true" dataSource="<%=priorityData%>" text="text" value="value"></ej:schedule-prioritySettings>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -1109,9 +1109,9 @@ The public method [searchAppointments](/api/js/ejschedule#methods:searchappointm
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -1123,7 +1123,7 @@ The public method [searchAppointments](/api/js/ejschedule#methods:searchappointm
 <div id="grid1"></div>
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -1170,9 +1170,9 @@ The appointments can be filtered or shortlisted based on the simple or complex c
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -1183,7 +1183,7 @@ The appointments can be filtered or shortlisted based on the simple or complex c
 <div id="grid1"></div>
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -1310,9 +1310,9 @@ To know more about other possible combinations of above specified recurrence rul
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -1320,7 +1320,7 @@ To know more about other possible combinations of above specified recurrence rul
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -1338,9 +1338,9 @@ The default recurrence validation has been included for recurrence appointments 
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -1348,7 +1348,7 @@ The default recurrence validation has been included for recurrence appointments 
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" enableRecurrenceValidation="false">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" enableRecurrenceValidation="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -1392,9 +1392,9 @@ Reminder option notifies all the appointments before some specific time. By defa
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -1402,7 +1402,7 @@ Reminder option notifies all the appointments before some specific time. By defa
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" reminder="reminderCustom">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" reminder="reminderCustom">
     <ej:scheule-reminderSettings enable="true" alertBefore="10"></ej:scheule-reminderSettings>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -1480,9 +1480,9 @@ The below blockout fields holds the appropriate column names from the dataSource
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> blockdatas = obj.getBlockData();
-    request.setAttribute("scheduleBlockData", blockdatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> blockDatas = obj.getBlockData();
+    request.setAttribute("scheduleBlockData", blockDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -1490,7 +1490,7 @@ The below blockout fields holds the appropriate column names from the dataSource
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-blockoutSettings enable="true" dataSource="<%=scheduleBlockData%>" id="BlockId" startTime="BlockStartTime" endTime="BlockEndTime" subject="BlockSubject" isBlockAppointment="IsBlockAppointment"></ej:schedule-blockoutSettings>
 </ej:schedule>
 
@@ -1508,9 +1508,9 @@ The Appointments that lies within the blocked time range can be restricted to pe
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> blockdatas = obj.getBlockData();
-    request.setAttribute("scheduleBlockData", blockdatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> blockDatas = obj.getBlockData();
+    request.setAttribute("scheduleBlockData", blockDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -1518,7 +1518,7 @@ The Appointments that lies within the blocked time range can be restricted to pe
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-blockoutSettings enable="true" dataSource="<%=scheduleBlockData%>" id="BlockId" startTime="BlockStartTime" endTime="BlockEndTime" subject="BlockSubject" isBlockAppointment="IsBlockAppointment"></ej:schedule-blockoutSettings>
 </ej:schedule>
 
@@ -1539,9 +1539,9 @@ The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the be
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> blockdatas = obj.getBlockData();
-    request.setAttribute("scheduleBlockData", blockdatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> blockDatas = obj.getBlockData();
+    request.setAttribute("scheduleBlockData", blockDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -1549,7 +1549,7 @@ The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the be
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-blockoutSettings enable="true" dataSource="<%=scheduleBlockData%>" templateId="#blockTemplate" id="BlockId" startTime="BlockStartTime" endTime="BlockEndTime" subject="BlockSubject" isBlockAppointment="IsBlockAppointment"></ej:schedule-blockoutSettings>
 </ej:schedule>
 
@@ -1574,29 +1574,29 @@ The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the be
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    ArrayList<ScheduleDataSource> blockdatas = obj.getBlockData();
-    request.setAttribute("scheduleBlockData", blockdatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    ArrayList<ScheduleDataSource> blockDatas = obj.getBlockData();
+    request.setAttribute("scheduleBlockData", blockDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
@@ -1604,11 +1604,11 @@ The [blockoutSettings](/api/js/ejschedule#members:blockoutsettings) holds the be
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>

@@ -30,9 +30,9 @@ By default, the Schedule control’s active view is **Week** view. Also, it is p
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
     String[] scheduleViews = { "Day", "WorkWeek" };
 %>
 
@@ -41,7 +41,7 @@ By default, the Schedule control’s active view is **Week** view. Also, it is p
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" views="<%=scheduleViews%>" currentView="workweek">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" views="<%=scheduleViews%>" currentView="workweek">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -61,9 +61,9 @@ It represents a single day Scheduler view (single date display) with all its rel
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -71,7 +71,7 @@ It represents a single day Scheduler view (single date display) with all its rel
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" currentView="day">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" currentView="day">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -89,9 +89,9 @@ It’s a view displaying a count of 7 days (from Sunday to Saturday) with all it
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -99,7 +99,7 @@ It’s a view displaying a count of 7 days (from Sunday to Saturday) with all it
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" currentView="week" firstDayOfWeek="monday">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" currentView="week" firstDayOfWeek="monday">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -117,9 +117,9 @@ Work week view displays the working days of the week (count of 5 days) and its a
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
     String[] weekDays = { "Monday", "Tuesday", "Thursday", "Friday", "Saturday" };
 %>
 
@@ -128,7 +128,7 @@ Work week view displays the working days of the week (count of 5 days) and its a
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" currentView="workweek" workWeek="<%=weekDays%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" currentView="workweek" workWeek="<%=weekDays%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -150,9 +150,9 @@ For example – To set the Month view as current view in Scheduler and to hide t
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -160,7 +160,7 @@ For example – To set the Month view as current view in Scheduler and to hide t
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" currentView="month" showNextPrevMonth="false">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" currentView="month" showNextPrevMonth="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -182,9 +182,9 @@ To display the custom view option in the toolbar-like view options in the schedu
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
     Date startDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/1");
     Date endDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/6");
     String[] scheduleViews = { "Day", "Week", "WorkWeek", "Month", "CustomView" };
@@ -195,7 +195,7 @@ To display the custom view option in the toolbar-like view options in the schedu
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" views="<%=scheduleViews%>" currentView="customview">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" views="<%=scheduleViews%>" currentView="customview">
     <ej:schedule-renderDates start="<%=startDate%>" end="<%=endDate%>"></ej:schedule-renderDates>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -218,9 +218,9 @@ This View option lists out the appointments in a grid-like view for the next 7 d
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -228,7 +228,7 @@ This View option lists out the appointments in a grid-like view for the next 7 d
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" currentView="agenda">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" currentView="agenda">
     <ej:schedule-agendaViewSettings daysInAgenda="5"></ej:schedule-agendaViewSettings>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
@@ -251,9 +251,9 @@ It is possible to restrict the users to display only the specific list of views 
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
     String[] scheduleViews = { "Month" };
 %>
 
@@ -262,7 +262,7 @@ It is possible to restrict the users to display only the specific list of views 
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" views="<%=scheduleViews%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" views="<%=scheduleViews%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -284,9 +284,9 @@ All the applicable features in Vertical mode works similar with Timeline mode (H
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
     String[] scheduleViews = { "Month" };
 %>
 
@@ -295,7 +295,7 @@ All the applicable features in Vertical mode works similar with Timeline mode (H
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>" orientation="horizontal">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>" orientation="horizontal">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 

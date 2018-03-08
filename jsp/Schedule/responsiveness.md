@@ -22,9 +22,9 @@ By default, setting 100% width to the Scheduler makes it adaptable to the window
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -32,7 +32,7 @@ By default, setting 100% width to the Scheduler makes it adaptable to the window
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -48,9 +48,9 @@ To auto-resize the Scheduler height – set the **height** property of the Sched
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -66,7 +66,7 @@ To auto-resize the Scheduler height – set the **height** property of the Sched
     </head>
     <body style="height:100%">
         <!--Container for ejScheduler widget-->
-        <ej:schedule id="Schedule1" height="100%" currentDate="<%=currentdate%>">
+        <ej:schedule id="Schedule1" height="100%" currentDate="<%=currentDate%>">
             <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
         </ej:schedule>
     </body>
@@ -108,9 +108,9 @@ The following code snippet depicts the Scheduler code with responsive set to tru
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -127,7 +127,7 @@ The following code snippet depicts the Scheduler code with responsive set to tru
     </head>
     <body style="height:100%">
         <!--Container for ejScheduler widget-->
-        <ej:schedule id="Schedule1" isResponsive="true" currentDate="<%=currentdate%>">
+        <ej:schedule id="Schedule1" isResponsive="true" currentDate="<%=currentDate%>">
             <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
         </ej:schedule>
     </body>

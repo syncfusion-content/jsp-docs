@@ -32,9 +32,9 @@ The following code example shows the way to export single appointment from the S
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> menuData1 = new HashMap<String, Object>();
@@ -55,7 +55,7 @@ The following code example shows the way to export single appointment from the S
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" menuItemClick="onMenuItemClick">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" menuItemClick="onMenuItemClick">
     <ej:schedule-contextMenuSettings enable="true">
         <ej:schedule-contextMenuSettings-menuItems appointment="<%=contextAppData%>"></ej:schedule-contextMenuSettings-menuItems>
     </ej:schedule-contextMenuSettings>
@@ -92,9 +92,9 @@ The following code example depicts the way to export all the Scheduler appointme
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -103,7 +103,7 @@ The following code example depicts the way to export all the Scheduler appointme
 
 <ej:button id="exportBtn" width="70px" height="30px" text="Print" click="onExportClick"></ej:button>
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -152,9 +152,9 @@ The following code example depicts the way to export the Scheduler with appointm
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -163,7 +163,7 @@ The following code example depicts the way to export the Scheduler with appointm
 
 <ej:button id="exportBtn" width="70px" height="30px" text="Print" click="onExportClick"></ej:button>
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -365,9 +365,9 @@ The following code example depicts the way to export the appointments in Excel f
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -376,7 +376,7 @@ The following code example depicts the way to export the appointments in Excel f
 
 <ej:button id="exportBtn" width="70px" height="30px" text="Print" click="onExportClick"></ej:button>
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -399,8 +399,8 @@ The server-side action **ExportAsExcel** contains the following code example to 
 public ActionResult ExportAsXSL()
 {
     List<AppointmentData> scheduleAppointments = (List<AppointmentData>)JsonConvert.DeserializeObject(Request.Form["ScheduleAppointment"], typeof(List<AppointmentData>));
-    ExcelExport xlExport = new ExcelExport();
-    return xlExport.Export(scheduleAppointments, ExcelVersion.Excel2013);
+    ExcelExport excelExport = new ExcelExport();
+    return excelExport.Export(scheduleAppointments, ExcelVersion.Excel2013);
 }
 
 public class AppointmentData
@@ -436,9 +436,9 @@ The following code example shows the way to print the entire Scheduler, by keepi
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -447,7 +447,7 @@ The following code example shows the way to print the entire Scheduler, by keepi
 
 <ej:button id="exportBtn" width="70px" height="30px" text="Print" click="onExportClick"></ej:button>
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -482,9 +482,9 @@ The following code example depicts the way to print a particular appointment.
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     ArrayList<HashMap<String, Object>> contextData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> menuData1 = new HashMap<String, Object>();
@@ -505,7 +505,7 @@ The following code example depicts the way to print a particular appointment.
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>">
     <ej:schedule-contextMenuSettings enable="true">
         <ej:schedule-contextMenuSettings-menuItems appointment="<%=contextAppData%>"></ej:schedule-contextMenuSettings-menuItems>
     </ej:schedule-contextMenuSettings>
@@ -528,16 +528,16 @@ For example, here the below code example depicts the way to print the particular
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" appointmentClick="onAppointmentClick">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" appointmentClick="onAppointmentClick">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -566,9 +566,9 @@ Refer the following code example to import the appointments into Scheduler.
 <%@ page import="java.text.SimpleDateFormat"%>
 <%
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
-    ArrayList<ScheduleDataSource> scheduledatas = obj.getData();
-    request.setAttribute("scheduleData", scheduledatas);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    ArrayList<ScheduleDataSource> scheduleDatas = obj.getData();
+    request.setAttribute("scheduleData", scheduleDatas);
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -577,7 +577,7 @@ Refer the following code example to import the appointments into Scheduler.
 
 <ej:button id="importBtn" width="70px" height="30px" text="Import" click="ScheduleImport"></ej:button>
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" appointmentClick="onAppointmentClick">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" appointmentClick="onAppointmentClick">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
