@@ -208,22 +208,22 @@ To customize the resource header with some additional images or other customizat
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
@@ -235,7 +235,7 @@ To customize the resource header with some additional images or other customizat
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>
@@ -267,22 +267,22 @@ To perform the above specified same customization in **horizontal** **Scheduler*
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 
     String[] group = { "Owners" };
-    ArrayList<HashMap<String, Object>> resourcedata = new ArrayList<HashMap<String, Object>>();
+    ArrayList<HashMap<String, Object>> resourceData = new ArrayList<HashMap<String, Object>>();
     HashMap<String, Object> res1 = new HashMap<String, Object>();
     res1.put("text", "Nancy");
     res1.put("id", 1);
     res1.put("color", "#f8a398");
-    resourcedata.add(res1);
+    resourceData.add(res1);
     HashMap<String, Object> res2 = new HashMap<String, Object>();
     res2.put("text", "Steven");
     res2.put("id", 3);
     res2.put("color", "#56ca85");
-    resourcedata.add(res2);
+    resourceData.add(res2);
     HashMap<String, Object> res3 = new HashMap<String, Object>();
     res3.put("text", "Michael");
     res3.put("id", 5);
     res3.put("color", "#51a0ed");
-    resourcedata.add(res3);
+    resourceData.add(res3);
 %>
 
 {% endhighlight %}
@@ -294,7 +294,7 @@ To perform the above specified same customization in **horizontal** **Scheduler*
     <ej:schedule-group resources="<%=group%>"></ej:schedule-group>
     <ej:schedule-resources>
         <ej:schedule-resource allowMultiple="true" field="ownerId" name="Owners" title="Owner">
-            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourcedata%>"></ej:schedule-resources-resourceSettings>
+            <ej:schedule-resources-resourceSettings id="id" color="color" text="text" dataSource="<%=resourceData%>"></ej:schedule-resources-resourceSettings>
         </ej:schedule-resource>
     </ej:schedule-resources>
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" resourceFields="ownerId"></ej:schedule-appointmentSettings>

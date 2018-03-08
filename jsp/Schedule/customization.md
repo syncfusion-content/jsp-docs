@@ -203,15 +203,15 @@ The following code example shows how to set the minDate and maxDate properties o
     ArrayList<ScheduleDataSource> scheduleData = obj.getData();
     request.setAttribute("scheduleData", scheduleData);
     Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
-    Date mindate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
-    Date maxdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/8");
+    Date minDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date maxDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/8");
 %>
 
 {% endhighlight %}
 
 {% highlight html %}
 
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" minDate="<%=mindate%>" maxDate="<%=maxdate%>">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" minDate="<%=minDate%>" maxDate="<%=maxDate%>">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}"></ej:schedule-appointmentSettings>
 </ej:schedule>
 

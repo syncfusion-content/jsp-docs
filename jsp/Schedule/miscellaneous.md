@@ -24,7 +24,7 @@ It is enabled by default in Scheduler and to hide it, [showCurrentTimeIndicator]
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
     ArrayList<ScheduleDataSource> scheduleData = obj.getData();
     request.setAttribute("scheduleData", scheduleData);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -32,7 +32,7 @@ It is enabled by default in Scheduler and to hide it, [showCurrentTimeIndicator]
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showCurrentTimeIndicator="false">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showCurrentTimeIndicator="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -54,7 +54,7 @@ The All-day row cell is a single row region displayed at the top of the work cel
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
     ArrayList<ScheduleDataSource> scheduleData = obj.getData();
     request.setAttribute("scheduleData", scheduleData);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -62,7 +62,7 @@ The All-day row cell is a single row region displayed at the top of the work cel
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showAllDayRow="false">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showAllDayRow="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -84,7 +84,7 @@ The header bar is the top most region of the Scheduler which includes the date n
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
     ArrayList<ScheduleDataSource> scheduleData = obj.getData();
     request.setAttribute("scheduleData", scheduleData);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -92,7 +92,7 @@ The header bar is the top most region of the Scheduler which includes the date n
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showHeaderBar="false">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showHeaderBar="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -112,7 +112,7 @@ The TimeScale is the left most region of the Scheduler in vertical mode and the 
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
     ArrayList<ScheduleDataSource> scheduleData = obj.getData();
     request.setAttribute("scheduleData", scheduleData);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -120,7 +120,7 @@ The TimeScale is the left most region of the Scheduler in vertical mode and the 
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showTimeScale="false">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showTimeScale="false">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule"></ej:schedule-appointmentSettings>
 </ej:schedule>
 
@@ -140,7 +140,7 @@ The Location field in the default appointment window can be displayed or hidden 
     ScheduleGetDataSource obj = new ScheduleGetDataSource();
     ArrayList<ScheduleDataSource> scheduleData = obj.getData();
     request.setAttribute("scheduleData", scheduleData);
-    Date currentdate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
+    Date currentDate = new SimpleDateFormat("yyyy/MM/dd").parse("2016/5/4");
 %>
 
 {% endhighlight %}
@@ -148,7 +148,7 @@ The Location field in the default appointment window can be displayed or hidden 
 {% highlight html %}
 
 <!--Container for ejScheduler widget-->
-<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentdate%>" showLocationField="true">
+<ej:schedule id="Schedule1" width="100%" height="525px" currentDate="<%=currentDate%>" showLocationField="true">
     <ej:schedule-appointmentSettings dataSource="${scheduleData}" id="Id" subject="Subject" description="Description" startTime="StartTime" endTime="EndTime" allDay="AllDay" recurrence="Recurrence" recurrenceRule="RecurrenceRule" location="Location"></ej:schedule-appointmentSettings>
 </ej:schedule>
 

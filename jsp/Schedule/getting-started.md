@@ -81,14 +81,14 @@ public class ScheduleDataSource {
 	public Boolean AllDay;
 	public Boolean Recurrence;
 	public String RecurrenceRule;
-	public ScheduleDataSource(int Id, String Subject, Date StartTime, Date EndTime, Boolean AllDay, Boolean Recurrence, String Recurrencerule) {
+	public ScheduleDataSource(int Id, String Subject, Date StartTime, Date EndTime, Boolean AllDay, Boolean Recurrence, String RecurrenceRule) {
 		this.Id = Id;
 		this.Subject = Subject;
 		this.StartTime = StartTime;
 		this.EndTime = EndTime;
 		this.AllDay = AllDay;
 		this.Recurrence = Recurrence;
-		this.RecurrenceRule = Recurrencerule;
+		this.RecurrenceRule = RecurrenceRule;
 	}
 }
 
