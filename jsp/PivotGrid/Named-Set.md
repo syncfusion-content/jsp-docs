@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Named Set
+# Named set
 
-Named set is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining cube data, arithmetic operators, numbers and functions.
+The named set is a multidimensional expression (MDX) that returns a set of dimension members that can be created by combining cube data, arithmetic operators, numbers, and functions.
 
-You can bind the Named Sets in PivotGrid by setting it's unique name in the `fieldName` property either in row or column axis and `isNamedSets` Boolean property to "true".
+You can bind the named sets in the pivot grid by setting it's unique name in the `fieldName` property in the row or column axis and `isNamedSets` Boolean property to true.
 
 {% highlight html %}
 

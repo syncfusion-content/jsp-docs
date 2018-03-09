@@ -10,17 +10,17 @@ keywords: overview
 
 # Overview
 
-The **PivotGauge** control is a lightweight control that reads both **OLAP** and **Relational** datasource. 
+The **pivot gauge** control is a lightweight control that reads both **OLAP** and **relational** data sources.
 
-**Key Features**
+**Key features**
 
-Some of the key features of PivotGauge are as follows, 
+Some of the key features of the pivot gauge are as follows:
 
-* **Data source:** Supports OLAP data binding with **XML/A** data sources and Relational data sources.
+* **Data source:** Supports OLAP data binding with **XML/A** data sources and relational data sources.
 * **Tooltip:** Displays the value and goal information in the tooltip.
-* **Multiple gauges and Layouts:** Support to customize the layout while rendering multiple controls.
-* **Frame types:** Built-in frame types provide a rich appearance of control.
-* **Indicators:** Displays the active/inactive state of PivotGauge.
-* **Ranges:** Highlighting the range of values in scale.
+* **Multiple gauges and layouts:** Supports customizing the layout while rendering multiple controls.
+* **Frame types:** Built-in frame types provide a rich appearance to the control.
+* **Indicators:** Displays the active/inactive state of the pivot gauge.
+* **Ranges:** Highlights the range of values in the scale.
 * **Pointers:**  Points the actual value and goal information.
-* **Header labels:** Support to show or hide header labels and indicators.
+* **Header labels:** Supports showing or hiding header labels and indicators.

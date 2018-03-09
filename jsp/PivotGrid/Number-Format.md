@@ -7,9 +7,9 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Number format 
+# Number format
 
-Allows us to specify the required number format that PivotGrid should use in its values by setting the `format` option. Following number formats that are supported:
+Allows you to specify the required number format that pivot grid should use in its values by setting the `format` option. Following are the number formats that are supported:
 
 * number
 * decimal

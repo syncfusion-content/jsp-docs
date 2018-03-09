@@ -9,22 +9,22 @@ documentation: ug
 
 # Exporting
 
-The PivotGrid control can be exported to the following file formats.
+The pivot grid control can be exported to the following file formats:
 
-* Excel
-* Word
+* Microsoft Excel
+* Microsoft Word
 * PDF
 * CSV
 
-The PivotGrid control can be exported by invoking **“exportPivotGrid”** method, with an appropriate export option as parameter.
+The pivot grid control can be exported by invoking the **“exportPivotGrid”** method with an appropriate export option as a parameter.
 
-## JSON Export
+## JSON export
 
-### Excel Export
+### Excel export
 
-User can export the contents of PivotGrid to an Excel document for future archival, references and analysis purposes.
+You can export the contents of the pivot grid to an Excel document for future archival, references, and analysis purposes.
 
-To achieve Excel export, URL and file name is sent as the parameter.
+To achieve Excel export, the URL and the file name are set as parameters.
 
 {% highlight html %}
 
@@ -46,11 +46,11 @@ To achieve Excel export, URL and file name is sent as the parameter.
 
 {% endhighlight %} 
 
-### Word Export
+### Word export
 
-User can export the contents of PivotGrid to a Word document for future archival, references and analysis purposes.
+You can export the contents of the pivot grid to a Word document for future archival, references, and analysis purposes.
 
-To achieve Word export, URL and file name is sent as the parameter.
+To achieve Word export, the URL and the file name are set as parameters.
 
 {% highlight html %}
 
@@ -72,11 +72,11 @@ To achieve Word export, URL and file name is sent as the parameter.
 
 {% endhighlight %} 
 
-### PDF Export
+### PDF export
 
-User can export the contents of PivotGrid to a PDF document for future archival, references and analysis purposes.
+You can export the contents of the pivot grid to a PDF document for future archival, references, and analysis purposes.
 
-To achieve Word export, URL and file name is sent as the parameter.
+To achieve Word export, the URL and the file name are set as parameters.
 
 {% highlight html %}
 
@@ -98,11 +98,11 @@ To achieve Word export, URL and file name is sent as the parameter.
 
 {% endhighlight %} 
 
-### CSV Export
+### CSV export
 
-User can export the contents of PivotGrid to a CSV document for future archival, references and analysis purposes.
+You can export the contents of the pivot grid to a CSV document for future archival, references, and analysis purposes.
 
-To achieve CSV export, URL and file name is sent as the parameter.
+To achieve CSV export, the URL and the file name are set as parameters.
 
 {% highlight html %}
 
@@ -126,7 +126,7 @@ To achieve CSV export, URL and file name is sent as the parameter.
 
 ### Customize the export document name
 
-For customizing file name, we need to send file name as parameter to the **“exportPivotGrid”**  method along with method name.
+For customizing file name, set the file name as parameter to the **“exportPivotGrid”** method along with method name.
 
 {% highlight html %}
 
@@ -149,9 +149,9 @@ For customizing file name, we need to send file name as parameter to the **“ex
 {% endhighlight %} 
 
 
-## Exporting Customization
+## Exporting customization
 
-You can add title and description to the exporting document by using the title and description properties respectively obtained in the `beforeExport` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
+You can add the title and description to the exporting document by using the title and description properties respectively, obtained in the `beforeExport` event. Similarly, you can enable or disable the styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight html %}
 
@@ -178,9 +178,9 @@ You can add title and description to the exporting document by using the title a
 
 {% endhighlight %} 
 
-### Exporting complete data on Paging
+### Exporting complete data on paging
 
-When paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and PivotEngine export and it is applicable for all kinds of exporting formats available in PivotGrid.
+When the paging is enabled, you can export the complete data by enabling the `enableCompleteDataExport` property. It is supported in both types of JSON and pivot engine export and it is applicable for all kinds of exporting formats available in the pivot grid.
 
 {% highlight html %}
 
@@ -207,19 +207,19 @@ When paging is enabled, you can export the complete data by enabling the `enable
 
 {% endhighlight %}
 
-The below screenshot shows the PivotGrid control exported to Excel document.
+The following screenshot shows the pivot grid control exported to an Excel document:
 
 ![](Exporting_images/ExportPivotExcel.png)
 
-The below screenshot shows the PivotGrid control exported to Word document.
+The following screenshot shows the pivot grid control exported to a Word document:
 
 ![](Exporting_images/ExportPivotWord.png)
 
-The below screenshot shows the PivotGrid control exported to PDF document.
+The following screenshot shows the pivot grid control exported to a PDF document:
 
 ![](Exporting_images/ExportPivotPDF.png)
 
-The below screenshot shows the PivotGrid control exported to CSV document.
+The following screenshot shows the pivot grid control exported to a CSV document:
 
 ![](Exporting_images/ExportPivotCSV.png)
 

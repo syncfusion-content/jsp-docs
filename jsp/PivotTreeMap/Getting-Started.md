@@ -7,15 +7,15 @@ documentation: ug
 keywords: ejpivottreemap, pivottreemap, jsp pivottreemap
 ---
 
-# Getting Started
+# Getting started
 
-This section explains you the steps required to populate the PivotTreeMap in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that you need to know to get started with the PivotTreeMap.
+This section explains how to populate the pivot tree map in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that are needed to get started with the pivot tree map.
 
-## Create PivotTreeMap widget
+## Create pivot tree map widget
 
 You can create a JSP application and add necessary scripts and styles with the help of the given [JSP Getting Started Documentation.](/jsp/Getting-Started)
 
-Refer the required scripts and CSS files in your JSP page as mentioned below in order to render the PivotTreeMap control - 
+Refer to the required scripts and CSS files in your JSP page as mentioned below to render the pivot tree map control:
 
 {% highlight html %}
 
@@ -36,7 +36,7 @@ Refer the required scripts and CSS files in your JSP page as mentioned below in 
 
 {% endhighlight %}
 
-Add the following code example to add list of items to the **PivotTreeMap** and initialize the **PivotTreeMap** widget with OLAP data source.
+Add the following code example to add list of items to the **pivot tree map** and initialize the **pivot tree map** widget with OLAP data source.
 
 {% highlight html %}
 
@@ -67,6 +67,6 @@ Add the following code example to add list of items to the **PivotTreeMap** and 
 
 {% endhighlight %}
 
-The above code will generate a simple PivotTreeMap with internet sales amount over a period of fiscal years across different customer geographic locations.
+The above code will generate a simple pivot tree map with internet sales amount over a period of fiscal years across different customer geographic locations.
 
 ![](Getting-Started_images/olap_default.png)

@@ -7,15 +7,15 @@ documentation: ug
 keywords: ejpivotgrid, pivotgrid, jsp pivotgrid
 ---
 
-# Getting Started
+# Getting started
 
-This section explains you the steps required to populate the PivotGrid in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that you need to know to get started with the PivotGrid.
+This section explains how to populate the pivot grid in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that are needed to get started with the pivot grid.
 
-## Create PivotGrid widget
+## Create pivot grid widget
 
 You can create a JSP application and add necessary scripts and styles with the help of the given [JSP Getting Started Documentation.](/jsp/Getting-Started)
 
-Refer the required scripts and CSS files in your JSP page as mentioned below in order to render the PivotGrid control - 
+Refer to the required scripts and CSS files in your JSP page as mentioned below to render the pivot grid control:
 
 {% highlight html %}
 
@@ -35,7 +35,7 @@ Refer the required scripts and CSS files in your JSP page as mentioned below in 
 
 ## Relational
 
-Add the following code example to add list of items to the **PivotGrid** and initialize the **PivotGrid** widget with Relational data source.
+Add the following code example to add list of items to the **pivot grid** and initialize the **pivot grid** widget with relational data source.
 
 {% highlight html %}
 
@@ -89,13 +89,13 @@ Add the following code example to add list of items to the **PivotGrid** and ini
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGrid with “Product” field in Row, “Date” field in Column and “Amount” field in Value section.
+The above code will generate a simple pivot grid with “Product” field in the row, “Date” field in the column, and “Amount” field in the value section.
 
 ![](Getting-Started_images/relational_default.png)
 
 ## OLAP
 
-Add the following code example to add list of items to the **PivotGrid** and initialize the **PivotGrid** widget with OLAP data source.
+Add the following code example to add list of items to the **pivot grid** and initialize the **pivot grid** widget with OLAP data source.
 
 {% highlight html %}
 
@@ -118,6 +118,6 @@ Add the following code example to add list of items to the **PivotGrid** and ini
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGrid with “Fiscal” field in Row, “Customer Geography” field in Column and “Internet Sales Amount” field in Value section.
+The above code will generate a simple pivot grid with “Fiscal” field in the row, “Customer Geography” field in the column, and “Internet Sales Amount” field in the value section.
 
 ![](Getting-Started_images/olap_default.png)

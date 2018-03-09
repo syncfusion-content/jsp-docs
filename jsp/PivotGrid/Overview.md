@@ -10,15 +10,15 @@ keywords: overview
 
 # Overview
 
-The **PivotGrid** control is an easily configurable, presentation-quality business control that reads both OLAP and Relational datasource, allows to create multi-dimensional views for analysis and satisfying business user needs.
+The **pivot grid** control is an easily configurable and presentation-quality business control that reads both OLAP and relational data sources and allows to create multi-dimensional views for analyzing and satisfying business user needs.
 
-**Key Features**
+**Key features**
 
-Some of the key features of PivotGrid are as follows, 
+Some of the key features of the pivot grid are as follows: 
 
-* **Data Binding**: Supports both OLAP and Relational datasource data binding in the same environment. 
-* **PivotTable Field List**: Lists the entire datasource bound to PivotGrid and allows UI interaction such as filtering and drag drop operation of any measure, dimension, hierarchy, level and field at runtime.  
-* **Grouping Bar**: Supports UI interaction at runtime through sorting, filtering and drag drop operation of the existing field items bound through report. 
-* **Grid Layout**: Four different layouts such as normal, top summary, no summaries and excel-like layout are supported.
-* **Export**: PivotGrid can be exported to Word, PDF, CSV and Excel documents.
-* PivotGrid control specific features such as hyperlink, cell selection, conditional formatting, RTL, globalization and localization are supported as well.
+* **Data binding**: Supports both OLAP and relational data source data binding in the same environment. 
+* **Pivot table field list**: Lists the entire data source bound to the pivot grid and allows UI interaction such as filtering and drag and drop operation of any measure, dimension, hierarchy, level, and field at runtime.
+* **Grouping bar**: Supports UI interaction at runtime through sorting, filtering, and drag and drop operation of the existing field items bound through the report.
+* **Grid layout**: Four different layouts such as normal, top summary, no summaries, and excel-like layout are supported.
+* **Export**: Exports the pivot grid to Microsoft Word, PDF, CSV, and Microsoft Excel documents.
+* The pivot grid control specific features such as hyperlink, cell selection, conditional formatting, RTL, globalization, and localization are also supported.

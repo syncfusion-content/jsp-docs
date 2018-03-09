@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Advanced Filtering and Sorting
+# Advanced filtering and sorting
 
-It allows to filter and sort the field members in PivotGrid.
+It allows to filter and sort the field members in the pivot grid.
 
-You can enable Advanced Filtering and Sorting option in PivotGrid by setting the `enableAdvancedFilter` property to true.
+You can enable the Advanced Filtering and Sorting option in the pivot grid by setting the `enableAdvancedFilter` property to true.
 
 {% highlight html %}
 
@@ -25,11 +25,11 @@ You can enable Advanced Filtering and Sorting option in PivotGrid by setting the
 
 ## Sorting
 
-Sorting provides an option to sort the members of a field either in ascending or descending order. 
+Sorting provides an option to sort the members of a field either in the ascending or descending order.
 
 ![](AdvanceFiltering_images/sorting.png)
 
-## Label Filtering
+## Label filtering
 
 Label filtering provides an option to filter the members of a field purely based on their caption. 
 
@@ -38,9 +38,9 @@ Label filtering provides an option to filter the members of a field purely based
 ![](AdvanceFiltering_images/filtering_dialog.png)
 
 
-## Value Filtering
+## Value filtering
 
-Value filtering provides an option to filter members based on the total values of the appropriate measure between the members of the level. 
+Value filtering provides an option to filter the members based on total values of the appropriate measure between members of the level.
 
 ![](AdvanceFiltering_images/valuefilter.png)
 

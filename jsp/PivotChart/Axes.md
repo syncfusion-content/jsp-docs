@@ -9,10 +9,10 @@ documentation: ug
 
 # Axes 
 
-## Label Format
+## Label format
 
-### Format Numeric labels
-By using the `labelFormat` property, you can format the numeric labels. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+### Format numeric labels
+By using the `labelFormat` property, you can format the numeric labels. Numeric values can be formatted with n (number with decimal points), c (currency), and p (percentage) commands.
 
 {% highlight html %}
 
@@ -32,7 +32,7 @@ By using the `labelFormat` property, you can format the numeric labels. Numeric 
 
 ![](Chart-Axes_images/Chart-Axes_img1.png)
 
-Following table describes the result on applying some commonly used label formats on numeric values.
+Following table describes the result when applying some commonly used label formats on numeric values:
 
 <table>
 <tr>
@@ -92,12 +92,12 @@ The Currency symbol is appended to number and number is rounded to 2 decimal pla
 </tr>
 </table>
 
-## Common Axis Features
+## Common axis features
 
-### Axis Visibility
+### Axis visibility
 Axis visibility can be set by using the `visible` property of the respective axis.
 
-N> By default, the value of `visible` property is true in PivotChart.
+N> By default, the value of `visible` property is true in the pivot chart.
 
 {% highlight html %}
 
@@ -117,8 +117,8 @@ N> By default, the value of `visible` property is true in PivotChart.
 
 ![](Chart-Axes_images/Chart-Axes_img3.png)
 
-### Label Customization
-By using the `font` property of the axis, we can customize the labels – font family, color, opacity, size and font-weight.
+### Label customization
+By using the `font` property of the axis, you can customize the font family, color, opacity, size, and font-weight of labels.
 
 {% highlight html %}
 
@@ -141,8 +141,8 @@ By using the `font` property of the axis, we can customize the labels – font f
 
 ![](Chart-Axes_images/Chart-Axes_img4.png)
 
-### Label and Tick Positioning
-Axis labels and ticks can be positioned inside or outside the Chart area by using the `axisLabelPosition` and `tickLinesPosition` properties. The labels and ticks are positioned outside the Chart area, by default.
+### Label and tick positioning
+Axis labels and ticks can be positioned inside or outside the chart area by using the `axisLabelPosition` and `tickLinesPosition` properties. The labels and ticks are positioned outside the chart area, by default.
 
 {% highlight html %}
 
@@ -163,10 +163,10 @@ Axis labels and ticks can be positioned inside or outside the Chart area by usin
 
 ![](Chart-Axes_images/Chart-Axes_img5.png)
 
-### Grid Lines Customization
-By using the `majorGridLines` and `minorGridLines` properties of the axis, you can customize the width, color, visibility and opacity of the grid lines.
+### Grid lines customization
+By using the `majorGridLines` and `minorGridLines` properties of the axis, you can customize the width, color, visibility, and opacity of the grid lines.
 
-N> By default, the minor grid lines are not visible in PivotChart.
+N> By default, the minor grid lines are not visible in the pivot chart.
 
 {% highlight html %}
 
@@ -192,10 +192,10 @@ N> By default, the minor grid lines are not visible in PivotChart.
 
 ![](Chart-Axes_images/Chart-Axes_img6.png)
 
-### Tick Line Customization
-By using the `majorTickLines` and `minorTickLines` properties of the axis, you can customize the width, color, visibility, size and opacity of the tick lines.
+### Tick line customization
+By using the `majorTickLines` and `minorTickLines` properties of the axis, you can customize the width, color, visibility, size, and opacity of the tick lines.
 
-N> By default, the minor tick lines are not visible in PivotChart.
+N> By default, the minor tick lines are not visible in the pivot chart.
 
 {% highlight html %}
 
@@ -223,10 +223,10 @@ N> By default, the minor tick lines are not visible in PivotChart.
 
 ![](Chart-Axes_images/Chart-Axes_img7.png)
 
-### Inversing Axis
-Axis can be inversed by using the `isInversed` property of the axis.
+### Inversing axis
+The axis can be inversed by using the `isInversed` property of the axis.
 
-N> By default, the `isInversed` property is false in PivotChart.
+N> By default, the `isInversed` property is false in the pivot chart.
 
 {% highlight html %}
 
@@ -247,10 +247,10 @@ N> By default, the `isInversed` property is false in PivotChart.
 
 ![](Chart-Axes_images/Chart-Axes_img8.png)
 
-### Placing Axes at Opposite Side
-The `opposedPosition` property of Chart axis can be used to place the axis at the opposite direction from its default position.
+### Placing axes at opposite side
+The `opposedPosition` property of the chart axis can be used to place the axis at the opposite direction from its default position.
 
-N> By default, the `opposedPosition` property is false in PivotChart.
+N> By default, the `opposedPosition` property is false in the pivot chart.
 
 {% highlight html %}
 
@@ -271,11 +271,11 @@ N> By default, the `opposedPosition` property is false in PivotChart.
 
 ![](Chart-Axes_images/Chart-Axes_img9.png)
 
-## Smart Axis Labels
+## Smart axis labels
 
-When the axis labels overlap with each other based on the Chart dimensions and label size, you can use `labelIntersection` property of the axis to avoid overlapping.
+When the axis labels overlap with each other based on chart dimensions and label size, use the `labelIntersection` property of the axis to avoid overlapping.
 
-N> By default, the `labelIntersection` property is none in PivotChart.
+N> By default, the `labelIntersection` property is none in the pivot chart.
 
 * Rotate45
 * Rotate90

@@ -7,16 +7,16 @@ documentation: ug
 keywords: ejpivotchart, pivotchart, jsp pivotchart
 ---
 
-# Getting Started
+# Getting started
 
-This section explains you the steps required to populate the PivotChart in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that you need to know to get started with the PivotChart.
+This section explains how to populate the pivot chart in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that are needed to get started with the pivot chart.
 
 
-## Create PivotChart widget
+## Create pivot chart widget
 
 You can create a JSP application and add necessary scripts and styles with the help of the given [JSP Getting Started Documentation.](/jsp/Getting-Started)
 
-Refer the required scripts and CSS files in your JSP page as mentioned below in order to render the PivotChart control - 
+Refer to the required scripts and CSS files in your JSP page as mentioned below to render the pivot chart control:
 
 {% highlight html %}
 
@@ -36,7 +36,7 @@ Refer the required scripts and CSS files in your JSP page as mentioned below in 
 
 ## Relational
 
-Add the following code example to add list of items to the **PivotChart** and initialize the **PivotChart** widget with Relational data source.
+Add the following code example to add list of items to the **pivot chart** and initialize the **pivot chart** widget with relational data source.
 
 {% highlight html %}
 
@@ -96,13 +96,13 @@ Add the following code example to add list of items to the **PivotChart** and in
 
 {% endhighlight %}
 
-The above code will generate a simple PivotChart with sales amount over products in different regions.
+The above code will generate a simple pivot chart with sales amount over products in different regions.
 
 ![](Getting-Started_images/relational_default.png)
 
 ## OLAP
 
-Add the following code example to add list of items to the **PivotChart** and initialize the **PivotChart** widget with OLAP data source.
+Add the following code example to add list of items to the **pivot chart** and initialize the **pivot chart** widget with OLAP data source.
 
 {% highlight html %}
 
@@ -140,6 +140,6 @@ Add the following code example to add list of items to the **PivotChart** and in
 
 {% endhighlight %}
 
-The above code will generate a simple PivotChart with internet sales amount over a period of fiscal years across different customer geographic locations.
+The above code will generate a simple pivot chart with internet sales amount over a period of fiscal years across different customer geographic locations.
 
 ![](Getting-Started_images/olap_default.png)

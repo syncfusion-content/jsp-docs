@@ -7,13 +7,13 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Save and Load Report
+# Save and load report
 
-Allows you to save the current report of PivotGrid and render the control with the saved report later.
+Allows you to save the current report of the pivot grid and render the control with saved report later.
 
-## Save Report to Local Storage
+## Save report to local storage
 
-To save the current report of PivotGrid to local storage, we need to call the `saveReport` method in PivotGrid.
+To save the current report of the pivot grid to the local storage, call the `saveReport` method in the pivot grid.
 
 {% highlight html %}
 
@@ -40,9 +40,9 @@ To save the current report of PivotGrid to local storage, we need to call the `s
 
 {% endhighlight %}
 
-## Load Report from Local Storage
+## Load report from local storage
 
-To load the stored report of PivotGrid from local storage, we need to call the `loadReport` method in PivotGrid.
+To load the stored report of the pivot grid from the local storage, call the `loadReport` method in the pivot grid.
 
 {% highlight html %}
 

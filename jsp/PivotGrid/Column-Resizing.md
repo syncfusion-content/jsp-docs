@@ -7,13 +7,13 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Resizing Column
+# Resizing column
 
-Allows the user to change the column width by holding and dragging the column border using the mouse pointer.
+Allows you to change the column width by holding and dragging the column border using the mouse pointer.
 
-## Column Width Based on Size
+## Column width based on size
 
-The property `enableColumnResizing` adjusts the width of each column based on size of the widget.
+The `enableColumnResizing` property adjusts the width of each column based on size of the widget.
 
 {% highlight html %}
 
@@ -25,7 +25,7 @@ The property `enableColumnResizing` adjusts the width of each column based on si
 
 {% endhighlight %}
 
-## Column Width Based on Text
+## Column width based on text
 
 The `resizeColumnsToFit` property automatically adjusts the width of each column based on the maximum content length available in the respective column.
 

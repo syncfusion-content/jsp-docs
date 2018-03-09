@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Grouping Bar
+# Grouping bar
 
 ## Initialization
 
-Grouping Bar allows user to dynamically alter the report by filter and remove operations in the PivotGrid control. Based on the OLAP datasource and report bound to the PivotGrid control, Grouping Bar will be automatically populated. You can enable Grouping Bar option in PivotGrid by setting the `enableGroupingBar` property to true.
+Grouping bar allows you to dynamically alter the report by filter and remove operations in the pivot grid control. Based on the OLAP data source and report bound to the pivot grid control, the grouping bar will be automatically populated. You can enable this option in the pivot grid by setting the `enableGroupingBar` property to true.
 
 {% highlight html %}
 
@@ -25,37 +25,37 @@ Grouping Bar allows user to dynamically alter the report by filter and remove op
 
 ![](Grouping-Bar_images/OlapGroupingbar.png)
 
-## Drag and Drop
+## Drag and drop
 
-You can alter the report on fly through drag-and-drop operation.
+You can alter the report on fly through the drag and drop operation.
 
 ![](Grouping-Bar_images/GBar_Olap.png)
 
-## Context Menu
+## Context menu
 
-You can also alter the report by using context menu.
+You can also alter the report by using the context menu.
 
 ![](Grouping-Bar_images/CMenu_Olap.png)
 
-## Searching Values
+## Searching values
 
-Search option available in Grouping Bar allows you to search a specific value that needs to be filtered from the list of values inside the filter pop-up window.
+The search option available in the grouping bar allows you to search a specific value that should be filtered from the list of values in the filter pop-up window.
 
 ![](Grouping-Bar_images/OlapFilterIcon.png)
 
 ![](Grouping-Bar_images/olapclientsearching.png)
 
-## Filtering Values
+## Filtering values
 
-Filtering option available in Grouping Bar allows you to select a specific set of values that needs to be displayed in the PivotGrid control. At least one value needed to be in checked state while filtering otherwise “Ok” button will be disabled.
+The filtering option available in the grouping bar allows you to select a specific set of values that should be displayed in the pivot grid control. At least, one value should be present in checked state while filtering, otherwise, the OK button will be disabled.
 
 ![](Grouping-Bar_images/OlapFiltericon.png)
 
 ![](Grouping-Bar_images/OlapFiltering.png)
 
-## Removing Field
+## Removing field
 
-Remove option available in the Grouping Bar allows you to completely remove a specific field from the PivotGrid control. Remove operation can be either achieved by clicking remove icon available inside each field or by dragging and dropping field out of Grouping Bar region.
+The remove option available in the grouping bar allows you to completely remove a specific field from the pivot grid control. The remove operation can be achieved by clicking the remove icon available in each field or by dragging and dropping the field out of the grouping bar region.
 
 ![](Grouping-Bar_images/OlapRemoveicon.png)
 

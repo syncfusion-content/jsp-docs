@@ -7,15 +7,15 @@ documentation: ug
 keywords: ejpivotgauge, pivotgauge, jsp pivotgauge
 ---
 
-# Getting Started
+# Getting started
 
-This section explains you the steps required to populate the PivotGauge in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that you need to know to get started with the PivotGauge.
+This section explains how to populate the pivot gauge in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that are needed to get started with the pivot gauge.
 
-## Create PivotGauge widget
+## Create pivot gauge widget
 
 You can create a JSP application and add necessary scripts and styles with the help of the given [JSP Getting Started Documentation.](/jsp/Getting-Started)
 
-Refer the required scripts and CSS files in your JSP page as mentioned below in order to render the PivotGauge control - 
+Refer to the required scripts and CSS files in your JSP page as mentioned below to render the pivot gauge control:
 
 {% highlight html %}
 
@@ -35,7 +35,7 @@ Refer the required scripts and CSS files in your JSP page as mentioned below in 
 
 ## Relational
 
-Add the following code example to add list of items to the **PivotGauge** and initialize the **PivotGauge** widget with Relational data source.
+Add the following code example to add list of items to the **pivot gauge** and initialize the **pivot gauge** widget with relational data source.
 
 {% highlight html %}
 
@@ -94,13 +94,13 @@ Add the following code example to add list of items to the **PivotGauge** and in
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGauge with relational data source as shown in below figure.
+The above code will generate a simple pivot gauge with relational data source as shown in the following screenshot:
 
 ![](Getting-Started_images/relational_default.png)
 
 ## OLAP
 
-Add the following code example to add list of items to the **PivotGauge** and initialize the **PivotGauge** widget with OLAP data source.
+Add the following code example to add list of items to the **pivot gauge** and initialize the **pivot gauge** widget with OLAP data source.
 
 {% highlight html %}
 
@@ -134,6 +134,6 @@ Add the following code example to add list of items to the **PivotGauge** and in
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGauge with OLAP data source as shown in below figure.
+The above code will generate a simple pivot gauge with OLAP data source as shown in the following screenshot:
 
 ![](Getting-Started_images/olap_default.png)
