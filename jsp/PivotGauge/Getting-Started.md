@@ -13,9 +13,7 @@ This section explains you the steps required to populate the PivotGauge in your 
 
 ## Create PivotGauge widget
 
-You can create a JSP Project and add necessary scripts and styles with the help of the given JSP Getting Started Documentation.
-
-Create a first JSP file in Xampp and name it appropriately with `.jsp` extension and also place it under the newly created sample folder. For example, say Index.jsp with the initial code as shown below -
+You can create a JSP application and add necessary scripts and styles with the help of the given [JSP Getting Started Documentation.](/jsp/Getting-Started)
 
 Refer the required scripts and CSS files in your JSP page as mentioned below in order to render the PivotGauge control - 
 

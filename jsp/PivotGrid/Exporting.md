@@ -38,7 +38,7 @@ To achieve Excel export, URL and file name is sent as the parameter.
     </div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
                 pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/ExcelExport","fileName");
             }
@@ -64,7 +64,7 @@ To achieve Word export, URL and file name is sent as the parameter.
     </div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
                 pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport","fileName");
             }
@@ -90,7 +90,7 @@ To achieve Word export, URL and file name is sent as the parameter.
     </div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
                 pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/PDFExport","fileName");
             }
@@ -116,7 +116,7 @@ To achieve CSV export, URL and file name is sent as the parameter.
     </div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
                 pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/CSVExport","fileName");
             }
@@ -140,7 +140,7 @@ For customizing file name, we need to send file name as parameter to the **“ex
     </div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
                 pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport","fileName");
             }
@@ -170,7 +170,7 @@ You can add title and description to the exporting document by using the title a
             args.description = "Displays both OLAP and Relational datasource in tabular format";
 			args.exportWithStyle = false;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
 	    }
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
                 pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport","fileName");
             }
@@ -199,7 +199,7 @@ When paging is enabled, you can export the complete data by enabling the `enable
             args.description = "Displays both OLAP and Relational datasource in tabular format";
 			args.exportWithStyle = false;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
 	    }
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
                 pGridObj.exportPivotGrid("http://js.syncfusion.com/ejservices/api/PivotGrid/Olap/WordExport","fileName");
             }

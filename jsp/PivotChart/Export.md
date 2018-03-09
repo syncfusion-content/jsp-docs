@@ -36,7 +36,7 @@ To achieve Excel export, method name **"ExcelExport"** and file name is sent as 
     <div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var chartObj = $('#PivotChart1').data("ejPivotChart");
                 chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
             }
@@ -62,7 +62,7 @@ To achieve Word export, method name **"WordExport"** and file name is sent as th
     <div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var chartObj = $('#PivotChart1').data("ejPivotChart");
                 chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/WordExport","fileName");
             }
@@ -89,7 +89,7 @@ To achieve Word export, method name **"PDFExport"** and file name is sent as the
     <div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var chartObj = $('#PivotChart1').data("ejPivotChart");
                 chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/PDFExport","fileName");
             }
@@ -120,7 +120,7 @@ To achieve image export, method name **"ImageExport"** ,**“ej.PivotChart.Expor
     <div>
     
 	<script type="text/javascript">
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var chartObj = $('#PivotChart1').data("ejPivotChart");
                 chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ImageExport","fileName","png");
             }
@@ -151,7 +151,7 @@ N> By default PivotChart will be exported as image format to Excel document.
         function BeforeExport(args) {
 			args.exportChartAsImage = false; //you can set the chart format here
 		}
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var chartObj = $('#PivotChart1').data("ejPivotChart");
                 chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
             }
@@ -185,7 +185,7 @@ N> Title and description cannot be added to image formats.
 			args.title = "PivotChart";
             args.description = "Visualizes both OLAP and Relational datasource in graphical format";
 		}
-		function exportBtnClick(args) {
+		function exportButtonClick(args) {
                 var chartObj = $('#PivotChart1').data("ejPivotChart");
                 chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport","fileName");
             }
@@ -199,7 +199,7 @@ We need to send file name as parameter to the **“exportPivotChart”**  method
 
 {% highlight javascript %}
 
-function exportBtnClick(args)
+function exportButtonClick(args)
 {
     var chartObj = $('#PivotChart1').data("ejPivotChart ");
     chartObj.exportPivotChart("http://js.syncfusion.com/ejservices/api/PivotChart/Olap/ExcelExport", "fileName");
