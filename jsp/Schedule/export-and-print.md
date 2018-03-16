@@ -357,7 +357,7 @@ The appointment has been exported based on the class fields. We should create th
 
 The following code example depicts the way to export the appointments in Excel format.
 
-% highlight js %}
+{% highlight js %}
 
 <%@ page import="datasource.schedule.*"%>
 <%@ page import="java.util.ArrayList"%>
