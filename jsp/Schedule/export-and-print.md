@@ -426,8 +426,6 @@ Two types of Print options are available – either to print the entire Schedule
 
 The following code example shows the way to print the entire Scheduler, by keeping an extra button in a page – on which clicking the button will print the entire Scheduler.
 
-{% highlight html %}
-
 {% highlight js %}
 
 <%@ page import="datasource.schedule.*"%>
