@@ -13,7 +13,7 @@ documentation: ug
 
 The field list, also known as pivot schema designer, allows you to add, rearrange, filter, and remove fields to show data in the pivot grid exactly the way you desire.
 
-Based on the data source and relational binnding to the pivot grid control, the pivot table field list will be automatically populated with cube information or field names. This list provides an Excel like appearance and behavior.
+Based on the data source and relational binding to the pivot grid control, the pivot table field list will be automatically populated with cube information or field names. This list provides an Excel like appearance and behavior.
 
 You should initialize the pivot table field list by using the **"PivotSchemaDesigner"** tag.
 
