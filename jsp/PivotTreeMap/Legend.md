@@ -35,4 +35,6 @@ You can disable the legend by setting the **showLegend** property to **false**. 
 	}
 </script>
 
+{% endhighlight %}
+
 ![](Legend_images/Legend_img2.png)
