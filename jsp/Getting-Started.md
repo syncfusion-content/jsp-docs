@@ -40,14 +40,14 @@ If you are downloading the zipped package, Downloaded package contains the follo
 
 1.	/Src - Comprises of Essential JS for JSP source package (jar files) to use Essential JS for JSP.
 2.	/Samples - Sample JSP Web Site.
-3.	/Scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for JSP components. Also, contains external dependency files such as jQuery, jsRender etc.
+3.	/Scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for JSP components. Also, contains external dependency files such as jQuery, JsRender etc.
 4.	/Themes - Contains the style sheets for web components
 
 
 ### Steps to deploy the Essential JS for JSP component demos in Apache Tomcat 
 
 1.	Download the Apache Tomcat from the official download page
-2.	You can find a sample JSP web site in the /Samples directory of the Essential JS for JSP distribution. To run the web site, copy this directory to your Webapps folder of Apache Tomcat
+2.	You can find a sample JSP web site in the /Samples directory of the Essential JS for JSP distribution. To run the web site, copy this directory to your webapps folder of Apache Tomcat
 3.	Run the startup.bat file from the Tomcat location (Tomcat bin folder)
 4.	JSP SampleBrowser will be launched under the default port 8080 (localhost: 8080/SampleBrowser/index.jsp).
 5.	Browse product samples using the Sample Browser.
