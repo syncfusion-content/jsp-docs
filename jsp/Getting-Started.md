@@ -11,39 +11,6 @@ documentation: ug
 
 ## Essential JS for JSP
 
-### System Requirements
-
-To work with JSP, you need to meet the below configuration. 
-
-* Java Development Kit (JDK), Java Runtime Environment (JRE) version (1.7 or 1.8) needs to be installed and configured.
-* Any web servers (Apache Tomcat 7) that’s supports the Java Servlet, JSP specification. Also, ensure that the web servers need to be tested and configured with the IDE.
-* Eclipse IDE for Enterprise developers with J2EE support – (Lune, Kepler, Mars, or later) or NetBeans IDE with Java2E support.
-
-### Download and Install 
-
-Download and install the Essential JS for JSP component setup from this link after logging in with your Syncfusion account. 
-
-You can download the Essential JS for JSP components in two ways.
-
-* Setup file(.exe).
-* Zipped file.
-
-If you are installing the setup file (.exe), then the Essential JS for JSP component packages will be available under the installed location of Syncfusion, refer below.
-
-   (installed location) \Syncfusion\Essential Studio\14.4.0.15\JSP\.
-
-You can also find the JSP samples (demo website) available under the below installed location.
-
-  (installed location) \Syncfusion\Essential Studio\14.4.0.15\JSP\Samples\.
-
-If you are downloading the zipped package, Downloaded package contains the following directories.
-
-1.	/Src - Comprises of Essential JS for JSP source package (jar files) to use Essential JS for JSP.
-2.	/Samples - Sample JSP Web Site.
-3.	/Scripts - Contains necessary widget scripts as well as culture scripts for Syncfusion Essential JS for JSP components. Also, contains external dependency files such as jQuery, jsRender etc.
-4.	/Themes - Contains the style sheets for web components
-
-
 ### Steps to deploy the Essential JS for JSP component demos in Apache Tomcat 
 
 1.	Download the Apache Tomcat from the official download page
