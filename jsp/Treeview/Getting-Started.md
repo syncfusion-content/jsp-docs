@@ -97,6 +97,8 @@ You can execute the above code example to display the **TreeView** control.
 
 The data for TreeView which can be populated using the dataSource property.
 
+The [beforeLoad](https://help.syncfusion.com/api/js/ejtreeview#events:beforeload) event will be triggered before loading nodes into TreeView.
+
 To configure data for TreeView component, define an object array data. You need to import datasource in JSP sample and access the data in datasource by creating object of it. Refer the below code to define the datasource for the TreeView.
 
 
