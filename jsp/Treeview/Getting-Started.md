@@ -139,8 +139,8 @@ Access the data from datasource by using below code,
 
 <%
    GetTreeDataSource obj = new GetTreeDataSource();
-	ArrayList<TreeDataSource> treedata = obj.getData();
-	request.setAttribute("treeData", treedata);	
+	ArrayList<TreeDataSource> treeData = obj.getData();
+	request.setAttribute("treeData", treeData);	
    %>
 
 
