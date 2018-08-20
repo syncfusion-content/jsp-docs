@@ -74,7 +74,6 @@ Create the JSP file and add the below given code to render **TreeView** control.
                 <li>
                     Classical
                     <ul>
-                        <li>Avant-Garde</li>
                         <li>Medieval</li>
                         <li>Orchestral</li>
                     </ul>
@@ -140,8 +139,8 @@ Access the data from datasource by using below code,
 
 <%
    GetTreeDataSource obj = new GetTreeDataSource();
-	ArrayList<TreeDataSource> treedatas = obj.getData();
-	request.setAttribute("treeData", treedatas);	
+	ArrayList<TreeDataSource> treedata = obj.getData();
+	request.setAttribute("treeData", treedata);	
    %>
 
 
