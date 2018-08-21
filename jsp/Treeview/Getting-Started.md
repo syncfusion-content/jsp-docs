@@ -74,7 +74,6 @@ Create the JSP file and add the below given code to render **TreeView** control.
                 <li>
                     Classical
                     <ul>
-                        <li>Avant-Garde</li>
                         <li>Medieval</li>
                         <li>Orchestral</li>
                     </ul>
@@ -96,6 +95,8 @@ You can execute the above code example to display the **TreeView** control.
 ## Data Binding
 
 The data for TreeView which can be populated using the dataSource property.
+
+The [beforeLoad](https://help.syncfusion.com/api/js/ejtreeview#events:beforeload) event will be triggered before loading nodes into TreeView.
 
 To configure data for TreeView component, define an object array data. You need to import datasource in JSP sample and access the data in datasource by creating object of it. Refer the below code to define the datasource for the TreeView.
 
@@ -138,8 +139,8 @@ Access the data from datasource by using below code,
 
 <%
    GetTreeDataSource obj = new GetTreeDataSource();
-	ArrayList<TreeDataSource> treedatas = obj.getData();
-	request.setAttribute("treeData", treedatas);	
+	ArrayList<TreeDataSource> treeData = obj.getData();
+	request.setAttribute("treeData", treeData);	
    %>
 
 
