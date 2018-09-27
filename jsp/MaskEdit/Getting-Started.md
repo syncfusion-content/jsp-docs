@@ -13,7 +13,7 @@ This section explains briefly about how to create a **MaskEdit** in your applica
 The usage of **MaskEdit** control is described in the following sections.
 
 ## Create a MaskEdit in JSP
-You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation](/jsp-docs/jsp/Getting-Started).
+You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation](https://help.syncfusion.com/jsp/getting-started).
 
 
 Create the JSP file and add the below given code to render **MaskEdit** control with **value**, **maskFormat**, **inputMode** ,**width** properties.

@@ -13,7 +13,7 @@ This section explains briefly about how to create a **NumericTextbox** in your a
 The usage of **NumericTextbox** control is described in the following sections.
 
 ## Create a NumericTextbox in JSP
-You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation](/jsp-docs/jsp/Getting-Started).
+You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation](https://help.syncfusion.com/jsp/getting-started).
 
 
 Create the JSP file and add the below given code to render **NumericTextbox** control.

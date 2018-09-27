@@ -13,7 +13,7 @@ This section explains briefly how to create a `Ribbon`.
 
 ## Script & CSS Reference 
 
-You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation.](/jsp/Getting-Started)
+You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation.](https://help.syncfusion.com/jsp/getting-started)
 
 ## Control Initialization
 
@@ -212,7 +212,7 @@ Create group item with `text` specified and add content group to Groups collecti
 
 Syncfusion JavaScript Controls can be added to group’s content with corresponding `type` specified like button, split button, toggle button, dropdown list, gallery, custom, etc. Default type is `button`.
 
-In ribbon buttonsetting button model can be assigned using JSONParser.
+In ribbon button setting button model can be assigned using JSONParser.
 
 {% highlight html %}
 
