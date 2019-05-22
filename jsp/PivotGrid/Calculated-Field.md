@@ -16,7 +16,7 @@ The pivot grid provides support to insert a new calculated field based on existi
 ### Through UI
 To insert a new calculated Field, open the Calculated Field dialog using the grouping bar context menu. You can define "Name" for the new calculated field and "Formula" can be entered by inserting required fields through the fields section. For inserting numbers and operators, you can use formula pop-up as shown in the following screenshot:
 
-![](Calculated-Field_images/Calculated-Field-Popup.png)
+![Calculated field dialog in JSP pivot grid control](Calculated-Field_images/Calculated-Field-Popup.png)
 
 Click **Add** to add the respective Calculated Field and **OK** to populate the pivot grid control.
 
@@ -77,4 +77,4 @@ The calculated field can be created at code-behind by defining formula based on 
 
 {% endhighlight %}
 
-![](Calculated-Field_images/Calculated-Field1.png)
+![JSP pivot grid control with user-defined field, aka calculated field](Calculated-Field_images/Calculated-Field1.png)
