@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated Field
+title: Calculated Field | JSP | PivotGrid | Syncfusion
 description: calculated field
 platform: jsp
 control: PivotGrid

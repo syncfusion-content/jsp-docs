@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Types
+title: Chart Types | JSP | PivotChart | Syncfusion
 description: chart types
 platform: jsp
 control: PivotChart
