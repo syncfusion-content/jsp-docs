@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save and Load Report | JSP | PivotGrid
+title: Save and Load Report | JSP | PivotGrid | Syncfusion
 description: This document illustrates that how to save and load report to database in JSP platform of PivotGrid control 
 platform: jsp
 control: PivotGrid

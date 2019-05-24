@@ -39,4 +39,4 @@ The `resizeColumnsToFit` property automatically adjusts the width of each column
 
 {% endhighlight %}
 
-![](Column-Resizing_images/columnresizing.png)
+![Column resizing in JSP pivot grid control](Column-Resizing_images/columnresizing.png)

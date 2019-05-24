@@ -161,7 +161,7 @@ N> By default, the pivot chart will be exported in image format to an Excel docu
 
 The following screenshot shows the control exported to an Excel document showing its own format (pivoting chart):
 
-![](Export_images/Export_ExcelChartClient.png)
+![Exporting format of JSP pivot chart control](Export_images/Export_ExcelChartClient.png)
 
 ## Exporting customization
 
@@ -208,16 +208,16 @@ function exportButtonClick(args)
 
 The following screenshot shows the pivot chart control exported to an Excel document:
 
-![](Export_images/Export_ExcelClient.png)
+![Excel exporting in JSP pivot chart control](Export_images/Export_ExcelClient.png)
 
 The following screenshot shows the pivot chart control exported to a PDF document:
 
-![](Export_images/Export_PDFClient.png)
+![PDF exporting in JSP pivot chart control](Export_images/Export_PDFClient.png)
 
 The following screenshot shows the pivot chart control exported to a Word document:
 
-![](Export_images/Export_WordClient.png)
+![Word exporting in JSP pivot chart control](Export_images/Export_WordClient.png)
 
 The following screenshot shows the pivot chart control exported to a PNG format:
 
-![](Export_images/Export_PNGClient.png)
+![PNG exporting in JSP pivot chart control](Export_images/Export_PNGClient.png)

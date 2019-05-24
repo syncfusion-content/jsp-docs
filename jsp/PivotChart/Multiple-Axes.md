@@ -66,7 +66,7 @@ You can customize the axes in the primary pivot chart itself. To achieve this, y
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/rowIndex_zero.png)
+![Axes customization at zeroth row index in JSP pivot chart control](Multiple_Axes_images/rowIndex_zero.png)
 
 ## Customizing axes at row index one
 
@@ -101,7 +101,7 @@ You can customize the axes in the primary pivot chart itself. To achieve this, y
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/rowIndex_one.png)
+![Axes customization at first row index in JSP pivot chart control](Multiple_Axes_images/rowIndex_one.png)
 
 ## Customizing axes at column index of zero
 
@@ -135,7 +135,7 @@ You can customize the axes in the primary pivot chart itself. To achieve this, y
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/columnindex_zero.png)
+![Axes customization at zeroth column index in JSP pivot chart control](Multiple_Axes_images/columnindex_zero.png)
 
 ## Customizing axes at column index of one
 
@@ -169,7 +169,7 @@ You can customize the axes in the primary pivot chart itself. To achieve this, y
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/columnindex_one.png)
+![Axes customization at first column index in JSP pivot chart control](Multiple_Axes_images/columnindex_one.png)
 
 ## Customizing series
 You can customize the series in multiple axes support with the help of **beforeSeriesRender** event. You can change the series type through the **onBeforeRender** event.
@@ -206,7 +206,7 @@ You can customize the series in multiple axes support with the help of **beforeS
 
 **Note:** You have to use the same name in both name property of axes and xAxisName/yAxisName property of series in the above **beforeSeriesRender** event.
 
-![](Multiple_Axes_images/customize_series.png)
+![Series customization in JSP pivot chart control](Multiple_Axes_images/customize_series.png)
 
 To learn more about series properties, [`click here`](https://help.syncfusion.com/api/js/ejchart#members:series).
 
@@ -251,7 +251,7 @@ function onLoad(args) {
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/seriesindex_zero.png)
+![Series customization at zeroth index in JSP pivot chart control](Multiple_Axes_images/seriesindex_zero.png)
 
 ### For X-axes
 
@@ -267,7 +267,7 @@ function onLoad(args) {
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/seriesindex_one.png)
+![Series customization at first index in JSP pivot chart control](Multiple_Axes_images/seriesindex_one.png)
 
 ## Customizing PrimaryYAxis and axes properties
 
@@ -289,7 +289,7 @@ function onLoad(args) {
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/label_formats.png)
+![Customization of label formats in JSP pivot chart control](Multiple_Axes_images/label_formats.png)
 
 ### title
 You can customize the title for axes by the **title** property.
@@ -306,7 +306,7 @@ function onLoad(args) {
 
 {% endhighlight %}
 
-![](Multiple_Axes_images/title.png)
+![Customization of title in JSP pivot chart control](Multiple_Axes_images/title.png)
 
 
 

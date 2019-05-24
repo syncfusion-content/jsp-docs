@@ -25,6 +25,6 @@ You can enable cell editing option in the pivot grid by setting the `enableCellE
 
 {% endhighlight %}
 
-![](Cell-Editing_images/celleditingclient.png)
+![Cell editing in JSP pivot grid control](Cell-Editing_images/celleditingclient.png)
 
 

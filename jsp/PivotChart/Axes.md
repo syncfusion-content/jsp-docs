@@ -30,7 +30,7 @@ By using the `labelFormat` property, you can format the numeric labels. Numeric 
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img1.png)
+![Label format in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img1.png)
 
 Following table describes the result when applying some commonly used label formats on numeric values:
 
@@ -115,7 +115,7 @@ N> By default, the value of `visible` property is true in the pivot chart.
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img3.png)
+![Axis visibility in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img3.png)
 
 ### Label customization
 By using the `font` property of the axis, you can customize the font family, color, opacity, size, and font-weight of labels.
@@ -139,7 +139,7 @@ By using the `font` property of the axis, you can customize the font family, col
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img4.png)
+![Label customization in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img4.png)
 
 ### Label and tick positioning
 Axis labels and ticks can be positioned inside or outside the chart area by using the `axisLabelPosition` and `tickLinesPosition` properties. The labels and ticks are positioned outside the chart area, by default.
@@ -161,7 +161,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img5.png)
+![Label and tick positioning in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img5.png)
 
 ### Grid lines customization
 By using the `majorGridLines` and `minorGridLines` properties of the axis, you can customize the width, color, visibility, and opacity of the grid lines.
@@ -190,7 +190,7 @@ N> By default, the minor grid lines are not visible in the pivot chart.
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img6.png)
+![Grid lines customization in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img6.png)
 
 ### Tick line customization
 By using the `majorTickLines` and `minorTickLines` properties of the axis, you can customize the width, color, visibility, size, and opacity of the tick lines.
@@ -221,7 +221,7 @@ N> By default, the minor tick lines are not visible in the pivot chart.
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img7.png)
+![Tick line customization in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img7.png)
 
 ### Inversing axis
 The axis can be inversed by using the `isInversed` property of the axis.
@@ -245,7 +245,7 @@ N> By default, the `isInversed` property is false in the pivot chart.
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img8.png)
+![Inversing axes in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img8.png)
 
 ### Placing axes at opposite side
 The `opposedPosition` property of the chart axis can be used to place the axis at the opposite direction from its default position.
@@ -269,7 +269,7 @@ N> By default, the `opposedPosition` property is false in the pivot chart.
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img9.png)
+![Inverted direction of axis in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img9.png)
 
 ## Smart axis labels
 
@@ -300,4 +300,4 @@ N> By default, the `labelIntersection` property is none in the pivot chart.
 
 {% endhighlight %}
 
-![](Chart-Axes_images/Chart-Axes_img10.png)
+![Smart axis labels in JSP pivot chart control](Chart-Axes_images/Chart-Axes_img10.png)
