@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotGrid Control Overview 
-description: This document illustrates overview of PivotGrid control in JSP platform. PivotGrid is a business component to visualize relational and OLAP data sources in tabular format
+description: It is an overview of PivotGrid control in JSP platform. PivotGrid component visualizes relational and OLAP data sources in tabular format
 platform: JSP
 control: PivotGrid
 documentation: ug
