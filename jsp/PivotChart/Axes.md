@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Axes
-description: axes 
+title:  Axes | JSP | PivotChart | Syncfusion
+description: This document illustrates that how to define chart axes and its customization in JSP PivotChart control 
 platform: jsp
 control: PivotChart
 documentation: ug

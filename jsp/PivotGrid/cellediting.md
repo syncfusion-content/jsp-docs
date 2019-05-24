@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Editing
-description: cell editing
+title: Cell Editing | JSP | PivotGrid | Syncfusion
+description: This document illustrates that how to enable cell editing feature through API in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug

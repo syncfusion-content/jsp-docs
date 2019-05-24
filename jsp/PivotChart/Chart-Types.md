@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Types | JSP | PivotChart | Syncfusion
-description: chart types
+description: This document illustrates that how to define chart types and its customization in JSP PivotChart control
 platform: jsp
 control: PivotChart
 documentation: ug

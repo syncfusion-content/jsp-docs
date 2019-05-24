@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping Bar | JSP | PivotGrid | Syncfusion
-description: grouping bar
+description: This document illustrates that how to enable grouping bar feature and its functionalities in JSP PivotGrid control with relational mode
 platform: jsp
 control: PivotGrid
 documentation: ug

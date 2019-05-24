@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export
-description: export
+title: Export | JSP | PivotChart | Syncfusion
+description: This document illustrates that how to define exporting and its customization in JSP PivotChart control
 platform: jsp
 control: PivotChart
 documentation: ug

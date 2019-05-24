@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting
-description: exporting
+title: Exporting | JSP | PivotGrid | Syncfusion
+description: This document illustrates that how to define exporting and its customization in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug

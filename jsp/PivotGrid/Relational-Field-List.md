@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotTable Field List
-description: pivotTable field list
+description: This document illustrates that how to enable pivotTable field list component in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug

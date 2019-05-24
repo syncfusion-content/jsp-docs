@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calculated Field | JSP | PivotGrid | Syncfusion
-description: calculated field
+description: This document illustrates that how to define calculated field through code-behind/UI in JSP PivotGrid control 
 platform: jsp
 control: PivotGrid
 documentation: ug

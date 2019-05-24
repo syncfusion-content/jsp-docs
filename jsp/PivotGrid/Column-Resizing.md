@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Column Resizing
-description: column resizing
+title:  Column Resizing | JSP | PivotGrid | Syncfusion
+description: This document illustrates that how to enable column resizing feature and its customization through API in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DrillOperation
-description: drill operation
+title: DrillOperation | JSP | PivotChart | Syncfusion
+description: This document illustrates drill operation feature with respective to the modes of JSP PivotChart control
 platform: jsp
 control: PivotChart
 documentation: ug

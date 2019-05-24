@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple-Axes
-description: multiple axes
+title: Multiple-Axes | JSP | PivotChart | Syncfusion
+description: This document illustrates that how to define multiple-axes and its properties in JSP PivotChart control
 platform: jsp
 control: PivotChart
 documentation: ug

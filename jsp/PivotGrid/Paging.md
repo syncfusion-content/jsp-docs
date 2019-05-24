@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging | JSP | PivotGrid | Syncfusion
-description: paging
+description: This document illustrates that how to define paging with respective to the modes in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Filtering and Soritng
-description: advanced filtering and sorting
+description: This document illustrates that how to define advance filtering and sorting with respective to the modes in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug

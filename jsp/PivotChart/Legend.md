@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend | JSP | PivotChart | Syncfusion
-description: legend
+description: This document illustrates that how to define legend and its functionalities in JSP PivotChart control
 platform: jsp
 control: PivotChart
 documentation: ug
