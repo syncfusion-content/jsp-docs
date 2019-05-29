@@ -9,7 +9,7 @@ keywords: overview
 
 # Overview
 
-The Kanban control for java server page is an efficient way to visualize the workflow at each stage along its path to completion. The most important features available are Swim lane, filtering, and editing.
+The Kanban control for Java server page is an efficient way to visualize the workflow at each stage along its path to completion. The most important features available are Swim lane, filtering, and editing.
 
 Some important features of the Kanban control are:
 
