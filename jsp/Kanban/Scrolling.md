@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Scrolling
-description: Scrolling
+title:  Essential EJ1 Syncfusion JSP Kanban Scrolling
+description: This section explains how to achieve the scrolling behavior and its functionalities using the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: scrolling,kanban scrolling
@@ -47,7 +47,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/scroll_img1.png)
+![Scrolling width and height in pixel for JSP kanban control](Scrolling_images/scroll_img1.png)
 
 ## Set height and width in percentage
 
@@ -85,7 +85,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/scroll_img2.png)
+![Scrolling width and height in percentage for JSP kanban control](Scrolling_images/scroll_img2.png)
 
 ## Set width as auto
 
@@ -121,7 +121,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/scroll_img3.png)
+![Set width as auto in JSP kanban control](Scrolling_images/scroll_img3.png)
 
 ## Enabling freeze swim lane
 
@@ -157,7 +157,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/scroll_img4.png)
+![Enabling freeze swim lane in JSP kanban control](Scrolling_images/scroll_img4.png)
 
 N> `allowFreezeSwimlane` is applicable when swim lane grouping enabled by setting `swimlaneKey`.
 

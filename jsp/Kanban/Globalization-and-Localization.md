@@ -1,15 +1,13 @@
 ---
 layout: post
-title:  Globalization and Localization
-description: Globalization and Localization
+title:  Essential EJ1 Syncfusion JSP Kanban Globalization and Localization
+description: This section explains how to enable localization and its functionalities using the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: globalization and localization,kanban globalization and localizationards
 ---
 
 # Localization
-
-## Localization
 
 All text in Kanban can be localized using `ej.Kanban.Locale` object. Please find the table with list of properties and its value in locale object.
 
@@ -229,7 +227,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img1.png)
+![Localization in JSP kanban control](Localization_images/localization_img1.png)
 
 ## Right to Left (RTL)
 
@@ -283,5 +281,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img2.png)
+![Right to Left in JSP kanban control](Localization_images/localization_img2.png)
 

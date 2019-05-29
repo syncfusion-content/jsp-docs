@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Swimlanes
-description: Swimlanes
+title:  Essential EJ1 Syncfusion JSP Kanban Swimlanes
+description: This section explains the horizontal categorization of issues in the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: swimlanes,kanban swimlanes
@@ -39,7 +39,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img1.png)
+![Swim lanes in JSP kanban control](Swimlane_images/swimlane_img1.png)
 
 ## Drag And Drop between swim lanes
 
@@ -77,4 +77,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Swimlane_images/swimlane_img2.png)
+![Drag And Drop between swim lanes in JSP kanban control](Swimlane_images/swimlane_img2.png)

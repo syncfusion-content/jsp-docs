@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Kanban - Overview
-description: Kanban Introduction
+title: Syncfusion Kanban - Overview
+description: This section explains the short description of basic features on the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: overview
@@ -9,7 +9,7 @@ keywords: overview
 
 # Overview
 
-The Kanban control for javaserver page is an efficient way to visualize the workflow at each stage along its path to completion. The most important features available are Swim lane, filtering, and editing.
+The Kanban control for java server page is an efficient way to visualize the workflow at each stage along its path to completion. The most important features available are Swim lane, filtering, and editing.
 
 Some important features of the Kanban control are:
 
