@@ -47,7 +47,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img.png)
+![Key mapping in JSP kanban control](Columns_images/column_img.png)
 
 ## Multiple Key Mapping
 
@@ -82,7 +82,7 @@ The following code example and screenshot which describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img9.png)
+![Multiple key mapping in JSP kanban control](Columns_images/column_img9.png)
 
 ## Headers
 
@@ -141,7 +141,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img1.png)
+![Header template in JSP kanban control](Columns_images/column_img1.png)
 
 
 ## Visibility 
@@ -178,7 +178,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img3.png)
+![Column visibility in JSP kanban control](Columns_images/column_img3.png)
 
 ## Toggle 
 
@@ -213,7 +213,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img4.png)
+![Toggle column in JSP kanban control](Columns_images/column_img4.png)
 
 ## Allow Dragging
 
@@ -247,7 +247,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img5.png)
+![Allow dragging in JSP kanban control](Columns_images/column_img5.png)
 
 ## Allow Dropping
 
@@ -281,7 +281,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img6.png)
+![Allow dropping in JSP kanban control](Columns_images/column_img6.png)
 
 ##Items Count
 
@@ -315,5 +315,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Columns_images/column_img7.png)
+![Items count in JSP kanban control](Columns_images/column_img7.png)
 

@@ -67,7 +67,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img1.png)
+![Configuring edit items in JSP kanban control](Editing_images/editing_img1.png)
 
 ## Edit modes
 
@@ -119,7 +119,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img2.png)
+![Dialog in JSP kanban control](Editing_images/editing_img2.png)
 
 ### Dialog Template Form
 
@@ -227,7 +227,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img3.png)
+![Dialog template form in JSP kanban control](Editing_images/editing_img3.png)
 
 ### External Form
 
@@ -273,7 +273,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img11.png)
+![External form in JSP kanban control](Editing_images/editing_img11.png)
 
 ## Column Validation
 
@@ -412,5 +412,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img5.png)
+![Column validation in JSP kanban control](Editing_images/editing_img5.png)
 

@@ -173,7 +173,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context_images/context_img1.png)
+![Default sub context menu items in JSP kanban control](Context_images/context_img1.png)
 
-![](Context_images/context_img2.png)
+![Default context menu items in JSP kanban control](Context_images/context_img2.png)
 

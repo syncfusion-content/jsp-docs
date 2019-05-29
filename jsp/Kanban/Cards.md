@@ -45,7 +45,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img1.png)
+![Card customization in JSP kanban control](Cards_images/cards_img1.png)
 
 ## Template
 
@@ -149,7 +149,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img2.png)
+![Card template in JSP kanban control](Cards_images/cards_img2.png)
 
 ## Tooltip
 
@@ -186,7 +186,7 @@ The following code example describes the above behavior.
  
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img3.png)
+![Card tooltip in JSP kanban control](Cards_images/cards_img3.png)
 
 ### Template
 
@@ -291,4 +291,4 @@ The following code example describes the tooltip template.
  
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img4.png)
+![Card tooltip template in JSP kanban control](Cards_images/cards_img4.png)

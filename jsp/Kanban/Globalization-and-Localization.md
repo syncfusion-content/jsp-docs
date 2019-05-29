@@ -9,8 +9,6 @@ keywords: globalization and localization,kanban globalization and localizationar
 
 # Localization
 
-## Localization
-
 All text in Kanban can be localized using `ej.Kanban.Locale` object. Please find the table with list of properties and its value in locale object.
 
 <table>
@@ -229,7 +227,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img1.png)
+![Localization in JSP kanban control](Localization_images/localization_img1.png)
 
 ## Right to Left (RTL)
 
@@ -283,5 +281,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img2.png)
+![Right to Left in JSP kanban control](Localization_images/localization_img2.png)
 

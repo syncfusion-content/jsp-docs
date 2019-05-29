@@ -76,4 +76,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Selection_images/selection_img1.png)
+![Selection and hovering in JSP kanban control](Selection_images/selection_img1.png)
