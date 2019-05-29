@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Scrolling
-description: Scrolling
+title:  Essential EJ1 Syncfusion JSP Kanban Scrolling
+description: This section explains how to achieve the scrolling behavior and its functionalities using the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: scrolling,kanban scrolling

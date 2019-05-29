@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kanban - Overview
-description: Kanban Introduction
+description: This section explains the short description of basic features on the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: overview

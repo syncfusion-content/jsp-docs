@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Columns
-description: Columns
+title:  Essential EJ1 Syncfusion JSP Kanban Columns
+description: This section explains how to define the columns and their features of the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: columns,kanban columns

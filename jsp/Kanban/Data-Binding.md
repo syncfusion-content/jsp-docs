@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Data Binding 
-description: Data Binding 
+title:  Essential EJ1 Syncfusion JSP Kanban Data Binding
+description: Databinding is used to show the different binding of adaptor section using Syncfusion JSP Kanban component. 
 documentation: ug
 platform: jsp
 keywords: data binding ,kanban data binding

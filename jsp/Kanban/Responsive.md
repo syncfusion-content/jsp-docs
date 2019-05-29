@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Responsive
-description: Responsive
+title:  Responsive | Kanban | JSP | Syncfusion
+description: This section explains the responsive behavior of the Syncfusion JSP Kanban component based on the client browser width and height.
 documentation: ug
 platform: jsp
 keywords: responsive,kanban responsive

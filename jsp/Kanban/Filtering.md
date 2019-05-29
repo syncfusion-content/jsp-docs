@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Filtering
-description: Filtering
+title:  Essential EJ1 Syncfusion JSP Kanban Filtering
+description: This section explains how to enable filtering and its functionalities using the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: filtering,kanban filtering

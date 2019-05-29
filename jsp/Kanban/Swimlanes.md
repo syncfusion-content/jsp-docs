@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Swimlanes
-description: Swimlanes
+title:  Essential EJ1 Syncfusion JSP Kanban Swimlanes
+description: This section explains the horizontal categorization of issues in the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: swimlanes,kanban swimlanes

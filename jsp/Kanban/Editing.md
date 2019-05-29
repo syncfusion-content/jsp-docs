@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Editing
-description: Editing
+title:  Essential EJ1 Syncfusion JSP Kanban Editing
+description: This section explains how to enable different editing mode and its functionalities using the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: editing,kanban editing

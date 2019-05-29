@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Globalization and Localization
-description: Globalization and Localization
+title:  Essential EJ1 Syncfusion JSP Kanban Globalization and Localization
+description: This section explains how to enable localization and its functionalities using the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: globalization and localization,kanban globalization and localizationards

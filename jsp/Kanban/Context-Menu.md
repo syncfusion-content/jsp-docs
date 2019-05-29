@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  context menu 
-description: context menu 
+title:  Essential EJ1 Syncfusion JSP Kanban context menu 
+description: This section explains how to enable context menu and its functionalities using the Syncfusion JSP Kanban component. 
 documentation: ug
 platform: jsp
 keywords: context menu ,kanban context menu 

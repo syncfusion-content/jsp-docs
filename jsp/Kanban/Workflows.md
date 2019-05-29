@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Workflows
-description: Workflows
+title:  Essential EJ1 Syncfusion JSP Kanban Workflows
+description: This section explains the flow of cards between the Kanban columns in the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: Workflows,kanban Workflows
