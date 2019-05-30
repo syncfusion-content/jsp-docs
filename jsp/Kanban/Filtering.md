@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Filtering
-description: Filtering
+title:  Essential EJ1 Syncfusion JSP Kanban Filtering
+description: This section explains how to enable filtering and its functionalities using the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: filtering,kanban filtering
@@ -47,4 +47,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Filtering_images/filter_img1.png)
+![Filtering in JSP kanban control](Filtering_images/filter_img1.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  context menu 
-description: context menu 
+title:  Essential EJ1 Syncfusion JSP Kanban context menu 
+description: This section explains how to enable context menu and its functionalities using the Syncfusion JSP Kanban component. 
 documentation: ug
 platform: jsp
 keywords: context menu ,kanban context menu 
@@ -173,7 +173,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context_images/context_img1.png)
+![Default sub context menu items in JSP kanban control](Context_images/context_img1.png)
 
-![](Context_images/context_img2.png)
+![Default context menu items in JSP kanban control](Context_images/context_img2.png)
 

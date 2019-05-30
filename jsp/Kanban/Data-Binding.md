@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Data Binding 
-description: Data Binding 
+title:  Essential EJ1 Syncfusion JSP Kanban Data Binding
+description: Databinding is used to show the different binding of adaptor section using Syncfusion JSP Kanban component. 
 documentation: ug
 platform: jsp
 keywords: data binding ,kanban data binding
@@ -62,7 +62,7 @@ Refer the below code to render kanban with datasource.
 
 The following output is displayed as a result of the above code example.
 
-![](Data_Binding_images/Data_Bind_img1.png)
+![Local data in JSP kanban control](Data_Binding_images/Data_Bind_img1.png)
 
 ## Remote Data
 
@@ -98,5 +98,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Data_Binding_images/Data_Bind_img2.png)
+![Remote data in JSP kanban control](Data_Binding_images/Data_Bind_img2.png)
 
