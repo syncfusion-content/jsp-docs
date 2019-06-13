@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging
-description: paging
+title: Paging | JSP | PivotGrid | Syncfusion
+description: This document illustrates that how to define paging with respective to the modes in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug
@@ -45,7 +45,7 @@ Following are the navigation options available in the pager:
 * Move next: Navigates to the next page from the current page.
 * Numeric box: Navigates to the desired page by entering an appropriate page number in the numeric value.
 
-![](Paging_images/paging.png)
+![Paging in JSP pivot grid control](Paging_images/paging.png)
 
 
 ## Virtual scrolling
@@ -73,7 +73,7 @@ Virtual scrolling is a technique that allows you to view the pivot grid informat
 
 {% endhighlight %} 
 
-![](Paging_images/virtual-scrolling.png)
+![Virtual scrolling in JSP pivot grid control](Paging_images/virtual-scrolling.png)
 
 ## Page settings
 

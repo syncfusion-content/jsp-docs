@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotChart Control Overview 
-description: Overview of PivotChart control 
+title: PivotChart Control Overview | JSP | Syncfusion
+description: It is an overview of PivotChart control in JSP platform. PivotChart visualizes relational and OLAP data sources in a graphical format
 platform: JSP
 control: PivotChart
 documentation: ug
