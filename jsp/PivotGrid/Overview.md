@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotGrid Control Overview 
-description: Overview of PivotGrid control 
+title: PivotGrid Control Overview | JSP | Syncfusion
+description: It is an overview of PivotGrid control in JSP platform. PivotGrid component visualizes relational and OLAP data sources in tabular format
 platform: JSP
 control: PivotGrid
 documentation: ug
