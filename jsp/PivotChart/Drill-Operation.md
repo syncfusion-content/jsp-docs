@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DrillOperation
-description: drill operation
+title: Drill operation | JSP | PivotChart | Syncfusion
+description: This document illustrates drill operation feature with respective to the modes of JSP PivotChart control
 platform: jsp
 control: PivotChart
 documentation: ug
@@ -15,10 +15,10 @@ Drill up, also called roll up, navigates from the inner most level (having detai
 
 Drill down, also called roll down, is the reverse of drill up. It navigates from any of the outer levels to the inner most level.
 
-![](Drill-Operation_images/Drill-Operation_img1.png)
+![Drill down operation in JSP pivot chart control](Drill-Operation_images/Drill-Operation_img1.png)
 
 
-![](Drill-Operation_images/Drill-Operation_img2.png)
+![Drill up operation in JSP pivot chart control](Drill-Operation_images/Drill-Operation_img2.png)
 
 
 The drillSuccess event will be triggered when you right-click the pivot chart and select any option available in the context menu to perform drill up or drill down operation.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotGauge Control Overview 
-description: Overview of PivotGauge control 
+title: PivotGauge Control Overview | JSP | Syncfusion
+description: It is an overview of PivotGauge control in JSP platform. PivotGauge visualizes relational and OLAP data sources in the form of circular gauge
 platform: JSP
 control: PivotGauge
 documentation: ug

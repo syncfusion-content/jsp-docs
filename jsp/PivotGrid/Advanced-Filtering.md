@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Advanced Filtering and Soritng
-description: advanced filtering and sorting
+title: Advanced Filtering and Soritng | JSP | PivotGrid | Syncfusion
+description: This document illustrates that how to define advance filtering and sorting with respective to the modes in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug
@@ -27,21 +27,21 @@ You can enable the Advanced Filtering and Sorting option in the pivot grid by se
 
 Sorting provides an option to sort the members of a field either in the ascending or descending order.
 
-![](AdvanceFiltering_images/sorting.png)
+![Sorting options in JSP pivot grid control](AdvanceFiltering_images/sorting.png)
 
 ## Label filtering
 
 Label filtering provides an option to filter the members of a field purely based on their caption. 
 
-![](AdvanceFiltering_images/filtering.png)
+![Label filtering options in JSP pivot grid control](AdvanceFiltering_images/filtering.png)
 
-![](AdvanceFiltering_images/filtering_dialog.png)
+![Label filter dialog in JSP pivot grid control](AdvanceFiltering_images/filtering_dialog.png)
 
 
 ## Value filtering
 
 Value filtering provides an option to filter the members based on total values of the appropriate measure between members of the level.
 
-![](AdvanceFiltering_images/valuefilter.png)
+![Value filtering options in JSP pivot grid control](AdvanceFiltering_images/valuefilter.png)
 
-![](AdvanceFiltering_images/valuefilter_dialog.png)
+![Value filter dialog in JSP pivot grid control](AdvanceFiltering_images/valuefilter_dialog.png)

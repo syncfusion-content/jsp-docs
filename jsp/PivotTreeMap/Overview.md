@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotTreeMap Control Overview 
-description: Overview of PivotTreeMap control 
+title: Overview | PivotTreeMap | JSP | Syncfusion
+description: It is an overview of PivotTreeMap control in JSP platform. PivotTreeMap visualizes relational and OLAP data in the form of nested nodes
 platform: JSP
 control: PivotTreeMap
 documentation: ug

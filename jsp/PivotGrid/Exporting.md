@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting
-description: exporting
+title: Exporting | JSP | PivotGrid | Syncfusion
+description: This document illustrates that how to define exporting and its customization in JSP PivotGrid control
 platform: jsp
 control: PivotGrid
 documentation: ug
@@ -209,17 +209,17 @@ When the paging is enabled, you can export the complete data by enabling the `en
 
 The following screenshot shows the pivot grid control exported to an Excel document:
 
-![](Exporting_images/ExportPivotExcel.png)
+![Excel exporting in JSP pivot grid control](Exporting_images/ExportPivotExcel.png)
 
 The following screenshot shows the pivot grid control exported to a Word document:
 
-![](Exporting_images/ExportPivotWord.png)
+![Word exporting in JSP pivot grid control](Exporting_images/ExportPivotWord.png)
 
 The following screenshot shows the pivot grid control exported to a PDF document:
 
-![](Exporting_images/ExportPivotPDF.png)
+![PDF exporting in JSP pivot grid control](Exporting_images/ExportPivotPDF.png)
 
 The following screenshot shows the pivot grid control exported to a CSV document:
 
-![](Exporting_images/ExportPivotCSV.png)
+![CSV exporting in JSP pivot grid control](Exporting_images/ExportPivotCSV.png)
 
