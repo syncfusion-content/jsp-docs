@@ -49,7 +49,7 @@ You need to add Splitter Panes by using **ej:splitter-contentTemplate** tag. Her
     
     <div class="cols-sample-area">
     <ej:splitter id="inner" height="250" width="400">
-        <ej:splitter-contenttemplate>
+        <ej:splitter-contentTemplate>
             <div id="pane1">
                 <div>
                     <div class="cont">
@@ -76,7 +76,7 @@ You need to add Splitter Panes by using **ej:splitter-contentTemplate** tag. Her
                     </div>
                 </div>
             </div>
-        </ej:splitter-contenttemplate>
+        </ej:splitter-contentTemplate>
     </ej:splitter>
     </div>
 
@@ -91,7 +91,7 @@ Add the following code example in HTML file to configure Tree View.
 {% highlight html %}
 
     <ej:treeview id="treeView" nodeselect="treeClicked">
-        <ej:treeview-contenttemplate>
+        <ej:treeview-contentTemplate>
         <ul id="treeView" class="visibleHide">
             <li>
                 Mobile
@@ -112,7 +112,7 @@ Add the following code example in HTML file to configure Tree View.
                 </ul>
             </li>
         </ul>
-        </ej:treeview-contenttemplate>
+        </ej:treeview-contentTemplate>
     </ej:treeview>
 
   
