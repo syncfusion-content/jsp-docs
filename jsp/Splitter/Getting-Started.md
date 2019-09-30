@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started-Splitter | Syncfusion
 description: getting started
 platform: jsp
 control: Splitter
@@ -11,7 +11,7 @@ documentation: ug
 
 This section helps to get started of the Splitter control in a JSP application.
 
-![](Getting-Started_images/Getting_Started_img1.png)
+![getting-started](Getting-Started_images/Getting_Started_img1.png)
 
 ## Create a Splitter
 
@@ -136,6 +136,6 @@ Add the following code example in script to set the action to view the image. We
 
 The following screenshot is the output for the above code.
 
-![](Getting-Started_images/Getting_Started_img1.png)
+![Splitter](Getting-Started_images/Getting_Started_img1.png)
 
 N> _Note:_ _You can find the Splitter control properties from the_ [API reference](https://help.syncfusion.com/api/js/ejsplitter) _document_
