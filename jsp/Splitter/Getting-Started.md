@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started-Splitter | Syncfusion
 description: getting started
 platform: jsp
 control: Splitter
@@ -11,7 +11,7 @@ documentation: ug
 
 This section helps to get started of the Splitter control in a JSP application.
 
-![](Getting-Started_images/Getting_Started_img1.png)
+![getting-started](Getting-Started_images/Getting_Started_img1.png)
 
 ## Create a Splitter
 
@@ -49,7 +49,7 @@ You need to add Splitter Panes by using **ej:splitter-contentTemplate** tag. Her
     
     <div class="cols-sample-area">
     <ej:splitter id="inner" height="250" width="400">
-        <ej:splitter-contenttemplate>
+        <ej:splitter-contentTemplate>
             <div id="pane1">
                 <div>
                     <div class="cont">
@@ -76,7 +76,7 @@ You need to add Splitter Panes by using **ej:splitter-contentTemplate** tag. Her
                     </div>
                 </div>
             </div>
-        </ej:splitter-contenttemplate>
+        </ej:splitter-contentTemplate>
     </ej:splitter>
     </div>
 
@@ -91,7 +91,7 @@ Add the following code example in HTML file to configure Tree View.
 {% highlight html %}
 
     <ej:treeview id="treeView" nodeselect="treeClicked">
-        <ej:treeview-contenttemplate>
+        <ej:treeview-contentTemplate>
         <ul id="treeView" class="visibleHide">
             <li>
                 Mobile
@@ -112,7 +112,7 @@ Add the following code example in HTML file to configure Tree View.
                 </ul>
             </li>
         </ul>
-        </ej:treeview-contenttemplate>
+        </ej:treeview-contentTemplate>
     </ej:treeview>
 
   
@@ -136,6 +136,6 @@ Add the following code example in script to set the action to view the image. We
 
 The following screenshot is the output for the above code.
 
-![](Getting-Started_images/Getting_Started_img1.png)
+![Splitter](Getting-Started_images/Getting_Started_img1.png)
 
 N> _Note:_ _You can find the Splitter control properties from the_ [API reference](https://help.syncfusion.com/api/js/ejsplitter) _document_
