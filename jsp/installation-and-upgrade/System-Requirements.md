@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System requirements needed to use Syncfusion Essential JSP components
-description: Learn what are the system requirements needed to use Syncfusion Essential JSP components
+title: System Requirements for JSP | JSP | Syncfusion
+description: this section provides the information about the system requirements for JSP platform with supported browsers
 platform: JSP
 control: System Requirement
 documentation: ug
