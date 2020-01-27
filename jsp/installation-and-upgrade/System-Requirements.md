@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System requirements needed to use Syncfusion Essential JSP components
-description: Learn what are the system requirements needed to use Syncfusion Essential JSP components
+title: System Requirements for JSP | JSP | Syncfusion
+description: this section provides the information about the system requirements for JSP platform with supported browsers
 platform: JSP
 control: System Requirement
 documentation: ug
@@ -27,7 +27,7 @@ The following topic describes the system requirements for Syncfusion JSP platfor
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 300 MB of available space may be required. However, 90 MB free space is required in boot drive even if you are installing the setup in other drive.
+* Hard disk: up to 300 MB of available space may be required. However, 90 MB free space is required in boot drive even if you are installing in other drive.
 
 ### Development Environment
 
