@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Essential EJ1 Syncfusion JSP Kanban Globalization and Localization
+title:  Globalization and Localization in Syncfusion Essential JSP Kanban
 description: This section explains how to enable localization and its functionalities using the Syncfusion JSP Kanban component.
 documentation: ug
 platform: jsp
 keywords: globalization and localization,kanban globalization and localizationards
 ---
 
-# Localization
+# Localization in Kanban
 
 All text in Kanban can be localized using `ej.Kanban.Locale` object. Please find the table with list of properties and its value in locale object.
 
