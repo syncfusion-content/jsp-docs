@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio JSP products
-description: Learn how to install and deploy the Syncfusion JSP component
+title: Installation for Syncfusion Essential Studio JSP products
+description: Learn how to install Syncfusion Essential JSP installer and deploy the Syncfusion Essential JSP installer component
 platform: JSP
 control: Installation and Deployment
 documentation: ug
