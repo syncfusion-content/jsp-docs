@@ -9,7 +9,7 @@ documentation: ug
 
 # System Requirement
 
-The following topic describes the system requirements for Syncfusion JSP platform.
+The system requirements for using our Syncfusion JSP platform are as follows
 
 ### Operating Systems
 
