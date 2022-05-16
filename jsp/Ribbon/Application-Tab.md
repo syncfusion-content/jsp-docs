@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  Ribbon-Application-Tab
-description: application tab
+title: Application Tab in JSP Ribbon Control | Syncfusion
+description: Learn here about application tab in Syncfusion Essential JSP Ribbon Control, its elements, features, and more.
 documentation: ug
 platform: jsp
+control: Ribbon
 keywords: application tab,ribbon application tab
 ---
 
-# Application Tab
+# Application Tab in JSP Ribbon
 
 The Application Tab is used to represent a `Menu` that do some operations, such as File menu to create, open, and print documents. Application Tab classified by `type` property with the following:
 
@@ -76,7 +77,7 @@ Set the UL element `id` to `menuItemID` property to create Application Menu and 
     </html>
 {% endhighlight %}
 
-![](Application-Tab_images/Application-Tab_img1.png)
+![JSP Ribbon Application Menu](Application-Tab_images/Application-Tab_img1.png)
 
 ## Backstage Page
 
@@ -180,7 +181,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
     
 {% endhighlight %}
 
-![](Application-Tab_images/Application-Tab_img3.png)
+![JSP Ribbon Backstage Page](Application-Tab_images/Application-Tab_img3.png)
 
 N> Height & width of backstage can be set using `height` and `width`, if these are not set, Ribbon’s height & width will be considered.
 
