@@ -1,17 +1,17 @@
 ---
 layout: post
-title: getting started
-description: getting started
-platform: js
-control: Control Name undefined
+title: Getting Started with JSP AutoComplete Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JSP AutoComplete Control, its elements, and more.
+platform: JSP
+control: AutoComplete
 documentation: ug
 ---
 
-## Getting Started
+# Getting Started with JSP AutoComplete
 
 This section helps to understand the getting started of the Autocomplete control for JSP.
 
-### Creating an AutoComplete in JSP
+## Creating an AutoComplete in JSP
 
 The following steps guide you to add an Autocomplete control.
 
@@ -58,7 +58,7 @@ Create a simple Autocomplete by adding ej:autocomplete tag for initializing an e
 
 This will render an Autocomplete with no suggestion on executing.
 
-![](getting_started_images\creatinganautocompleteinjsp_img1.png)
+![JSP AutoComplete Getting Started](getting_started_images\creatinganautocompleteinjsp_img1.png)
 
 
 ### Data Binding
@@ -138,7 +138,7 @@ Refer the below code to render Autocomplete with datasource.
 
 Run the above code to get the following output.
 
-![](getting_started_images\databinding_img1.png)
+![JSP AutoComplete Data Binding](getting_started_images\databinding_img1.png)
 
 
 ### Enable Popup Button
@@ -161,7 +161,7 @@ We can enable the popup button of AutoComplete by using showPopupButton property
 
 Run the above code to get the following output.
 
-![](getting_started_images\enablepopupbutton_img1.png)
+![JSP AutoComplete Enable Popup Button](getting_started_images\enablepopupbutton_img1.png)
 
 
 
