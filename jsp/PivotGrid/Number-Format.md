@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Number format in jsp PivotGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion jsp PivotGrid number format, its elements, and more. 
+description: Learn more about Number Format support in Syncfusion JSP PivotGrid control, its elements, and more. 
 platform: jsp
 control: PivotGrid
 documentation: ug
 ---
 
-# Getting started with jsp PivotGrid
-
+# Number Format in JSP PivotGrid
 Allows you to specify the required number format that pivot grid should use in its values by setting the `format` option. Following are the number formats that are supported:
 
 * number
