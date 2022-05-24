@@ -1,13 +1,13 @@
 ---
 layout: post
-title: getting started
-description: Learn here about getting started with Syncfusion Essential JSP controlname ListView control, its elements, and more.
+title: Getting started with JSP ListView
+description: Learn here more about getting started with Syncfusion Essential JSP ListView control, its elements, and more.
 platform: js
 control: Control Name undefined
 documentation: ug
 ---
 
-## Getting Started with JSP ListView
+# Getting Started with JSP ListView
 
 This section helps to understand the getting started of the Essential JSP ListView with the step-by-step instructions.
 
