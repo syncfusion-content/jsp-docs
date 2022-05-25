@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number format in jsp PivotGrid control | Syncfusion
-description: Learn more about Number Format support in Syncfusion JSP PivotGrid control, its elements, and more. 
+description: Learn here more about Number Format support in Syncfusion JSP PivotGrid control, its elements, and more. 
 platform: jsp
 control: PivotGrid
 documentation: ug
