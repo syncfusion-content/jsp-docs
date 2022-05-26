@@ -1,13 +1,13 @@
 ---
 layout: post
-title: getting-started
+title: Getting started with JSP RadioButton | Syncfusion
 description: getting started for RadioButton
 platform: JSP
 control: RadioButton
 documentation: ug
 ---
 
-# GettingStarted
+# GettingStarted with JSP RadioButton
 
 This section briefly describes about how to create a **RadioButton** in your application with JSP.
 
@@ -56,4 +56,4 @@ Create the JSP file and add the below given code to render **RadioButton** contr
 
 You can execute the above code example to display the **RadioButton** control .
 
-![](getting-started_images/radiobutton.png) 
+![JSP RadioButton Getting Started](getting-started_images/radiobutton.png) 
