@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with JSP RadioButton | Syncfusion
-description: getting started for RadioButton
+description: Learn here about getting started with Syncfusion Essential JSP RadioButton control, its elements, and more. 
 platform: JSP
 control: RadioButton
 documentation: ug
