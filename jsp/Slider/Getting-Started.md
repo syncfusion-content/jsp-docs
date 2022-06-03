@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started
-description: Getting Started
+title: Getting Started with Syncfusion Slider Control for JSP
+description: Learn here about getting started with Syncfusion Essential JSP Slider control, its elements, and more.
 platform: jsp
 control: Slider
 documentation: ug
 ---
-# Getting Started
+# Getting Started with JSP Slider
 
 This section explains briefly about how to create a **Slider** in your application with JSP.
 
@@ -26,5 +26,5 @@ Create the JSP file and add the below given code to render **Slider** control wi
 
 You can execute the above code example to display the **Slider** control.
 
-![](Getting Started-images/Slider_image1.png) 
+![Getting Started with JSP Slider](Getting Started-images/Slider_image1.png) 
 
