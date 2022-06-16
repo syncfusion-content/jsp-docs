@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation for Syncfusion Essential Studio JSP products
-description: Learn how to install Syncfusion Essential JSP installer and deploy the Syncfusion Essential JSP installer component
+title: Installation Errors in JSP - Syncfusion
+description: Learn here about the common installation errors and solution to those errors in Syncfusion JSP Components installation.
 platform: JSP
 control: Installation and Deployment
 documentation: ug
