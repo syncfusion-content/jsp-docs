@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Resizing column
+# Resizing column in JSP PivotGrid
 
 Allows you to change the column width by holding and dragging the column border using the mouse pointer.
 

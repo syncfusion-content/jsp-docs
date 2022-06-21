@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started
-description: Getting Started
+title: Getting Started with JSP DatePicker Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JSP DatePicker Control, its elements, and more.
 platform: JSP
 control: DatePicker
 documentation: ug
 ---
-# Getting Started
+# Getting Started with JSP DatePicker
 
 This section explains briefly about how to create a **DatePicker** in your application with JSP.
 
@@ -27,7 +27,7 @@ Create the JSP file and add the below given code to render **DatePicker** contro
 
 You can execute the above code example to display the **DatePicker** control.
 
-![](Getting Started-images/Datepicker_image1.png) 
+![JSP DatePicker getting started](Getting Started-images/Datepicker_image1.png) 
 
 ## Configuring DatePicker
 This section encompasses the details on how you can setting the **MinDate**, **MaxDate** properties with **DatePicker** control in your application according to your requirement.
@@ -52,5 +52,5 @@ To set the **MinDate**, **MaxDate** in your application add the following script
 
 Run the above code to display the **DatePicker** control with **MinDate** and **MaxDate**.
 
-![](Getting Started-images/Datepicker_image2.png) 
+![JSP DatePicker configuration](Getting Started-images/Datepicker_image2.png) 
 

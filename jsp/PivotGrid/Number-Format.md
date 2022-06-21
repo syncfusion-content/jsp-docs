@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Number format
-description: number format 
+title: Number format in JSP PivotGrid Control | Syncfusion
+description: Learn here about number format in Syncfusion Essential JSP PivotGrid Control, its elements, and more.
 platform: jsp
 control: PivotGrid
 documentation: ug
 ---
 
-# Number format
+# Number format in JSP PivotGrid
 
 Allows you to specify the required number format that pivot grid should use in its values by setting the `format` option. Following are the number formats that are supported:
 
@@ -78,7 +78,7 @@ Allows you to specify the required number format that pivot grid should use in i
 
 {% endhighlight %}
 
-![](Number-Format_images/RelationalClient.png)
+![JSP PivotGrid Number Format](Number-Format_images/RelationalClient.png)
 
 ## OLAP
 
@@ -103,4 +103,4 @@ Allows you to specify the required number format that pivot grid should use in i
 
 {% endhighlight %}
 
-![](Number-Format_images/OlapClient.png)
+![Number-Format OLAP Client](Number-Format_images/OlapClient.png)
