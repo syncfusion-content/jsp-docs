@@ -1,17 +1,17 @@
 ---
 layout: post
-title: getting started
-description: getting started
-platform: js
-control: Control Name undefined
+title: Getting Started with JSP ListView Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JSP ListView Control, its elements, and more.
+platform: jsp
+control: ListView
 documentation: ug
 ---
 
-## Getting Started
+# Getting Started with JSP ListView
 
 This section helps to understand the getting started of the Essential JSP ListView with the step-by-step instructions.
 
-### Create an ListView 
+## Create an ListView 
 
 The following steps guide you to add a Listview control.
 
@@ -72,7 +72,7 @@ Run the above code to render the following output.
 
 
 
-![](gettingstarted_images\createanlistview_img1.png)
+![JSP ListView getting started](gettingstarted_images\createanlistview_img1.png)
 
 
 ### Data binding
@@ -153,7 +153,7 @@ Run the above code to render the following output.
 
 
 
-![](gettingstarted_images\databinding_img1.png)
+![JSP ListView Data binding](gettingstarted_images\databinding_img1.png)
 
 
 ### Add Header
@@ -175,7 +175,7 @@ Run the above code to render the following output.
 
 
 
-![](gettingstarted_images\addheader_img1.png)
+![JSP ListView Add Header](gettingstarted_images\addheader_img1.png)
 
 Note: You can find the ListView properties from the [API reference](https://help.syncfusion.com/api/js/ejlistview) document 
 
