@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with JSP Rotator Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JSP Rotator Control, its elements, and more.
 platform: jsp
 control: Rotator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with JSP Rotator
 
 This section helps to understand the getting started of the **Rotator** control for JSP.
 
-![](Getting_Started_images/getting-started1.png)
+![JSP Rotator Create a Rotator](Getting_Started_images/getting-started1.png)
 
 ## Create a Rotator
 
@@ -114,6 +114,6 @@ Refer the below code to render rotator in sample.
 {% endhighlight %}
 
 
-![](Getting_Started_images/configuring-properties_img1.png)
+![JSP Rotator configuring properties](Getting_Started_images/configuring-properties_img1.png)
 
 N> _Note:_ _You can find the Rotator control properties from the_ [API reference](https://help.syncfusion.com/api/js/ejrotator) _document_
