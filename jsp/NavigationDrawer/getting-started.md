@@ -1,13 +1,13 @@
 ---
 layout: post
-title: getting-started
-description: getting started
+title: Getting Started with JSP Navigation Drawer Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JSP Navigation Drawer Control, its elements, and more.
 platform: jsp
 control: navigation drawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with JSP Navigation Drawer
 
 This section helps you to understand the getting started of the Navigation Drawer control with the step-by-step instructions.
 
@@ -92,7 +92,7 @@ To set the target icon image and with the correct position as using the below me
 
 {% endhighlight %}
 
-![](Getting-Started_images/getting-started-img1.png)
+![JSP Navigation Drawer Create a Navigation Drawer](Getting-Started_images/getting-started-img1.png)
 
 To open the list items by clicking on target element, set the elements ID to targetId property.  
 
@@ -114,7 +114,7 @@ To open the list items by clicking on target element, set the elements ID to tar
   
 {% endhighlight %}
 
-![](Getting-Started_images/getting-started-img2.png)
+![JSP Navigation Drawer](Getting-Started_images/getting-started-img2.png)
 
 To set the images for list items of the Navigation Drawer by using the data-ej-imageurl property as follows.
 
@@ -136,7 +136,7 @@ To set the images for list items of the Navigation Drawer by using the data-ej-i
 
 {% endhighlight %}
 
-![](Getting-Started_images/getting-started-img3.png)
+![JSP Navigation Drawer getting started](Getting-Started_images/getting-started-img3.png)
 
 ## Customize Direction
 
@@ -160,6 +160,6 @@ By using direction property, to change the list view open direction. The possibl
 
 {% endhighlight %}
 
-![](Getting-Started_images/getting-started-img5.png)
+![JSP Navigation Drawer Customize Direction](Getting-Started_images/getting-started-img5.png)
 
 N> You can find the Navigation Drawer control properties from the [API reference](https://help.syncfusion.com/api/js/ejnavigationdrawer).
