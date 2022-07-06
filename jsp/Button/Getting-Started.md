@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Button
-description: button type
+title: Getting Started with JSP Button Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JSP Button Control, its elements, and more.
 platform: JSP
 control: Button
 documentation: ug
 ---
-# Getting Started
+# Getting Started with JSP Button
 
 This section explains briefly about how to create a **Button** in your application with JSP. The usage of **Button** control is described in the following sections.
 
@@ -48,5 +48,5 @@ To modify the size of the **Button** and rename the **Button**, add the followin
 
 The following screenshot illustrates the **Button** control with text and size properties.   
 
-![](Getting Started-images/Button_image1.png)  
+![JSP Button Configuring Button](Getting Started-images/Button_image1.png)  
 

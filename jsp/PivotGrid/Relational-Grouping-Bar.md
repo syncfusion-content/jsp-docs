@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Grouping bar
+# Grouping bar in JSP PivotGrid
 
 ## Initialization
 
