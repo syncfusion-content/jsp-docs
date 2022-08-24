@@ -19,7 +19,7 @@ documentation: ug
 4.	JSP SampleBrowser will be launched under the default port 8080 (localhost: 8080/SampleBrowser/index.jsp).
 5.	Browse product samples using the Sample Browser.
 
-![](Getting-Started_images/Getteing-Started_img5.PNG)
+![JSP Common Getting started](Getting-Started_images/Getteing-Started_img5.PNG)
 
 ### Steps to utilize Essential JS for JSP components in Dynamic web application with Eclipse environment
 
