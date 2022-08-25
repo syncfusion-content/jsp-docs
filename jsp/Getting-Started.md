@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | JSP | Syncfusion
-description: Learn here about getting started with Syncfusion JSP Common control, its elements, and more.
+description: Learn here about getting started with Syncfusion JSP Common control function, its elements, and more.
 platform: JSP 
 control: Common 
 documentation: ug
