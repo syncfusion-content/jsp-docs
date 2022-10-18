@@ -91,7 +91,7 @@ Add the following code example to add list of items to the **pivot grid** and in
 
 The above code will generate a simple pivot grid with “Product” field in the row, “Date” field in the column, and “Amount” field in the value section.
 
-![](Getting-Started_images/relational_default.png)
+![JSP PivotGrid Relational](Getting-Started_images/relational_default.png)
 
 ## OLAP
 
@@ -120,4 +120,4 @@ Add the following code example to add list of items to the **pivot grid** and in
 
 The above code will generate a simple pivot grid with “Fiscal” field in the row, “Customer Geography” field in the column, and “Internet Sales Amount” field in the value section.
 
-![](Getting-Started_images/olap_default.png)
+![JSP PivotGrid OLAP](Getting-Started_images/olap_default.png)
