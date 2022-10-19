@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started
-description: Getting Started
+title: Getting Started with JSP PercentageTextbox control| Syncfusion
+description: Learn here all about Getting Started with Syncfusion Essential JSP PercentageTextbox control, its elements, and more.
 platform: jsp
 control: PercentageTextbox
 documentation: ug
 ---
-# Getting Started
+# Getting Started with JSP PercentageTextbox
 
 This section explains briefly about how to create a **PercentageTextbox** in your application with JSP.
 
@@ -26,7 +26,7 @@ Create the JSP file and add the below given code to render **PercentageTextbox**
 
 You can execute the above code example to display the **PercentageTextbox** control.
 
-![](Getting Started-images/PercentageTextbox_image1.png) 
+![Getting Started with JSP PercentageTextbox](Getting Started-images/PercentageTextbox_image1.png) 
 
 ## Configuring PercentageTextbox
 This section encompasses the details on how you can setting the **value**, **minValue** ,**width** properties with **PercentageTextbox** control in your application according to your requirement.
@@ -41,5 +41,5 @@ To set the **value**, **minValue** ,**width** in your application add the follow
 
 Run the above code to display the **PercentageTextbox** control with **value** and **minValue**.
 
-![](Getting Started-images/PercentageTextbox_image2.png) 
+![Configuring JSP PercentageTextbox](Getting Started-images/PercentageTextbox_image2.png) 
 
