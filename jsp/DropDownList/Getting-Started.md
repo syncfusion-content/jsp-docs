@@ -1,14 +1,14 @@
 ---
 layout: post
-title: getting started
-description: getting started
+title: Getting started with JSP DropDownList Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential JSP DropDownList control, its elements, and more.
 platform: JSP
 control: DropDownList
 documentation: ug
 keywords: getting started, JSP document, dropdownList, populating data, setting dimensions
 ---
 
-# Getting Started
+# Getting Started with JSP DropDownList
 
 This section briefly describes about how to create a **DropDownList** in your application with JSP.The external script dependencies of the **DropDownList** widget are,
  * jQuery 1.7.1 and later versions.

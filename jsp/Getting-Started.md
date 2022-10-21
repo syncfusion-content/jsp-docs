@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | JSP | Syncfusion
-description: Getting Started.
+title: Getting Started with JSP Platform | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential JSP Platform, its elements, and more..
 platform: JSP 
 control: Common 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Essential JSP
 
 ## Essential JS for JSP
 
