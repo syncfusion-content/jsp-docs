@@ -1,14 +1,14 @@
 ---
 layout: post
-title: getting started
-description: getting started
+title: Getting Started with JSP DropDownList Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential JSP DropDownList control, its elements, and more.
 platform: JSP
 control: DropDownList
 documentation: ug
 keywords: getting started, JSP document, dropdownList, populating data, setting dimensions
 ---
 
-# Getting Started
+# Getting Started with JSP DropDownList
 
 This section briefly describes about how to create a **DropDownList** in your application with JSP.The external script dependencies of the **DropDownList** widget are,
  * jQuery 1.7.1 and later versions.
@@ -64,7 +64,7 @@ The DropDownList can be created in JSP by using the below given code.
 
 You can execute the above code example to display the DropDownList control.
 
-![](Getting Started-images/DropDownList_image1.png)
+![Simple JSP DropDownList](Getting Started-images/DropDownList_image1.png)
  
 ## Configuring the DropDownList
 
@@ -87,7 +87,7 @@ This section encompasses the details on how to configure the dropdownlist compon
 	
 Run the above code to get the following output.
  
-![](Getting Started-images/DropDownList_image2.png)
+![Configure JSP DropDownList](Getting Started-images/DropDownList_image2.png)
 
 ## Populating Data
 
@@ -156,7 +156,7 @@ Refer the below code to render  DropDownList with datasource.
 	
 Run the above code to get the following output.
 
-![](Getting Started-images/DropDownList_image3.png)
+![Populate Data in JSP DropDownList](Getting Started-images/DropDownList_image3.png)
 	 
 ## Setting Dimensions
 
