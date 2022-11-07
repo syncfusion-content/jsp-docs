@@ -1,13 +1,13 @@
 ---
 layout: post
-title: getting-started
-description: getting started for ColorPicker
+title: Getting Started with JSP ColorPicker Control | Syncfusion
+description: Learn here all about Getting Started with Syncfusion Essential JSP ColorPicker control, its elements, and more.
 platform: JSP
 control: ColorPicker
 documentation: ug
 ---
 
-# GettingStarted
+# Getting Started with Essential JSP ColorPicker
 
 This section briefly describes about how to create a **Colorpicker** in your application with JSP. The usage of the **Colorpicker** is described in the following sections.
 
@@ -30,7 +30,7 @@ Create the JSP file and add the below given code to render **Colorpicker** contr
 
 You can execute the above code example to display the **Colorpicker** control with simple control list.
 
-![](getting-started_images/colorpicker.png) 
+![Create a simple ColorPicker in JSP](getting-started_images/colorpicker.png) 
 
 ### Configuring ColorPicker
 
@@ -46,4 +46,4 @@ To modify the preset type of the **Colorpicker**, add the following code in your
 
 The following screenshot illustrates the **Colorpicker** control with preset type property.
 
-![](getting-started_images/colorpickerpreset.png) 
+![Configuring ColorPicker in JSP](getting-started_images/colorpickerpreset.png) 

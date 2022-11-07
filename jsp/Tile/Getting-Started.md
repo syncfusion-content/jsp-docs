@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting-Started with JSP Tile Control | Syncfusion
+description: Learn here all about Getting Started with Syncfusion Essential JSP Tile control, its elements, and more.
 platform: jsp
 control: Tile
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Essential JSP Tile
 
 This section helps you to understand the getting started of the Tile control with the step-by-step instructions.
 
@@ -44,7 +44,7 @@ Create a simple Tile by adding ej:tile tag to initialize the control in the appl
 
 Get the following output from the above mentioned code
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Create a Tile in JSP](Getting-Started_images/Getting-Started_img1.png)
 
 You can easily design a home page using tile control for easy navigation. Therefore, you require many different sizes of tiles aligned in a grid-like manner. The tiles will be aligned automatically to define the necessary tile elements inside the wrapper element, that contains a "e-tile-column" class. You can define all columns elements under the wrapper element with the tile "e-tile-group" class to make ‘n’ number of tiles as a grouped tile. Add the below mentioned code to the corresponding view page.
 
@@ -100,7 +100,7 @@ You can easily design a home page using tile control for easy navigation. Theref
 
 Run the above code to get the following output.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Tile Elements in JSP](Getting-Started_images/Getting-Started_img2.png)
 
 ## Template support with Tile Control  
 
@@ -157,6 +157,6 @@ Add the following styles to customize the tile images with template support.
 
 Run the above code to get the following output.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Template Tile in JSP](Getting-Started_images/Getting-Started_img3.png)
 
 N> _Note:_ _You can find the Tile control properties from the_ [API reference](https://help.syncfusion.com/api/js/ejtile) _document_
