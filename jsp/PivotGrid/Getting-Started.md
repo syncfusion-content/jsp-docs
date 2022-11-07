@@ -1,13 +1,13 @@
 ---
-title: Getting Started for React JS PivotGrid
-description: How to create a PivotGrid with data source.
+title: Getting Started with JSP Pivot Grid Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential JSP Pivot Grid control, its elements, and more.
 platform: JSP
 control: PivotGrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, jsp pivotgrid
 ---
 
-# Getting started
+# Getting started with JSP Pivot Grid
 
 This section explains how to populate the pivot grid in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that are needed to get started with the pivot grid.
 
@@ -91,7 +91,7 @@ Add the following code example to add list of items to the **pivot grid** and in
 
 The above code will generate a simple pivot grid with “Product” field in the row, “Date” field in the column, and “Amount” field in the value section.
 
-![](Getting-Started_images/relational_default.png)
+![JSP PivotGrid Relational](Getting-Started_images/relational_default.png)
 
 ## OLAP
 
@@ -120,4 +120,4 @@ Add the following code example to add list of items to the **pivot grid** and in
 
 The above code will generate a simple pivot grid with “Fiscal” field in the row, “Customer Geography” field in the column, and “Internet Sales Amount” field in the value section.
 
-![](Getting-Started_images/olap_default.png)
+![JSP PivotGrid OLAP](Getting-Started_images/olap_default.png)

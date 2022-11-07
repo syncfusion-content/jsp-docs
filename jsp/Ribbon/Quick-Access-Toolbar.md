@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Quick Access Toolbar
-description: quick access toolbar
+title:  Quick Access in JSP Toolbar Control | Syncfusion
+description: Learn here all about quick access support in Syncfusion Essential JSP Toolbar control, its elements, and more.
 documentation: ug
 platform: jsp
 keywords: quick access toolbar,ribbon quick access toolbar
 ---
 
-# Quick Access Toolbar
+# Quick Access in Essential JSP Toolbar
 
 Quick Access Toolbar provides the shortcuts to the most commonly used commands by placing the controls at the Quick Access Toolbar section. It can be placed at the top or bottom of the Ribbon.
 
@@ -134,4 +134,4 @@ The client side event for Quick Access Toolbar menu click is `qatMenuItemClick` 
 
 {% endhighlight %}
 
-![](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img1.png)
+![Quick Access Toolbar in JSP](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img1.png)
