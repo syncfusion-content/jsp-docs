@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | JSP | Syncfusion
-description: Getting Started.
+description: Learn here about getting started with Syncfusion JSP Common control function, its elements, and more.
 platform: JSP 
 control: Common 
 documentation: ug
 ---
 
-# Getting Started
+# Getting started with JSP Common
 
 ## Essential JS for JSP
 
@@ -19,7 +19,7 @@ documentation: ug
 4.	JSP SampleBrowser will be launched under the default port 8080 (localhost: 8080/SampleBrowser/index.jsp).
 5.	Browse product samples using the Sample Browser.
 
-![](Getting-Started_images/Getteing-Started_img5.PNG)
+![JSP Common Getting started](Getting-Started_images/Getteing-Started_img5.PNG)
 
 ### Steps to utilize Essential JS for JSP components in Dynamic web application with Eclipse environment
 
@@ -28,14 +28,14 @@ To use Essential JS for JSP in eclipse environment, follow the steps below:
 
 1. Eclipse IDE with Apache Tomcat 7 configured 
 
-  ![](Getting-Started_images/Getteing-Started_img1.png)
+  ![JSP Common Getting started](Getting-Started_images/Getteing-Started_img1.png)
 
 
 2. Create a Dynamic web application in eclipse
 
    *	Choose File > New > Project....
    *	In the upcoming wizard choose Web > Dynamic Web Project.
-   ![](Getting-Started_images/Getteing-Started_img2.PNG)
+   ![JSP Common Getting started](Getting-Started_images/Getteing-Started_img2.PNG)
 
   And create a new Dynamic web project in eclipse.
 
@@ -61,7 +61,7 @@ To use Essential JS for JSP in eclipse environment, follow the steps below:
 
     {% endhighlight %}
 
-    ![](Getting-Started_images/Getteing-Started_img3.PNG)
+    ![JSP Common Getting started](Getting-Started_images/Getteing-Started_img3.PNG)
 
 5. Now add the Essential JS for JSP source package from \SampleBrowser\WEB-INF\lib\syncfusion-taglib-[version].jar to your project's /WebContent/WEB-INF/lib folder.
 
@@ -100,7 +100,7 @@ To use Essential JS for JSP in eclipse environment, follow the steps below:
 10. Finally, right-click your project’s in the Eclipse Project Explorer.
 
    * Select Run As > Run on server.
-  ![](Getting-Started_images/Getteing-Started_img4.PNG)
+  ![JSP Common Getting started](Getting-Started_images/Getteing-Started_img4.PNG)
 
 
 
