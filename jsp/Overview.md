@@ -9,6 +9,8 @@ documentation: ug
 
 # Welcome to Syncfusion Essential JS for JSP
 
+> Syncfusion jQuery based widgets are no longer in active development. Switch to our pure JavaScript based next generation Essential JS 2 library.
+
 Syncfusion JSP server side wrapper with over 40+ controls provide the enhanced way to create the rich dynamic web applications effortlessly. Components offered with this package are JavaScript UI controls which lets to customize the functionality and looks via altered options and themes.    
 
 ## How to best read this user guide
