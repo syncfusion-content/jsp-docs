@@ -7,6 +7,8 @@ control: Introduction
 documentation: ug
 ---
 
+> The Syncfusion JSP components of Essential JS 1 controls (jQuery-based widgets) are no longer actively developed, and 2022 Volume 4 marks the last release of the Syncfusion JSP components.
+
 # Welcome to Syncfusion Essential JS for JSP
 
 Syncfusion JSP server side wrapper with over 40+ controls provide the enhanced way to create the rich dynamic web applications effortlessly. Components offered with this package are JavaScript UI controls which lets to customize the functionality and looks via altered options and themes.    
@@ -15,7 +17,7 @@ Syncfusion JSP server side wrapper with over 40+ controls provide the enhanced w
 
 * The best way to get started would be to read the "Getting Started" section of the documentation for the component that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
 
-* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://jsp.syncfusion.com/) which contains code samples, it is very likely that you will find a code sample that resembles your intended usage scenario. 
+* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://jsp.syncfusion.com/SampleBrowser/index.jsp#Grids/Grid/default.jsp) which contains code samples, it is very likely that you will find a code sample that resembles your intended usage scenario. 
 
 * After you have integrated the component into your application using one of the sample code snippets as a starting point, it is likely that you would want additional information on specific features and API. The best option would be to search a the specific topic using the search box that is available at the top of the user guide.
 
