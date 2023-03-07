@@ -27,5 +27,5 @@ Syncfusion JSP server side wrapper with over 40+ controls provide the enhanced w
 
 ## Create a support incident
 
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://support.syncfusion.com/support/tickets) by creating a support ticket.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.syncfusion.com/company/contact-us) by creating a support ticket.
 
