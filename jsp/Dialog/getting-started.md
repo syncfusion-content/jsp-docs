@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: Getting Started
+title: Getting Started with JSP Dialog Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential JSP Dialog Control, its elements, and more.
 platform: jsp
 control: dialog
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with JSP Dialog
 
 This section helps you to understand the getting started of the Dialog control with the step-by-step instructions.
 
@@ -41,7 +41,7 @@ Create a simple Dialog by adding ej:dialog tag to initialize the control in the 
 
 To get the following output from the above-mentioned code.
 
-![](getting-started-images/getting-started-img1.png)
+![JSP Dialog add content](getting-started-images/getting-started-img1.png)
 
 ## Add dialog content
 
@@ -61,7 +61,7 @@ You can add any content to dialog inside the ej:dialog-contentTemplate tag. The 
 
 You will get the following output from the above-mentioned code
 
-![](getting-started-images/getting-started-img2.png)
+![JSP Dialog set a header](getting-started-images/getting-started-img2.png)
 
 ## Set a header
 
@@ -81,7 +81,7 @@ To set header for the dialog control, the title property is used.
 
 You will get the following output from the above-mentioned code.
 
-![](getting-started-images/getting-started-img3.png)
+![JSP open dialog dynamically](getting-started-images/getting-started-img3.png)
 
 ## Open Dialog dynamically
 
@@ -115,7 +115,7 @@ The dialog will be opened on clicking the Button control. Refer to the below men
 
 To get the following output from the above-mentioned code.
 
-![](getting-started-images/getting-started-img4.png)
+![JSP Dialog properties](getting-started-images/getting-started-img4.png)
 
 
 N> You can find the Dialog control properties from the [API reference](https://help.syncfusion.com/api/js/ejdialog).             
