@@ -1,17 +1,17 @@
 ---
 layout: post
-title: overview
-description: overview
-platform: js
-control: Control Name undefined
+title: Overview of JSP AutoComplete Control | Syncfusion
+description: Learn here all about overview of Syncfusion Essential JSP AutoComplete Control, its elements, and more.
+platform: jsp
+control: AutoComplete
 documentation: ug
 ---
 
-## Overview
+# Overview of JSP AutoComplete
 
 The **Essential JSP** AutoComplete control is a textbox control that provides a list of suggestions based on your query. When you enter a text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
 
-### Key Features
+## Key Features
 
 * Multi word Search: Supports searching using multiple words
 
