@@ -23,9 +23,9 @@ Syncfusion JSP server side wrapper with over 40+ controls provide the enhanced w
 
 ## Additional help resources
 
-* The [Knowledge Base](https://www.syncfusion.com/kb/jsp) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
+* The [Knowledge Base](https://support.syncfusion.com/kb) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
 
-* Similar to the [Knowledge Base](https://www.syncfusion.com/kb/jsp), the [forum](https://www.syncfusion.com/forums/jsp) section also contains responses to questions that other customers have asked us in the past.
+* Similar to the [Knowledge Base](https://support.syncfusion.com/kb), the [forum](https://www.syncfusion.com/forums/jsp) section also contains responses to questions that other customers have asked us in the past.
 
 ## Create a support incident
 
