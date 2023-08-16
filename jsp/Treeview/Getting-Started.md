@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started in JSP TreeView | Syncfusion
+title: Getting Started | JSP TreeView | Syncfusion
 description: Learn here about getting started with Syncfusion Essential JSP TreeView control, its elements, and more.
 platform: jsp
 control: TreeView
