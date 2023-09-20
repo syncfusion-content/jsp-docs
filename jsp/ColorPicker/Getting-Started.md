@@ -13,7 +13,7 @@ This section briefly describes about how to create a **Colorpicker** in your app
 
 ## Create a simple ColorPicker in JSP
 
-You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation.](/jsp-docs/jsp/Getting-Started)
+You can create an JSP application and add necessary scripts with the help of the given [JSP Getting Started Documentation.](/jsp/getting-started)
 
 Create the JSP file and add the below given code to render **Colorpicker** control.
 
