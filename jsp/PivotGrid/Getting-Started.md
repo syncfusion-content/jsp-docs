@@ -1,13 +1,13 @@
 ---
-title: Getting Started with JSP Pivot Grid Control | Syncfusion
-description: Learn here all about getting started with Syncfusion Essential JSP Pivot Grid control, its elements, and more.
+title: Getting Started with JSP PivotGrid Control | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential JSP PivotGrid control, its elements, and more.
 platform: JSP
 control: PivotGrid
 documentation: ug
 keywords: ejpivotgrid, pivotgrid, jsp pivotgrid
 ---
 
-# Getting started with JSP Pivot Grid
+# Getting started with JSP PivotGrid
 
 This section explains how to populate the pivot grid in your application with **JSP** wrapper classes of EJ controls. This section covers only the minimal features that are needed to get started with the pivot grid.
 
