@@ -90,7 +90,7 @@ Create the JSP file and add the below given code to render **TreeView** control.
 
 You can execute the above code example to display the **TreeView** control.
 
-![](Getting Started-images/TreeView_image1.png) 
+![create a TreeView in JSP.](Getting Started-images/TreeView_image1.png) 
 
 ## Data Binding
 
@@ -164,4 +164,4 @@ Refer the below code to render TreeView with local datasource.
 
 Run the above code to get the following output.
 
-![](Getting Started-images/TreeView_image2.png) 
+![data binding in JSP.](Getting Started-images/TreeView_image2.png) 
